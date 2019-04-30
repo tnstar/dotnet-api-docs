@@ -1,9 +1,9 @@
 ﻿<Type Name="SystemSounds" FullName="System.Media.SystemSounds">
-  <TypeSignature Language="C#" Value="public sealed class SystemSounds" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SystemSounds extends System.Object" />
+  <TypeSignature Language="C#" Value="public static class SystemSounds" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SystemSounds extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Media.SystemSounds" />
-  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SystemSounds" />
-  <TypeSignature Language="C++ CLI" Value="public ref class SystemSounds sealed" />
+  <TypeSignature Language="VB.NET" Value="Public Class SystemSounds" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SystemSounds abstract sealed" />
   <TypeSignature Language="F#" Value="type SystemSounds = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>

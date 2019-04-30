@@ -333,35 +333,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="System.Collections.Generic.ICollection&lt;System.ServiceModel.IExtension&lt;T&gt;&gt;.IsReadOnly">
-      <MemberSignature Language="C#" Value="bool System.Collections.Generic.ICollection&lt;System.ServiceModel.IExtension&lt;T&gt;&gt;.IsReadOnly { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.Generic.ICollection&lt;System.ServiceModel.IExtension&lt;T&gt;&gt;.IsReadOnly" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.ExtensionCollection`1.System#Collections#Generic#ICollection&lt;System#ServiceModel#IExtension&lt;T&gt;&gt;#IsReadOnly" />
-      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of IExtension(Of T)).IsReadOnly" />
-      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::Generic::ICollection&lt;System::ServiceModel::IExtension&lt;T&gt;&gt;::IsReadOnly { bool get(); };" />
-      <MemberSignature Language="F#" Usage="System.Collections.Generic.ICollection&lt;System.ServiceModel.IExtension&lt;T&gt;&gt;.IsReadOnly" />
-      <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets whether the collection is read-only.</summary>
-        <value>
-          <see cref="T:System.ServiceModel.ExtensionCollection`1" /> always returns <see langword="false" />.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
   </Members>
 </Type>

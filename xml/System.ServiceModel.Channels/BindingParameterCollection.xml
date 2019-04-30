@@ -1,10 +1,10 @@
 ﻿<Type Name="BindingParameterCollection" FullName="System.ServiceModel.Channels.BindingParameterCollection">
-  <TypeSignature Language="C#" Value="public class BindingParameterCollection : System.Collections.Generic.KeyedByTypeCollection&lt;object&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BindingParameterCollection extends System.Collections.Generic.KeyedByTypeCollection`1&lt;object&gt;" />
+  <TypeSignature Language="C#" Value="public class BindingParameterCollection : System.Collections.ObjectModel.KeyedCollection&lt;Type,object&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BindingParameterCollection extends System.Collections.ObjectModel.KeyedCollection`2&lt;class System.Type, object&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.BindingParameterCollection" />
-  <TypeSignature Language="VB.NET" Value="Public Class BindingParameterCollection&#xA;Inherits KeyedByTypeCollection(Of Object)" />
-  <TypeSignature Language="C++ CLI" Value="public ref class BindingParameterCollection : System::Collections::Generic::KeyedByTypeCollection&lt;System::Object ^&gt;" />
-  <TypeSignature Language="F#" Value="type BindingParameterCollection = class&#xA;    inherit KeyedByTypeCollection&lt;obj&gt;" />
+  <TypeSignature Language="VB.NET" Value="Public Class BindingParameterCollection&#xA;Inherits KeyedCollection(Of Type, Object)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BindingParameterCollection : System::Collections::ObjectModel::KeyedCollection&lt;Type ^, System::Object ^&gt;" />
+  <TypeSignature Language="F#" Value="type BindingParameterCollection = class&#xA;    inherit KeyedCollection&lt;Type, obj&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -24,7 +24,8 @@
     <BaseTypeName>System.Collections.Generic.KeyedByTypeCollection&lt;System.Object&gt;</BaseTypeName>
     <BaseTypeName FrameworkAlternate="netcore-1.0">System.Collections.ObjectModel.KeyedCollection&lt;System.Type,System.Object&gt;</BaseTypeName>
     <BaseTypeArguments>
-      <BaseTypeArgument TypeParamName="TItem">System.Object</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="!0">System.Type</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="!1">System.Object</BaseTypeArgument>
     </BaseTypeArguments>
   </Base>
   <Interfaces />
@@ -62,11 +63,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.BindingParameterCollection" /> class.</summary>
@@ -99,7 +95,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="item" Type="System.Object" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-uwp-10.0;netcore-1.0;netcore-1.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
         <param name="item">To be added.</param>
@@ -134,8 +130,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-uwp-10.0;netcore-1.0;netcore-1.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="item" Type="System.Object" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-uwp-10.0;netcore-1.0;netcore-1.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
         <param name="index">To be added.</param>
@@ -170,8 +166,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-uwp-10.0;netcore-1.0;netcore-1.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="item" Type="System.Object" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-uwp-10.0;netcore-1.0;netcore-1.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
         <param name="index">To be added.</param>

@@ -25,11 +25,6 @@
       <InterfaceName>System.ICloneable</InterfaceName>
     </Interface>
   </Interfaces>
-  <Attributes>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.ComponentModel.DefaultEvent("InfoMessage")</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <summary>Represents an open connection to a data source.</summary>
     <remarks>
@@ -177,7 +172,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Data.Common.DbTransaction BeginDbTransaction(valuetype System.Data.IsolationLevel isolationLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.BeginDbTransaction(System.Data.IsolationLevel)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::DbTransaction ^ BeginDbTransaction(System::Data::IsolationLevel isolationLevel);" />
-      <MemberSignature Language="F#" Value="override this.BeginDbTransaction : System.Data.IsolationLevel -&gt; System.Data.Common.DbTransaction" Usage="odbcConnection.BeginDbTransaction isolationLevel" />
+      <MemberSignature Language="F#" Value="abstract member BeginDbTransaction : System.Data.IsolationLevel -&gt; System.Data.Common.DbTransaction&#xA;override this.BeginDbTransaction : System.Data.IsolationLevel -&gt; System.Data.Common.DbTransaction" Usage="odbcConnection.BeginDbTransaction isolationLevel" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -193,13 +188,13 @@
         <ReturnType>System.Data.Common.DbTransaction</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="isolationLevel" Type="System.Data.IsolationLevel" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="isolationLevel" Type="System.Data.IsolationLevel" />
       </Parameters>
       <Docs>
         <param name="isolationLevel">A bitwise combination of the enumeration values that specify the isolation level of the transaction.</param>
         <summary>Begins a transaction on the connection.</summary>
         <returns>The transaction.</returns>
-        <remarks>To be added.</remarks>        
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <MemberGroup MemberName="BeginTransaction">
@@ -218,7 +213,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.BeginTransaction" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTransaction () As OdbcTransaction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Odbc::OdbcTransaction ^ BeginTransaction();" />
-      <MemberSignature Language="F#" Value="override this.BeginTransaction : unit -&gt; System.Data.Odbc.OdbcTransaction" Usage="odbcConnection.BeginTransaction " />
+      <MemberSignature Language="F#" Value="member this.BeginTransaction : unit -&gt; System.Data.Odbc.OdbcTransaction" Usage="odbcConnection.BeginTransaction " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -269,7 +264,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.BeginTransaction(System.Data.IsolationLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Function BeginTransaction (isolevel As IsolationLevel) As OdbcTransaction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Odbc::OdbcTransaction ^ BeginTransaction(System::Data::IsolationLevel isolevel);" />
-      <MemberSignature Language="F#" Value="override this.BeginTransaction : System.Data.IsolationLevel -&gt; System.Data.Odbc.OdbcTransaction" Usage="odbcConnection.BeginTransaction isolevel" />
+      <MemberSignature Language="F#" Value="member this.BeginTransaction : System.Data.IsolationLevel -&gt; System.Data.Odbc.OdbcTransaction" Usage="odbcConnection.BeginTransaction isolevel" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -320,7 +315,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.ChangeDatabase(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ChangeDatabase (value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ChangeDatabase(System::String ^ value);" />
-      <MemberSignature Language="F#" Value="override this.ChangeDatabase : string -&gt; unit" Usage="odbcConnection.ChangeDatabase value" />
+      <MemberSignature Language="F#" Value="abstract member ChangeDatabase : string -&gt; unit&#xA;override this.ChangeDatabase : string -&gt; unit" Usage="odbcConnection.ChangeDatabase value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -370,7 +365,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
-      <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="odbcConnection.Close " />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="odbcConnection.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -435,32 +430,6 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="xamarinmac-3.0">
-          <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Odbc.Design.OdbcConnectionStringEditor, Microsoft.VSDesigner, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.ComponentModel.RecommendedAsConfigurable(true)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.ComponentModel.SettingsBindable(true)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1">
-          <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Odbc.Design.OdbcConnectionStringEditor, Microsoft.VSDesigner, Version=7.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-          <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Odbc.Design.OdbcConnectionStringEditor, Microsoft.VSDesigner, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Odbc.Design.OdbcConnectionStringEditor, Microsoft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -556,9 +525,6 @@ driver-defined-attribute-keyword ::= identifier
         <Attribute FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0;netcore-3.0">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -584,7 +550,7 @@ driver-defined-attribute-keyword ::= identifier
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.CreateCommand" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateCommand () As OdbcCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Odbc::OdbcCommand ^ CreateCommand();" />
-      <MemberSignature Language="F#" Value="override this.CreateCommand : unit -&gt; System.Data.Odbc.OdbcCommand" Usage="odbcConnection.CreateCommand " />
+      <MemberSignature Language="F#" Value="member this.CreateCommand : unit -&gt; System.Data.Odbc.OdbcCommand" Usage="odbcConnection.CreateCommand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -614,7 +580,7 @@ driver-defined-attribute-keyword ::= identifier
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.CreateDbCommand" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateDbCommand () As DbCommand" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::DbCommand ^ CreateDbCommand();" />
-      <MemberSignature Language="F#" Value="override this.CreateDbCommand : unit -&gt; System.Data.Common.DbCommand" Usage="odbcConnection.CreateDbCommand " />
+      <MemberSignature Language="F#" Value="abstract member CreateDbCommand : unit -&gt; System.Data.Common.DbCommand&#xA;override this.CreateDbCommand : unit -&gt; System.Data.Common.DbCommand" Usage="odbcConnection.CreateDbCommand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -658,9 +624,6 @@ driver-defined-attribute-keyword ::= identifier
       <Attributes>
         <Attribute FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0;netcore-3.0">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -716,9 +679,6 @@ driver-defined-attribute-keyword ::= identifier
         <Attribute FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0;netcore-3.0">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -751,7 +711,7 @@ driver-defined-attribute-keyword ::= identifier
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
-      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="odbcConnection.Dispose disposing" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="odbcConnection.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -802,9 +762,6 @@ driver-defined-attribute-keyword ::= identifier
         <Attribute FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0;netcore-3.0">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -823,80 +780,6 @@ driver-defined-attribute-keyword ::= identifier
         <related type="Article" href="https://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
       </Docs>
     </Member>
-    <Member MemberName="EnlistDistributedTransaction">
-      <MemberSignature Language="C#" Value="public void EnlistDistributedTransaction (System.EnterpriseServices.ITransaction transaction);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EnlistDistributedTransaction(class System.EnterpriseServices.ITransaction transaction) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.EnlistDistributedTransaction(System.EnterpriseServices.ITransaction)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub EnlistDistributedTransaction (transaction As ITransaction)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnlistDistributedTransaction(System::EnterpriseServices::ITransaction ^ transaction);" />
-      <MemberSignature Language="F#" Value="member this.EnlistDistributedTransaction : System.EnterpriseServices.ITransaction -&gt; unit" Usage="odbcConnection.EnlistDistributedTransaction transaction" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Odbc</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="transaction" Type="System.EnterpriseServices.ITransaction" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
-      </Parameters>
-      <Docs>
-        <param name="transaction">A reference to an existing <see cref="T:System.EnterpriseServices.ITransaction" /> in which to enlist.</param>
-        <summary>Enlists in the specified transaction as a distributed transaction.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- New in ADO.NET 2.0 is support for using the <xref:System.Data.Common.DbConnection.EnlistTransaction%2A> method to enlist in a distributed transaction. Because it enlists a connection in a <xref:System.Transactions.Transaction> instance, **EnlistTransaction** takes advantage of functionality available in the <xref:System.Transactions> namespace for managing distributed transactions, making it preferable to **EnlistDistributedTransaction** for this purpose. For more information, see [Distributed Transactions](~/docs/framework/data/adonet/distributed-transactions.md).  
-  
- You can continue to enlist in an existing distributed transaction using the <xref:System.Data.Odbc.OdbcConnection.EnlistDistributedTransaction*> method if auto-enlistment is disabled. Enlisting in an existing distributed transaction makes sure that, if the transaction is committed or rolled back, modifications made by the code at the data source are also committed or rolled back. For more information about distributed transactions, see [Distributed Transactions](~/docs/framework/data/adonet/distributed-transactions.md).  
-  
- <xref:System.Data.Odbc.OdbcConnection.EnlistDistributedTransaction%2A> returns an exception if the <xref:System.Data.Odbc.OdbcConnection> has already started a transaction using <xref:System.Data.Odbc.OdbcConnection.BeginTransaction*>. However, if the transaction is a local transaction started at the data source (for example, by explicitly executing the BEGIN TRANSACTION statement using an <xref:System.Data.Odbc.OdbcCommand> object), <xref:System.Data.Odbc.OdbcConnection.EnlistDistributedTransaction%2A> rolls back the local transaction and enlists in the existing distributed transaction as requested. You will not receive notice that the local transaction was rolled back, and are responsible for managing any local transactions not started using <xref:System.Data.Odbc.OdbcConnection.BeginTransaction*>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="EnlistTransaction">
-      <MemberSignature Language="C#" Value="public override void EnlistTransaction (System.Transactions.Transaction transaction);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EnlistTransaction(class System.Transactions.Transaction transaction) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.EnlistTransaction(System.Transactions.Transaction)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EnlistTransaction(System::Transactions::Transaction ^ transaction);" />
-      <MemberSignature Language="F#" Value="override this.EnlistTransaction : System.Transactions.Transaction -&gt; unit" Usage="odbcConnection.EnlistTransaction transaction" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Odbc</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="transaction" Type="System.Transactions.Transaction" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
-      </Parameters>
-      <Docs>
-        <param name="transaction">A reference to an existing <see cref="T:System.Transactions.Transaction" /> in which to enlist.</param>
-        <summary>Enlists in the specified transaction as a distributed transaction.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- New in ADO.NET 2.0 is support for using the <xref:System.Data.Common.DbConnection.EnlistTransaction%2A> method to enlist in a distributed transaction. Because it enlists a connection in a <xref:System.Transactions.Transaction> instance, **EnlistTransaction** takes advantage of functionality available in the <xref:System.Transactions> namespace for managing distributed transactions, making it preferable to **EnlistDistributedTransaction**, which uses a **System.EnterpriseServices.ITransaction** object. It also has slightly different semantics: once a connection is explicitly enlisted on a transaction, it cannot be unenlisted or enlisted in another transaction until the first transaction finishes. For more information about distributed transactions, see [Distributed Transactions](~/docs/framework/data/adonet/distributed-transactions.md).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </Member>
     <MemberGroup MemberName="GetSchema">
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -907,122 +790,6 @@ driver-defined-attribute-keyword ::= identifier
         <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
       </Docs>
     </MemberGroup>
-    <Member MemberName="GetSchema">
-      <MemberSignature Language="C#" Value="public override System.Data.DataTable GetSchema ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.DataTable GetSchema() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.GetSchema" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetSchema () As DataTable" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::DataTable ^ GetSchema();" />
-      <MemberSignature Language="F#" Value="override this.GetSchema : unit -&gt; System.Data.DataTable" Usage="odbcConnection.GetSchema " />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Odbc</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.DataTable</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>Returns schema information for the data source of this <see cref="T:System.Data.Odbc.OdbcConnection" />.</summary>
-        <returns>A <see cref="T:System.Data.DataTable" /> that contains schema information.</returns>
-        <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
-      </Docs>
-    </Member>
-    <Member MemberName="GetSchema">
-      <MemberSignature Language="C#" Value="public override System.Data.DataTable GetSchema (string collectionName);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.DataTable GetSchema(string collectionName) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.GetSchema(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetSchema (collectionName As String) As DataTable" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::DataTable ^ GetSchema(System::String ^ collectionName);" />
-      <MemberSignature Language="F#" Value="override this.GetSchema : string -&gt; System.Data.DataTable" Usage="odbcConnection.GetSchema collectionName" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Odbc</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.DataTable</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="collectionName" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
-      </Parameters>
-      <Docs>
-        <param name="collectionName">Specifies the name of the schema to return.</param>
-        <summary>Returns schema information for the data source of this <see cref="T:System.Data.Odbc.OdbcConnection" /> using the specified name for the schema name.</summary>
-        <returns>A <see cref="T:System.Data.DataTable" /> that contains schema information.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When `collectionName` is null, the <xref:System.Data.DataTable> contains information about all available metadata and any restrictions.  
-  
-> [!NOTE]
->  All restrictions that apply to the `SQLStatistics` method also apply to the `ODBCConnection.GetSchema("indexes")` collection.  
-  
- ]]></format>
-        </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
-      </Docs>
-    </Member>
-    <Member MemberName="GetSchema">
-      <MemberSignature Language="C#" Value="public override System.Data.DataTable GetSchema (string collectionName, string[] restrictionValues);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.DataTable GetSchema(string collectionName, string[] restrictionValues) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.GetSchema(System.String,System.String[])" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetSchema (collectionName As String, restrictionValues As String()) As DataTable" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::DataTable ^ GetSchema(System::String ^ collectionName, cli::array &lt;System::String ^&gt; ^ restrictionValues);" />
-      <MemberSignature Language="F#" Value="override this.GetSchema : string * string[] -&gt; System.Data.DataTable" Usage="odbcConnection.GetSchema (collectionName, restrictionValues)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Odbc</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.DataTable</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="collectionName" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
-        <Parameter Name="restrictionValues" Type="System.String[]" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
-      </Parameters>
-      <Docs>
-        <param name="collectionName">Specifies the name of the schema to return.</param>
-        <param name="restrictionValues">Specifies a set of restriction values for the requested schema.</param>
-        <summary>Returns schema information for the data source of this <see cref="T:System.Data.Odbc.OdbcConnection" /> using the specified string for the schema name and the specified string array for the restriction values.</summary>
-        <returns>A <see cref="T:System.Data.DataTable" /> that contains schema information.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When `collectionName` is specified as null, the <xref:System.Data.DataTable> contains information about all the metadata that is available, and its restrictions.  
-  
- The `restrictionValues` parameter can supply *n* depth of values which are specified by the restrictions collection for a specific collection. In order to set values on a given restriction, and not set the values of other restrictions, you must set the preceding restrictions to null and then put the appropriate value in for the restriction that you would like to specify a value for.  
-  
- An example of this is the "Tables" collection. If the "Tables" collection has three restrictions (database, owner, and table name), and you want to get back only the tables associated with the owner "Carl," then you would need to pass in at least the following values: null, "Carl". If a restriction value is not passed in, the default values are used for that restriction. This is the same mapping as passing in null, which is different from passing in an empty string for the parameter value. In that case, the empty string ("") is considered to be the value for the specified parameter.  
-  
-> [!NOTE]
->  All restrictions that apply to SQLStatistics method will apply to the ODBCConnection.GetSchema("indexes") collection.  
-  
- ]]></format>
-        </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
-      </Docs>
-    </Member>
     <Member MemberName="InfoMessage">
       <MemberSignature Language="C#" Value="public event System.Data.Odbc.OdbcInfoMessageEventHandler InfoMessage;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Data.Odbc.OdbcInfoMessageEventHandler InfoMessage" />
@@ -1064,7 +831,7 @@ driver-defined-attribute-keyword ::= identifier
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.Open" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Open ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Open();" />
-      <MemberSignature Language="F#" Value="override this.Open : unit -&gt; unit" Usage="odbcConnection.Open " />
+      <MemberSignature Language="F#" Value="abstract member Open : unit -&gt; unit&#xA;override this.Open : unit -&gt; unit" Usage="odbcConnection.Open " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1174,9 +941,6 @@ driver-defined-attribute-keyword ::= identifier
         <Attribute FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0;netcore-3.0">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1224,9 +988,6 @@ driver-defined-attribute-keyword ::= identifier
         <Attribute FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0;netcore-3.0">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Data.ConnectionState</ReturnType>
@@ -1250,116 +1011,6 @@ driver-defined-attribute-keyword ::= identifier
  ]]></format>
         </remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/9abc3f92-1be3-4e1a-b360-762dc689650e">Connecting to Data Sources</related>
-      </Docs>
-    </Member>
-    <Member MemberName="StateChange">
-      <MemberSignature Language="C#" Value="public event System.Data.StateChangeEventHandler StateChange;" />
-      <MemberSignature Language="ILAsm" Value=".event class System.Data.StateChangeEventHandler StateChange" />
-      <MemberSignature Language="DocId" Value="E:System.Data.Odbc.OdbcConnection.StateChange" />
-      <MemberSignature Language="VB.NET" Value="Public Custom Event StateChange As StateChangeEventHandler " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Data::StateChangeEventHandler ^ StateChange;" />
-      <MemberSignature Language="F#" Value="member this.StateChange : System.Data.StateChangeEventHandler " Usage="member this.StateChange : System.Data.StateChangeEventHandler " />
-      <MemberType>Event</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Odbc</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.StateChangeEventHandler</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Occurs when the state of the connection changes.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="System.Data.IDbConnection.BeginTransaction">
-      <MemberSignature Language="C#" Value="System.Data.IDbTransaction IDbConnection.BeginTransaction ();" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Data.IDbTransaction System.Data.IDbConnection.BeginTransaction() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.System#Data#IDbConnection#BeginTransaction" />
-      <MemberSignature Language="VB.NET" Value="Function BeginTransaction () As IDbTransaction Implements IDbConnection.BeginTransaction" />
-      <MemberSignature Language="C++ CLI" Value=" virtual System::Data::IDbTransaction ^ System.Data.IDbConnection.BeginTransaction() = System::Data::IDbConnection::BeginTransaction;" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Data.IDbConnection.BeginTransaction</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Odbc</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.IDbTransaction</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>Begins a database transaction.</summary>
-        <returns>An object representing the new transaction.</returns>
-        <remarks>To be added.</remarks>
-        <forInternalUseOnly />
-      </Docs>
-    </Member>
-    <Member MemberName="System.Data.IDbConnection.BeginTransaction">
-      <MemberSignature Language="C#" Value="System.Data.IDbTransaction IDbConnection.BeginTransaction (System.Data.IsolationLevel isolevel);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Data.IDbTransaction System.Data.IDbConnection.BeginTransaction(valuetype System.Data.IsolationLevel isolevel) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.System#Data#IDbConnection#BeginTransaction(System.Data.IsolationLevel)" />
-      <MemberSignature Language="VB.NET" Value="Function BeginTransaction (isolevel As IsolationLevel) As IDbTransaction Implements IDbConnection.BeginTransaction" />
-      <MemberSignature Language="C++ CLI" Value=" virtual System::Data::IDbTransaction ^ System.Data.IDbConnection.BeginTransaction(System::Data::IsolationLevel isolevel) = System::Data::IDbConnection::BeginTransaction;" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Data.IDbConnection.BeginTransaction(System.Data.IsolationLevel)</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Odbc</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.IDbTransaction</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="isolevel" Type="System.Data.IsolationLevel" Index="0" FrameworkAlternate="netframework-1.1" />
-      </Parameters>
-      <Docs>
-        <param name="isolevel">A bitwise combination of the enumeration values that specify the isolation level.</param>
-        <summary>Begins a database transaction with the specified isolation level.</summary>
-        <returns>An object representing the new transaction.</returns>
-        <remarks>To be added.</remarks>
-        <forInternalUseOnly />
-      </Docs>
-    </Member>
-    <Member MemberName="System.Data.IDbConnection.CreateCommand">
-      <MemberSignature Language="C#" Value="System.Data.IDbCommand IDbConnection.CreateCommand ();" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Data.IDbCommand System.Data.IDbConnection.CreateCommand() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnection.System#Data#IDbConnection#CreateCommand" />
-      <MemberSignature Language="VB.NET" Value="Function CreateCommand () As IDbCommand Implements IDbConnection.CreateCommand" />
-      <MemberSignature Language="C++ CLI" Value=" virtual System::Data::IDbCommand ^ System.Data.IDbConnection.CreateCommand() = System::Data::IDbConnection::CreateCommand;" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Data.IDbConnection.CreateCommand</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Odbc</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Data.IDbCommand</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>Creates and returns a command object associated with the connection.</summary>
-        <returns>A command object associated with the connection.</returns>
-        <remarks>To be added.</remarks>
-        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.ICloneable.Clone">

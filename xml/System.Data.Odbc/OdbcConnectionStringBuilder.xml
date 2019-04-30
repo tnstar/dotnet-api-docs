@@ -1,6 +1,6 @@
 ﻿<Type Name="OdbcConnectionStringBuilder" FullName="System.Data.Odbc.OdbcConnectionStringBuilder">
   <TypeSignature Language="C#" Value="public sealed class OdbcConnectionStringBuilder : System.Data.Common.DbConnectionStringBuilder" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OdbcConnectionStringBuilder extends System.Data.Common.DbConnectionStringBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OdbcConnectionStringBuilder extends System.Data.Common.DbConnectionStringBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcConnectionStringBuilder" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OdbcConnectionStringBuilder&#xA;Inherits DbConnectionStringBuilder" />
   <TypeSignature Language="C++ CLI" Value="public ref class OdbcConnectionStringBuilder sealed : System::Data::Common::DbConnectionStringBuilder" />
@@ -19,14 +19,6 @@
     <BaseTypeName>System.Data.Common.DbConnectionStringBuilder</BaseTypeName>
   </Base>
   <Interfaces />
-  <Attributes>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.ComponentModel.DefaultProperty("Driver")</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Data.Odbc.OdbcConnectionStringBuilder/OdbcConnectionStringBuilderConverter))</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <summary>Provides a simple way to create and manage the contents of connection strings used by the <see cref="T:System.Data.Odbc.OdbcConnection" /> class.</summary>
     <remarks>
@@ -177,7 +169,7 @@ Driver={SQL Server};Server="MyServer;NewValue=Bad"
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnectionStringBuilder.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Clear();" />
-      <MemberSignature Language="F#" Value="override this.Clear : unit -&gt; unit" Usage="odbcConnectionStringBuilder.Clear " />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="odbcConnectionStringBuilder.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -219,7 +211,7 @@ Driver={SQL Server};Server="MyServer;NewValue=Bad"
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnectionStringBuilder.ContainsKey(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ContainsKey (keyword As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ContainsKey(System::String ^ keyword);" />
-      <MemberSignature Language="F#" Value="override this.ContainsKey : string -&gt; bool" Usage="odbcConnectionStringBuilder.ContainsKey keyword" />
+      <MemberSignature Language="F#" Value="abstract member ContainsKey : string -&gt; bool&#xA;override this.ContainsKey : string -&gt; bool" Usage="odbcConnectionStringBuilder.ContainsKey keyword" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -281,9 +273,6 @@ Driver={SQL Server};Server="MyServer;NewValue=Bad"
         <Attribute FrameworkAlternate="netcore-2.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0">
           <AttributeName>System.ComponentModel.DisplayName("Driver")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -324,9 +313,6 @@ Driver={SQL Server};Server="MyServer;NewValue=Bad"
       <Attributes>
         <Attribute FrameworkAlternate="netcore-2.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0">
           <AttributeName>System.ComponentModel.DisplayName("Dsn")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -451,7 +437,7 @@ Driver={SQL Server};Server="MyServer;NewValue=Bad"
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnectionStringBuilder.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Remove (keyword As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Remove(System::String ^ keyword);" />
-      <MemberSignature Language="F#" Value="override this.Remove : string -&gt; bool" Usage="odbcConnectionStringBuilder.Remove keyword" />
+      <MemberSignature Language="F#" Value="abstract member Remove : string -&gt; bool&#xA;override this.Remove : string -&gt; bool" Usage="odbcConnectionStringBuilder.Remove keyword" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -502,7 +488,7 @@ Driver={SQL Server};Server="MyServer;NewValue=Bad"
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcConnectionStringBuilder.TryGetValue(System.String,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function TryGetValue (keyword As String, ByRef value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool TryGetValue(System::String ^ keyword, [Runtime::InteropServices::Out] System::Object ^ % value);" />
-      <MemberSignature Language="F#" Value="override this.TryGetValue : string *  -&gt; bool" Usage="odbcConnectionStringBuilder.TryGetValue (keyword, value)" />
+      <MemberSignature Language="F#" Value="abstract member TryGetValue : string *  -&gt; bool&#xA;override this.TryGetValue : string *  -&gt; bool" Usage="odbcConnectionStringBuilder.TryGetValue (keyword, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

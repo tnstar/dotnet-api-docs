@@ -1,10 +1,10 @@
 ﻿<Type Name="DataContractSerializerOperationBehavior" FullName="System.ServiceModel.Description.DataContractSerializerOperationBehavior">
-  <TypeSignature Language="C#" Value="public class DataContractSerializerOperationBehavior : System.ServiceModel.Description.IOperationBehavior, System.ServiceModel.Description.IWsdlExportExtension" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataContractSerializerOperationBehavior extends System.Object implements class System.ServiceModel.Description.IOperationBehavior, class System.ServiceModel.Description.IWsdlExportExtension" />
+  <TypeSignature Language="C#" Value="public class DataContractSerializerOperationBehavior : System.ServiceModel.Description.IOperationBehavior" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataContractSerializerOperationBehavior extends System.Object implements class System.ServiceModel.Description.IOperationBehavior" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.DataContractSerializerOperationBehavior" />
-  <TypeSignature Language="VB.NET" Value="Public Class DataContractSerializerOperationBehavior&#xA;Implements IOperationBehavior, IWsdlExportExtension" />
-  <TypeSignature Language="C++ CLI" Value="public ref class DataContractSerializerOperationBehavior : System::ServiceModel::Description::IOperationBehavior, System::ServiceModel::Description::IWsdlExportExtension" />
-  <TypeSignature Language="F#" Value="type DataContractSerializerOperationBehavior = class&#xA;    interface IOperationBehavior&#xA;    interface IWsdlExportExtension" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataContractSerializerOperationBehavior&#xA;Implements IOperationBehavior" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataContractSerializerOperationBehavior : System::ServiceModel::Description::IOperationBehavior" />
+  <TypeSignature Language="F#" Value="type DataContractSerializerOperationBehavior = class&#xA;    interface IOperationBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -26,9 +26,6 @@
   <Interfaces>
     <Interface>
       <InterfaceName>System.ServiceModel.Description.IOperationBehavior</InterfaceName>
-    </Interface>
-    <Interface>
-      <InterfaceName>System.ServiceModel.Description.IWsdlExportExtension</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>
@@ -90,11 +87,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="operation" Type="System.ServiceModel.Description.OperationDescription" />
       </Parameters>
@@ -266,11 +258,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.DataContractFormatAttribute</ReturnType>
       </ReturnValue>
@@ -302,14 +289,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Runtime.Serialization.DataContractResolver</ReturnType>
       </ReturnValue>
@@ -321,78 +300,6 @@
   
 ## Remarks  
  For more information, see the <xref:System.Runtime.Serialization.DataContractResolver> class document.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="DataContractSurrogate">
-      <MemberSignature Language="C#" Value="public System.Runtime.Serialization.IDataContractSurrogate DataContractSurrogate { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Serialization.IDataContractSurrogate DataContractSurrogate" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.DataContractSerializerOperationBehavior.DataContractSurrogate" />
-      <MemberSignature Language="VB.NET" Value="Public Property DataContractSurrogate As IDataContractSurrogate" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::IDataContractSurrogate ^ DataContractSurrogate { System::Runtime::Serialization::IDataContractSurrogate ^ get(); void set(System::Runtime::Serialization::IDataContractSurrogate ^ value); };" />
-      <MemberSignature Language="F#" Value="member this.DataContractSurrogate : System.Runtime.Serialization.IDataContractSurrogate with get, set" Usage="System.ServiceModel.Description.DataContractSerializerOperationBehavior.DataContractSurrogate" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Runtime.Serialization.IDataContractSurrogate</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets or sets a surrogate to be used during the serialization and deserialization processes.</summary>
-        <value>An <see cref="T:System.Runtime.Serialization.IDataContractSurrogate" /> that is used as a substitute serializer.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="IgnoreExtensionDataObject">
-      <MemberSignature Language="C#" Value="public bool IgnoreExtensionDataObject { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreExtensionDataObject" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.DataContractSerializerOperationBehavior.IgnoreExtensionDataObject" />
-      <MemberSignature Language="VB.NET" Value="Public Property IgnoreExtensionDataObject As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreExtensionDataObject { bool get(); void set(bool value); };" />
-      <MemberSignature Language="F#" Value="member this.IgnoreExtensionDataObject : bool with get, set" Usage="System.ServiceModel.Description.DataContractSerializerOperationBehavior.IgnoreExtensionDataObject" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets or sets a value that specifies whether the data provided by an extension of a type (and therefore not in the data contract) is ignored or not.</summary>
-        <value>
-          <see langword="true" /> to ignore the data; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When set to `true`, the extra data is returned with any other serialized data. For more information, see the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface.  
   
  ]]></format>
         </remarks>
@@ -421,11 +328,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -586,70 +488,6 @@
       <Docs>
         <param name="description">An <see cref="T:System.ServiceModel.Description.OperationDescription" /> that represents the operation to validate.</param>
         <summary>Validates the operation.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="System.ServiceModel.Description.IWsdlExportExtension.ExportContract">
-      <MemberSignature Language="C#" Value="void IWsdlExportExtension.ExportContract (System.ServiceModel.Description.WsdlExporter exporter, System.ServiceModel.Description.WsdlContractConversionContext contractContext);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IWsdlExportExtension.ExportContract(class System.ServiceModel.Description.WsdlExporter exporter, class System.ServiceModel.Description.WsdlContractConversionContext contractContext) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.DataContractSerializerOperationBehavior.System#ServiceModel#Description#IWsdlExportExtension#ExportContract(System.ServiceModel.Description.WsdlExporter,System.ServiceModel.Description.WsdlContractConversionContext)" />
-      <MemberSignature Language="VB.NET" Value="Sub ExportContract (exporter As WsdlExporter, contractContext As WsdlContractConversionContext) Implements IWsdlExportExtension.ExportContract" />
-      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IWsdlExportExtension.ExportContract(System::ServiceModel::Description::WsdlExporter ^ exporter, System::ServiceModel::Description::WsdlContractConversionContext ^ contractContext) = System::ServiceModel::Description::IWsdlExportExtension::ExportContract;" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ServiceModel.Description.IWsdlExportExtension.ExportContract(System.ServiceModel.Description.WsdlExporter,System.ServiceModel.Description.WsdlContractConversionContext)</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="exporter" Type="System.ServiceModel.Description.WsdlExporter" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="contractContext" Type="System.ServiceModel.Description.WsdlContractConversionContext" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      </Parameters>
-      <Docs>
-        <param name="exporter">A <see cref="T:System.ServiceModel.Description.WsdlExporter" /> to use for the export.</param>
-        <param name="contractContext">A <see cref="T:System.ServiceModel.Description.WsdlContractConversionContext" /> for the WSDL.</param>
-        <summary>Exports the WSDL representation of the operation.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="System.ServiceModel.Description.IWsdlExportExtension.ExportEndpoint">
-      <MemberSignature Language="C#" Value="void IWsdlExportExtension.ExportEndpoint (System.ServiceModel.Description.WsdlExporter exporter, System.ServiceModel.Description.WsdlEndpointConversionContext endpointContext);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IWsdlExportExtension.ExportEndpoint(class System.ServiceModel.Description.WsdlExporter exporter, class System.ServiceModel.Description.WsdlEndpointConversionContext endpointContext) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.DataContractSerializerOperationBehavior.System#ServiceModel#Description#IWsdlExportExtension#ExportEndpoint(System.ServiceModel.Description.WsdlExporter,System.ServiceModel.Description.WsdlEndpointConversionContext)" />
-      <MemberSignature Language="VB.NET" Value="Sub ExportEndpoint (exporter As WsdlExporter, endpointContext As WsdlEndpointConversionContext) Implements IWsdlExportExtension.ExportEndpoint" />
-      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IWsdlExportExtension.ExportEndpoint(System::ServiceModel::Description::WsdlExporter ^ exporter, System::ServiceModel::Description::WsdlEndpointConversionContext ^ endpointContext) = System::ServiceModel::Description::IWsdlExportExtension::ExportEndpoint;" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ServiceModel.Description.IWsdlExportExtension.ExportEndpoint(System.ServiceModel.Description.WsdlExporter,System.ServiceModel.Description.WsdlEndpointConversionContext)</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="exporter" Type="System.ServiceModel.Description.WsdlExporter" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="endpointContext" Type="System.ServiceModel.Description.WsdlEndpointConversionContext" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      </Parameters>
-      <Docs>
-        <param name="exporter">A <see cref="T:System.ServiceModel.Description.WsdlExporter" /> to use for the export.</param>
-        <param name="endpointContext">A <see cref="T:System.ServiceModel.Description.WsdlEndpointConversionContext" /> for the WSDL.</param>
-        <summary>Exports the endpoint description as a WSDL document.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

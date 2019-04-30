@@ -586,11 +586,11 @@
       </Docs>
     </Member>
     <Member MemberName="DefaultCloseTimeout">
-      <MemberSignature Language="C#" Value="protected internal abstract TimeSpan DefaultCloseTimeout { get; }" />
+      <MemberSignature Language="C#" Value="protected abstract TimeSpan DefaultCloseTimeout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan DefaultCloseTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CommunicationObject.DefaultCloseTimeout" />
-      <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride ReadOnly Property DefaultCloseTimeout As TimeSpan" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract property TimeSpan DefaultCloseTimeout { TimeSpan get(); };" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride ReadOnly Property DefaultCloseTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract property TimeSpan DefaultCloseTimeout { TimeSpan get(); };" />
       <MemberSignature Language="F#" Value="member this.DefaultCloseTimeout : TimeSpan" Usage="System.ServiceModel.Channels.CommunicationObject.DefaultCloseTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -618,11 +618,11 @@
       </Docs>
     </Member>
     <Member MemberName="DefaultOpenTimeout">
-      <MemberSignature Language="C#" Value="protected internal abstract TimeSpan DefaultOpenTimeout { get; }" />
+      <MemberSignature Language="C#" Value="protected abstract TimeSpan DefaultOpenTimeout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan DefaultOpenTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CommunicationObject.DefaultOpenTimeout" />
-      <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride ReadOnly Property DefaultOpenTimeout As TimeSpan" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract property TimeSpan DefaultOpenTimeout { TimeSpan get(); };" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride ReadOnly Property DefaultOpenTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract property TimeSpan DefaultOpenTimeout { TimeSpan get(); };" />
       <MemberSignature Language="F#" Value="member this.DefaultOpenTimeout : TimeSpan" Usage="System.ServiceModel.Channels.CommunicationObject.DefaultOpenTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -1669,11 +1669,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.CommunicationState</ReturnType>
       </ReturnValue>
@@ -1706,11 +1701,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -1718,106 +1708,6 @@
         <summary>Gets the mutually exclusive lock that protects the class instance during a state transition.</summary>
         <value>The mutually exclusive lock that protects the class instance during a state transition.</value>
         <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ThrowIfDisposed">
-      <MemberSignature Language="C#" Value="protected void ThrowIfDisposed ();" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ThrowIfDisposed() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposed" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub ThrowIfDisposed ()" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ThrowIfDisposed();" />
-      <MemberSignature Language="F#" Value="member this.ThrowIfDisposed : unit -&gt; unit" Usage="communicationObject.ThrowIfDisposed " />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>Throws an exception if the communication object is disposed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- No exception is thrown if the communication object is in a <xref:System.ServiceModel.CommunicationState.Created>, <xref:System.ServiceModel.CommunicationState.Opening> or <xref:System.ServiceModel.CommunicationState.Opened> state. A communication object is disposed once <xref:System.ServiceModel.Channels.CommunicationObject.Close%2A> is called on it.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ObjectDisposedException">The communication object is in a <see cref="F:System.ServiceModel.CommunicationState.Closing" /> or <see cref="F:System.ServiceModel.CommunicationState.Closed" /> state.</exception>
-        <exception cref="T:System.ServiceModel.CommunicationObjectFaultedException">The communication object is in a <see cref="F:System.ServiceModel.CommunicationState.Faulted" /> state.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="ThrowIfDisposedOrImmutable">
-      <MemberSignature Language="C#" Value="protected void ThrowIfDisposedOrImmutable ();" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ThrowIfDisposedOrImmutable() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrImmutable" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub ThrowIfDisposedOrImmutable ()" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ThrowIfDisposedOrImmutable();" />
-      <MemberSignature Language="F#" Value="member this.ThrowIfDisposedOrImmutable : unit -&gt; unit" Usage="communicationObject.ThrowIfDisposedOrImmutable " />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>Throws an exception if the communication object the <see cref="P:System.ServiceModel.Channels.CommunicationObject.State" /> property is not set to the <see cref="F:System.ServiceModel.CommunicationState.Created" /> state.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Since an object is immutable after <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A> is called on it, the only state that is both mutable and not disposed is the <xref:System.ServiceModel.CommunicationState.Created> state.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The communication object is in a <see cref="F:System.ServiceModel.CommunicationState.Opening" /> or <see cref="F:System.ServiceModel.CommunicationState.Opened" /> state.</exception>
-        <exception cref="T:System.ObjectDisposedException">The communication object is in a <see cref="F:System.ServiceModel.CommunicationState.Closing" /> or <see cref="F:System.ServiceModel.CommunicationState.Closed" /> state.</exception>
-        <exception cref="T:System.ServiceModel.CommunicationObjectFaultedException">The communication object is in a <see cref="F:System.ServiceModel.CommunicationState.Faulted" /> state.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="ThrowIfDisposedOrNotOpen">
-      <MemberSignature Language="C#" Value="protected void ThrowIfDisposedOrNotOpen ();" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ThrowIfDisposedOrNotOpen() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub ThrowIfDisposedOrNotOpen ()" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ThrowIfDisposedOrNotOpen();" />
-      <MemberSignature Language="F#" Value="member this.ThrowIfDisposedOrNotOpen : unit -&gt; unit" Usage="communicationObject.ThrowIfDisposedOrNotOpen " />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>Throws an exception if the communication object is not in the <see cref="F:System.ServiceModel.CommunicationState.Opened" /> state.</summary>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The communication object is not in a <see cref="F:System.ServiceModel.CommunicationState.Created" /> or <see cref="F:System.ServiceModel.CommunicationState.Opening" /> state and cannot be used.</exception>
-        <exception cref="T:System.ObjectDisposedException">The communication object is in a <see cref="F:System.ServiceModel.CommunicationState.Closing" /> or <see cref="F:System.ServiceModel.CommunicationState.Closed" /> state and cannot be modified.</exception>
-        <exception cref="T:System.ServiceModel.CommunicationObjectFaultedException">The communication object is in a <see cref="F:System.ServiceModel.CommunicationState.Faulted" /> state and cannot be modified.</exception>
       </Docs>
     </Member>
   </Members>

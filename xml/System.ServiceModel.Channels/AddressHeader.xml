@@ -68,11 +68,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.AddressHeader" /> class.</summary>
@@ -104,93 +99,6 @@
         </remarks>
       </Docs>
     </MemberGroup>
-    <Member MemberName="CreateAddressHeader">
-      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.AddressHeader CreateAddressHeader (object value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.AddressHeader CreateAddressHeader(object value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.CreateAddressHeader(System.Object)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateAddressHeader (value As Object) As AddressHeader" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::AddressHeader ^ CreateAddressHeader(System::Object ^ value);" />
-      <MemberSignature Language="F#" Value="static member CreateAddressHeader : obj -&gt; System.ServiceModel.Channels.AddressHeader" Usage="System.ServiceModel.Channels.AddressHeader.CreateAddressHeader value" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.ServiceModel.Channels.AddressHeader</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Object" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      </Parameters>
-      <Docs>
-        <param name="value">The information item for the address header.</param>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Channels.AddressHeader" /> class with a specified value.</summary>
-        <returns>The <see cref="T:System.ServiceModel.Channels.AddressHeader" /> that contains the information item specified by the <paramref name="value" /> parameter.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to create an address header using this method.  
-  
- [!code-csharp[SL_AddressHeader#3](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/page.xaml.cs#3)]
- [!code-csharp[SL_AddressHeader#3](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/program.cs#3)]
- [!code-vb[SL_AddressHeader#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/page.xaml.vb#3)]
- [!code-vb[SL_AddressHeader#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/program.vb#3)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="CreateAddressHeader">
-      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.AddressHeader CreateAddressHeader (object value, System.Runtime.Serialization.XmlObjectSerializer serializer);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.AddressHeader CreateAddressHeader(object value, class System.Runtime.Serialization.XmlObjectSerializer serializer) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressHeader.CreateAddressHeader(System.Object,System.Runtime.Serialization.XmlObjectSerializer)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateAddressHeader (value As Object, serializer As XmlObjectSerializer) As AddressHeader" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Channels::AddressHeader ^ CreateAddressHeader(System::Object ^ value, System::Runtime::Serialization::XmlObjectSerializer ^ serializer);" />
-      <MemberSignature Language="F#" Value="static member CreateAddressHeader : obj * System.Runtime.Serialization.XmlObjectSerializer -&gt; System.ServiceModel.Channels.AddressHeader" Usage="System.ServiceModel.Channels.AddressHeader.CreateAddressHeader (value, serializer)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.ServiceModel.Channels.AddressHeader</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Object" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="serializer" Type="System.Runtime.Serialization.XmlObjectSerializer" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      </Parameters>
-      <Docs>
-        <param name="value">The information item for the address header.</param>
-        <param name="serializer">The <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" /> used to serialize the specified object in the <paramref name="value" /> parameter.</param>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Channels.AddressHeader" /> class using a specified formatter to serialize the information item from a specified object.</summary>
-        <returns>The <see cref="T:System.ServiceModel.Channels.AddressHeader" /> that contains the information item specified by the value parameter.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to create an address header using this method.  
-  
- [!code-csharp[SL_AddressHeader#4](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/page.xaml.cs#4)]
- [!code-csharp[SL_AddressHeader#4](~/samples/snippets/csharp/VS_Snippets_CFX/sl_addressheader/cs/program.cs#4)]
- [!code-vb[SL_AddressHeader#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/page.xaml.vb#4)]
- [!code-vb[SL_AddressHeader#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/sl_addressheader/vb/program.vb#4)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="formatter" /> is <see langword="null" />.</exception>
-      </Docs>
-    </Member>
     <Member MemberName="CreateAddressHeader">
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.AddressHeader CreateAddressHeader (string name, string ns, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.AddressHeader CreateAddressHeader(string name, string ns, object value) cil managed" />

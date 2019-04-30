@@ -156,41 +156,12 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.IContextChannel</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Gets the channel associated with the current <see cref="T:System.ServiceModel.OperationContext" /> object.</summary>
         <value>An <see cref="T:System.ServiceModel.IContextChannel" /> associated with the current <see cref="T:System.ServiceModel.OperationContext" />.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ClaimsPrincipal">
-      <MemberSignature Language="C#" Value="public System.Security.Claims.ClaimsPrincipal ClaimsPrincipal { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Claims.ClaimsPrincipal ClaimsPrincipal" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContext.ClaimsPrincipal" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClaimsPrincipal As ClaimsPrincipal" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Claims::ClaimsPrincipal ^ ClaimsPrincipal { System::Security::Claims::ClaimsPrincipal ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.ClaimsPrincipal : System.Security.Claims.ClaimsPrincipal" Usage="System.ServiceModel.OperationContext.ClaimsPrincipal" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Security.Claims.ClaimsPrincipal</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets the claims-based principal associated with the operation.</summary>
-        <value>The claims principal.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,39 +210,6 @@
   
  ]]></format>
         </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="EndpointDispatcher">
-      <MemberSignature Language="C#" Value="public System.ServiceModel.Dispatcher.EndpointDispatcher EndpointDispatcher { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Dispatcher.EndpointDispatcher EndpointDispatcher" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContext.EndpointDispatcher" />
-      <MemberSignature Language="VB.NET" Value="Public Property EndpointDispatcher As EndpointDispatcher" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Dispatcher::EndpointDispatcher ^ EndpointDispatcher { System::ServiceModel::Dispatcher::EndpointDispatcher ^ get(); void set(System::ServiceModel::Dispatcher::EndpointDispatcher ^ value); };" />
-      <MemberSignature Language="F#" Value="member this.EndpointDispatcher : System.ServiceModel.Dispatcher.EndpointDispatcher with get, set" Usage="System.ServiceModel.OperationContext.EndpointDispatcher" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.ServiceModel.Dispatcher.EndpointDispatcher</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets or sets the endpoint dispatcher for the endpoint to inspect or modify.</summary>
-        <value>The endpoint dispatcher for the endpoint to inspect or modify.</value>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Extensions">
@@ -370,62 +308,6 @@
   
  ]]></format>
         </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="HasSupportingTokens">
-      <MemberSignature Language="C#" Value="public bool HasSupportingTokens { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool HasSupportingTokens" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContext.HasSupportingTokens" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasSupportingTokens As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasSupportingTokens { bool get(); };" />
-      <MemberSignature Language="F#" Value="member this.HasSupportingTokens : bool" Usage="System.ServiceModel.OperationContext.HasSupportingTokens" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets a value that indicates whether the incoming message has supporting tokens.</summary>
-        <value>
-          <see langword="true" /> if the incoming message has supporting tokens; otherwise, <see langword="false" />.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Host">
-      <MemberSignature Language="C#" Value="public System.ServiceModel.ServiceHostBase Host { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.ServiceHostBase Host" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContext.Host" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Host As ServiceHostBase" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::ServiceHostBase ^ Host { System::ServiceModel::ServiceHostBase ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.Host : System.ServiceModel.ServiceHostBase" Usage="System.ServiceModel.OperationContext.Host" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.ServiceModel.ServiceHostBase</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets the <see cref="T:System.ServiceModel.ServiceHost" /> for the current service object.</summary>
-        <value>A <see cref="T:System.ServiceModel.ServiceHost" /> object.</value>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IncomingMessageHeaders">
@@ -548,44 +430,6 @@
   
 ## Remarks  
  Use this property to inspect the SOAP version of the request message that arrives at a service operation or the SOAP version of the reply message that arrives at a client proxy.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="InstanceContext">
-      <MemberSignature Language="C#" Value="public System.ServiceModel.InstanceContext InstanceContext { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.InstanceContext InstanceContext" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContext.InstanceContext" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceContext As InstanceContext" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::InstanceContext ^ InstanceContext { System::ServiceModel::InstanceContext ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.InstanceContext : System.ServiceModel.InstanceContext" Usage="System.ServiceModel.OperationContext.InstanceContext" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.ServiceModel.InstanceContext</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets the <see cref="T:System.ServiceModel.InstanceContext" /> object that manages the current service instance.</summary>
-        <value>The <see cref="T:System.ServiceModel.InstanceContext" /> object for the current service.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.ServiceModel.OperationContext.InstanceContext%2A> property to access the run-time object that manages the current service object.  
   
  ]]></format>
         </remarks>
@@ -776,14 +620,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.RequestContext</ReturnType>
       </ReturnValue>
@@ -798,115 +634,6 @@
   
  ]]></format>
         </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ServiceSecurityContext">
-      <MemberSignature Language="C#" Value="public System.ServiceModel.ServiceSecurityContext ServiceSecurityContext { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.ServiceSecurityContext ServiceSecurityContext" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContext.ServiceSecurityContext" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceSecurityContext As ServiceSecurityContext" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::ServiceSecurityContext ^ ServiceSecurityContext { System::ServiceModel::ServiceSecurityContext ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.ServiceSecurityContext : System.ServiceModel.ServiceSecurityContext" Usage="System.ServiceModel.OperationContext.ServiceSecurityContext" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.ServiceModel.ServiceSecurityContext</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets or sets the <see cref="T:System.ServiceModel.ServiceSecurityContext" /> within which this method executes.</summary>
-        <value>A <see cref="T:System.ServiceModel.ServiceSecurityContext" /> object.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SessionId">
-      <MemberSignature Language="C#" Value="public string SessionId { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string SessionId" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContext.SessionId" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SessionId As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SessionId { System::String ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.SessionId : string" Usage="System.ServiceModel.OperationContext.SessionId" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets the <see cref="T:System.String" /> used to identify the current session.</summary>
-        <value>The session identifier.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetTransactionComplete">
-      <MemberSignature Language="C#" Value="public void SetTransactionComplete ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetTransactionComplete() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.OperationContext.SetTransactionComplete" />
-      <MemberSignature Language="VB.NET" Value="Public Sub SetTransactionComplete ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetTransactionComplete();" />
-      <MemberSignature Language="F#" Value="member this.SetTransactionComplete : unit -&gt; unit" Usage="operationContext.SetTransactionComplete " />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>Commits the currently executing transaction.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is only useful in operations that set <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A?displayProperty=nameWithType> to `false`. Typically, services do this on some but not all operations. When <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A?displayProperty=nameWithType> is false the transaction completes automatically. Use <xref:System.ServiceModel.OperationContext.SetTransactionComplete%2A> in cases where it is not possible to determine at design-time whether an operation needs to complete the transaction.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">There is no transaction in the context.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="SupportingTokens">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;System.ServiceModel.Security.SupportingTokenSpecification&gt; SupportingTokens { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.ServiceModel.Security.SupportingTokenSpecification&gt; SupportingTokens" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContext.SupportingTokens" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportingTokens As ICollection(Of SupportingTokenSpecification)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::ServiceModel::Security::SupportingTokenSpecification ^&gt; ^ SupportingTokens { System::Collections::Generic::ICollection&lt;System::ServiceModel::Security::SupportingTokenSpecification ^&gt; ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.SupportingTokens : System.Collections.Generic.ICollection&lt;System.ServiceModel.Security.SupportingTokenSpecification&gt;" Usage="System.ServiceModel.OperationContext.SupportingTokens" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Collections.Generic.ICollection&lt;System.ServiceModel.Security.SupportingTokenSpecification&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets a <see cref="T:System.Collections.Generic.ICollection`1" /> of type <see cref="T:System.IdentityModel.Tokens.SecurityToken" />.</summary>
-        <value>A collection of security tokens.</value>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

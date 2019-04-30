@@ -1,6 +1,6 @@
 ﻿<Type Name="SecurityPackageContextConnectionInformation" FullName="System.DirectoryServices.Protocols.SecurityPackageContextConnectionInformation">
   <TypeSignature Language="C#" Value="public class SecurityPackageContextConnectionInformation" />
-  <TypeSignature Language="ILAsm" Value=".class public sequential beforefieldinit SecurityPackageContextConnectionInformation extends System.Object" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SecurityPackageContextConnectionInformation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.SecurityPackageContextConnectionInformation" />
   <TypeSignature Language="VB.NET" Value="Public Class SecurityPackageContextConnectionInformation" />
   <TypeSignature Language="C++ CLI" Value="public ref class SecurityPackageContextConnectionInformation" />

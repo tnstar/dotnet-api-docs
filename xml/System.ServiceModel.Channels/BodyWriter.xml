@@ -84,38 +84,6 @@
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="BeginWriteBodyContents">
-      <MemberSignature Language="C#" Value="public IAsyncResult BeginWriteBodyContents (System.Xml.XmlDictionaryWriter writer, AsyncCallback callback, object state);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginWriteBodyContents(class System.Xml.XmlDictionaryWriter writer, class System.AsyncCallback callback, object state) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BodyWriter.BeginWriteBodyContents(System.Xml.XmlDictionaryWriter,System.AsyncCallback,System.Object)" />
-      <MemberSignature Language="VB.NET" Value="Public Function BeginWriteBodyContents (writer As XmlDictionaryWriter, callback As AsyncCallback, state As Object) As IAsyncResult" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginWriteBodyContents(System::Xml::XmlDictionaryWriter ^ writer, AsyncCallback ^ callback, System::Object ^ state);" />
-      <MemberSignature Language="F#" Value="member this.BeginWriteBodyContents : System.Xml.XmlDictionaryWriter * AsyncCallback * obj -&gt; IAsyncResult" Usage="bodyWriter.BeginWriteBodyContents (writer, callback, state)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.IAsyncResult</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="callback" Type="System.AsyncCallback" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      </Parameters>
-      <Docs>
-        <param name="writer">The writer.</param>
-        <param name="callback">The callback.</param>
-        <param name="state">The state.</param>
-        <summary>Starts to write body contents for the body writer with specified writer, callback and state.</summary>
-        <returns>The result of the operation.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="CreateBufferedCopy">
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.BodyWriter CreateBufferedCopy (int maxBufferSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Channels.BodyWriter CreateBufferedCopy(int32 maxBufferSize) cil managed" />
@@ -169,33 +137,6 @@
         <exception cref="T:System.InvalidOperationException">The body has already been written and cannot be written again, or the body writer is not buffered.</exception>
       </Docs>
     </Member>
-    <Member MemberName="EndWriteBodyContents">
-      <MemberSignature Language="C#" Value="public void EndWriteBodyContents (IAsyncResult result);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndWriteBodyContents(class System.IAsyncResult result) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BodyWriter.EndWriteBodyContents(System.IAsyncResult)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub EndWriteBodyContents (result As IAsyncResult)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndWriteBodyContents(IAsyncResult ^ result);" />
-      <MemberSignature Language="F#" Value="member this.EndWriteBodyContents : IAsyncResult -&gt; unit" Usage="bodyWriter.EndWriteBodyContents result" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="result" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      </Parameters>
-      <Docs>
-        <param name="result">The result of the operation.</param>
-        <summary>Ends the writing of body contents.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="IsBuffered">
       <MemberSignature Language="C#" Value="public bool IsBuffered { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsBuffered" />
@@ -219,11 +160,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -239,38 +175,6 @@
   
  ]]></format>
         </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="OnBeginWriteBodyContents">
-      <MemberSignature Language="C#" Value="protected virtual IAsyncResult OnBeginWriteBodyContents (System.Xml.XmlDictionaryWriter writer, AsyncCallback callback, object state);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IAsyncResult OnBeginWriteBodyContents(class System.Xml.XmlDictionaryWriter writer, class System.AsyncCallback callback, object state) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BodyWriter.OnBeginWriteBodyContents(System.Xml.XmlDictionaryWriter,System.AsyncCallback,System.Object)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnBeginWriteBodyContents (writer As XmlDictionaryWriter, callback As AsyncCallback, state As Object) As IAsyncResult" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual IAsyncResult ^ OnBeginWriteBodyContents(System::Xml::XmlDictionaryWriter ^ writer, AsyncCallback ^ callback, System::Object ^ state);" />
-      <MemberSignature Language="F#" Value="abstract member OnBeginWriteBodyContents : System.Xml.XmlDictionaryWriter * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.OnBeginWriteBodyContents : System.Xml.XmlDictionaryWriter * AsyncCallback * obj -&gt; IAsyncResult" Usage="bodyWriter.OnBeginWriteBodyContents (writer, callback, state)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.IAsyncResult</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="callback" Type="System.AsyncCallback" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      </Parameters>
-      <Docs>
-        <param name="writer">The writer</param>
-        <param name="callback">The callback</param>
-        <param name="state">The state.</param>
-        <summary>Raises an event when the body writer starts to write body contents with specified writer, callback and state.</summary>
-        <returns>The asynchronous result.</returns>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnCreateBufferedCopy">
@@ -316,33 +220,6 @@
   
  ]]></format>
         </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="OnEndWriteBodyContents">
-      <MemberSignature Language="C#" Value="protected virtual void OnEndWriteBodyContents (IAsyncResult result);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnEndWriteBodyContents(class System.IAsyncResult result) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BodyWriter.OnEndWriteBodyContents(System.IAsyncResult)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnEndWriteBodyContents (result As IAsyncResult)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnEndWriteBodyContents(IAsyncResult ^ result);" />
-      <MemberSignature Language="F#" Value="abstract member OnEndWriteBodyContents : IAsyncResult -&gt; unit&#xA;override this.OnEndWriteBodyContents : IAsyncResult -&gt; unit" Usage="bodyWriter.OnEndWriteBodyContents result" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="result" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      </Parameters>
-      <Docs>
-        <param name="result">The result of the operation.</param>
-        <summary>Raises an event when the body writer ends writing body contents.</summary>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnWriteBodyContents">

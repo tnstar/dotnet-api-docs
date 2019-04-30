@@ -54,11 +54,6 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Hosting.AggregateCatalog" /> class.</summary>
@@ -105,7 +100,7 @@
       <Parameters>
         <Parameter Name="catalogs" Type="System.ComponentModel.Composition.Primitives.ComposablePartCatalog[]">
           <Attributes>
-            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
+            <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -318,29 +313,6 @@
         <param name="e">A <see cref="T:System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs" /> object that contains the event data.</param>
         <summary>Raises the <see cref="E:System.ComponentModel.Composition.Hosting.AggregateCatalog.Changing" /> event.</summary>
         <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Parts">
-      <MemberSignature Language="C#" Value="public override System.Linq.IQueryable&lt;System.ComponentModel.Composition.Primitives.ComposablePartDefinition&gt; Parts { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Linq.IQueryable`1&lt;class System.ComponentModel.Composition.Primitives.ComposablePartDefinition&gt; Parts" />
-      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Hosting.AggregateCatalog.Parts" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Parts As IQueryable(Of ComposablePartDefinition)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Linq::IQueryable&lt;System::ComponentModel::Composition::Primitives::ComposablePartDefinition ^&gt; ^ Parts { System::Linq::IQueryable&lt;System::ComponentModel::Composition::Primitives::ComposablePartDefinition ^&gt; ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.Parts : System.Linq.IQueryable&lt;System.ComponentModel.Composition.Primitives.ComposablePartDefinition&gt;" Usage="System.ComponentModel.Composition.Hosting.AggregateCatalog.Parts" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Linq.IQueryable&lt;System.ComponentModel.Composition.Primitives.ComposablePartDefinition&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets the part definitions that are contained in the catalog.</summary>
-        <value>The <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePartDefinition" /> objects that are contained in the <see cref="T:System.ComponentModel.Composition.Hosting.AggregateCatalog" /> object.</value>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">
-          The <see cref="T:System.ComponentModel.Composition.Hosting.AggregateCatalog" /> has been disposed of.</exception>
       </Docs>
     </Member>
   </Members>

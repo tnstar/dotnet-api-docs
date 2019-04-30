@@ -14,11 +14,6 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
-  <Attributes>
-    <Attribute FrameworkAlternate="dotnet-uwp-10.0">
-      <AttributeName>System.Security.SecurityCritical</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <summary>Contains extension methods for converting between streams in the Windows Runtime and managed streams in the .NET for Windows Store apps.</summary>
     <remarks>

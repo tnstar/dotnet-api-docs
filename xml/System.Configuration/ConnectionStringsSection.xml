@@ -1,6 +1,6 @@
 ﻿<Type Name="ConnectionStringsSection" FullName="System.Configuration.ConnectionStringsSection">
   <TypeSignature Language="C#" Value="public sealed class ConnectionStringsSection : System.Configuration.ConfigurationSection" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ConnectionStringsSection extends System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ConnectionStringsSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConnectionStringsSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConnectionStringsSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="C++ CLI" Value="public ref class ConnectionStringsSection sealed : System::Configuration::ConfigurationSection" />
@@ -97,11 +97,6 @@
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;netcore-3.0;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0">
-          <AttributeName>System.Configuration.ConfigurationProperty("", Options=System.Configuration.ConfigurationPropertyOptions.IsDefaultCollection)</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Configuration.ConnectionStringSettingsCollection</ReturnType>
       </ReturnValue>
@@ -124,11 +119,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetRuntimeObject">
-      <MemberSignature Language="C#" Value="protected internal override object GetRuntimeObject ();" />
-      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object GetRuntimeObject() cil managed" />
+      <MemberSignature Language="C#" Value="protected override object GetRuntimeObject ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetRuntimeObject() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringsSection.GetRuntimeObject" />
-      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetRuntimeObject () As Object" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ GetRuntimeObject();" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetRuntimeObject () As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetRuntimeObject();" />
       <MemberSignature Language="F#" Value="override this.GetRuntimeObject : unit -&gt; obj" Usage="connectionStringsSection.GetRuntimeObject " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -153,11 +148,11 @@
       </Docs>
     </Member>
     <Member MemberName="Properties">
-      <MemberSignature Language="C#" Value="protected internal override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConnectionStringsSection.Properties" />
-      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Configuration.ConnectionStringsSection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>

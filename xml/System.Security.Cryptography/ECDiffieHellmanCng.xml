@@ -83,11 +83,6 @@
         <AssemblyVersion>4.3.1.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.ECDiffieHellmanCng" /> class with a random key pair.</summary>
@@ -119,11 +114,6 @@
         <AssemblyVersion>4.3.1.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="keySize" Type="System.Int32" />
       </Parameters>
@@ -161,14 +151,6 @@
         <AssemblyVersion>4.3.1.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="key" Type="System.Security.Cryptography.CngKey" />
       </Parameters>
@@ -201,7 +183,7 @@
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="curve" Type="System.Security.Cryptography.ECCurve" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="curve" Type="System.Security.Cryptography.ECCurve" />
       </Parameters>
       <Docs>
         <param name="curve">The curve used to generate the public/private key pair.</param>
@@ -233,7 +215,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.DeriveKeyFromHash(System.Security.Cryptography.ECDiffieHellmanPublicKey,System.Security.Cryptography.HashAlgorithmName,System.Byte[],System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function DeriveKeyFromHash (otherPartyPublicKey As ECDiffieHellmanPublicKey, hashAlgorithm As HashAlgorithmName, secretPrepend As Byte(), secretAppend As Byte()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ DeriveKeyFromHash(System::Security::Cryptography::ECDiffieHellmanPublicKey ^ otherPartyPublicKey, System::Security::Cryptography::HashAlgorithmName hashAlgorithm, cli::array &lt;System::Byte&gt; ^ secretPrepend, cli::array &lt;System::Byte&gt; ^ secretAppend);" />
-      <MemberSignature Language="F#" Value="override this.DeriveKeyFromHash : System.Security.Cryptography.ECDiffieHellmanPublicKey * System.Security.Cryptography.HashAlgorithmName * byte[] * byte[] -&gt; byte[]" Usage="eCDiffieHellmanCng.DeriveKeyFromHash (otherPartyPublicKey, hashAlgorithm, secretPrepend, secretAppend)" />
+      <MemberSignature Language="F#" Value="abstract member DeriveKeyFromHash : System.Security.Cryptography.ECDiffieHellmanPublicKey * System.Security.Cryptography.HashAlgorithmName * byte[] * byte[] -&gt; byte[]&#xA;override this.DeriveKeyFromHash : System.Security.Cryptography.ECDiffieHellmanPublicKey * System.Security.Cryptography.HashAlgorithmName * byte[] * byte[] -&gt; byte[]" Usage="eCDiffieHellmanCng.DeriveKeyFromHash (otherPartyPublicKey, hashAlgorithm, secretPrepend, secretAppend)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -244,19 +226,14 @@
         <AssemblyVersion>4.3.1.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="otherPartyPublicKey" Type="System.Security.Cryptography.ECDiffieHellmanPublicKey" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="secretPrepend" Type="System.Byte[]" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="secretAppend" Type="System.Byte[]" Index="3" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="otherPartyPublicKey" Type="System.Security.Cryptography.ECDiffieHellmanPublicKey" />
+        <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" />
+        <Parameter Name="secretPrepend" Type="System.Byte[]" />
+        <Parameter Name="secretAppend" Type="System.Byte[]" />
       </Parameters>
       <Docs>
         <param name="otherPartyPublicKey">The other party's public key.</param>
@@ -299,7 +276,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.DeriveKeyFromHmac(System.Security.Cryptography.ECDiffieHellmanPublicKey,System.Security.Cryptography.HashAlgorithmName,System.Byte[],System.Byte[],System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function DeriveKeyFromHmac (otherPartyPublicKey As ECDiffieHellmanPublicKey, hashAlgorithm As HashAlgorithmName, hmacKey As Byte(), secretPrepend As Byte(), secretAppend As Byte()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ DeriveKeyFromHmac(System::Security::Cryptography::ECDiffieHellmanPublicKey ^ otherPartyPublicKey, System::Security::Cryptography::HashAlgorithmName hashAlgorithm, cli::array &lt;System::Byte&gt; ^ hmacKey, cli::array &lt;System::Byte&gt; ^ secretPrepend, cli::array &lt;System::Byte&gt; ^ secretAppend);" />
-      <MemberSignature Language="F#" Value="override this.DeriveKeyFromHmac : System.Security.Cryptography.ECDiffieHellmanPublicKey * System.Security.Cryptography.HashAlgorithmName * byte[] * byte[] * byte[] -&gt; byte[]" Usage="eCDiffieHellmanCng.DeriveKeyFromHmac (otherPartyPublicKey, hashAlgorithm, hmacKey, secretPrepend, secretAppend)" />
+      <MemberSignature Language="F#" Value="abstract member DeriveKeyFromHmac : System.Security.Cryptography.ECDiffieHellmanPublicKey * System.Security.Cryptography.HashAlgorithmName * byte[] * byte[] * byte[] -&gt; byte[]&#xA;override this.DeriveKeyFromHmac : System.Security.Cryptography.ECDiffieHellmanPublicKey * System.Security.Cryptography.HashAlgorithmName * byte[] * byte[] * byte[] -&gt; byte[]" Usage="eCDiffieHellmanCng.DeriveKeyFromHmac (otherPartyPublicKey, hashAlgorithm, hmacKey, secretPrepend, secretAppend)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -310,20 +287,15 @@
         <AssemblyVersion>4.3.1.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="otherPartyPublicKey" Type="System.Security.Cryptography.ECDiffieHellmanPublicKey" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="hmacKey" Type="System.Byte[]" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="secretPrepend" Type="System.Byte[]" Index="3" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="secretAppend" Type="System.Byte[]" Index="4" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="otherPartyPublicKey" Type="System.Security.Cryptography.ECDiffieHellmanPublicKey" />
+        <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" />
+        <Parameter Name="hmacKey" Type="System.Byte[]" />
+        <Parameter Name="secretPrepend" Type="System.Byte[]" />
+        <Parameter Name="secretAppend" Type="System.Byte[]" />
       </Parameters>
       <Docs>
         <param name="otherPartyPublicKey">The other party's public key.</param>
@@ -375,7 +347,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.DeriveKeyMaterial(System.Security.Cryptography.CngKey)" />
       <MemberSignature Language="VB.NET" Value="Public Function DeriveKeyMaterial (otherPartyPublicKey As CngKey) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ DeriveKeyMaterial(System::Security::Cryptography::CngKey ^ otherPartyPublicKey);" />
-      <MemberSignature Language="F#" Value="override this.DeriveKeyMaterial : System.Security.Cryptography.CngKey -&gt; byte[]" Usage="eCDiffieHellmanCng.DeriveKeyMaterial otherPartyPublicKey" />
+      <MemberSignature Language="F#" Value="member this.DeriveKeyMaterial : System.Security.Cryptography.CngKey -&gt; byte[]" Usage="eCDiffieHellmanCng.DeriveKeyMaterial otherPartyPublicKey" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -387,14 +359,6 @@
         <AssemblyVersion>4.3.1.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
@@ -420,7 +384,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.DeriveKeyMaterial(System.Security.Cryptography.ECDiffieHellmanPublicKey)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function DeriveKeyMaterial (otherPartyPublicKey As ECDiffieHellmanPublicKey) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ DeriveKeyMaterial(System::Security::Cryptography::ECDiffieHellmanPublicKey ^ otherPartyPublicKey);" />
-      <MemberSignature Language="F#" Value="override this.DeriveKeyMaterial : System.Security.Cryptography.ECDiffieHellmanPublicKey -&gt; byte[]" Usage="eCDiffieHellmanCng.DeriveKeyMaterial otherPartyPublicKey" />
+      <MemberSignature Language="F#" Value="abstract member DeriveKeyMaterial : System.Security.Cryptography.ECDiffieHellmanPublicKey -&gt; byte[]&#xA;override this.DeriveKeyMaterial : System.Security.Cryptography.ECDiffieHellmanPublicKey -&gt; byte[]" Usage="eCDiffieHellmanCng.DeriveKeyMaterial otherPartyPublicKey" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -455,7 +419,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.DeriveKeyTls(System.Security.Cryptography.ECDiffieHellmanPublicKey,System.Byte[],System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function DeriveKeyTls (otherPartyPublicKey As ECDiffieHellmanPublicKey, prfLabel As Byte(), prfSeed As Byte()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ DeriveKeyTls(System::Security::Cryptography::ECDiffieHellmanPublicKey ^ otherPartyPublicKey, cli::array &lt;System::Byte&gt; ^ prfLabel, cli::array &lt;System::Byte&gt; ^ prfSeed);" />
-      <MemberSignature Language="F#" Value="override this.DeriveKeyTls : System.Security.Cryptography.ECDiffieHellmanPublicKey * byte[] * byte[] -&gt; byte[]" Usage="eCDiffieHellmanCng.DeriveKeyTls (otherPartyPublicKey, prfLabel, prfSeed)" />
+      <MemberSignature Language="F#" Value="abstract member DeriveKeyTls : System.Security.Cryptography.ECDiffieHellmanPublicKey * byte[] * byte[] -&gt; byte[]&#xA;override this.DeriveKeyTls : System.Security.Cryptography.ECDiffieHellmanPublicKey * byte[] * byte[] -&gt; byte[]" Usage="eCDiffieHellmanCng.DeriveKeyTls (otherPartyPublicKey, prfLabel, prfSeed)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -466,18 +430,13 @@
         <AssemblyVersion>4.3.1.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="otherPartyPublicKey" Type="System.Security.Cryptography.ECDiffieHellmanPublicKey" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="prfLabel" Type="System.Byte[]" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="prfSeed" Type="System.Byte[]" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="otherPartyPublicKey" Type="System.Security.Cryptography.ECDiffieHellmanPublicKey" />
+        <Parameter Name="prfLabel" Type="System.Byte[]" />
+        <Parameter Name="prfSeed" Type="System.Byte[]" />
       </Parameters>
       <Docs>
         <param name="otherPartyPublicKey">The other party's public key.</param>
@@ -541,11 +500,6 @@
         <AssemblyVersion>4.3.1.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Win32.SafeHandles.SafeNCryptSecretHandle</ReturnType>
       </ReturnValue>
@@ -606,7 +560,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
-      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="eCDiffieHellmanCng.Dispose disposing" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="eCDiffieHellmanCng.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -636,7 +590,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.ExportExplicitParameters(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ExportExplicitParameters (includePrivateParameters As Boolean) As ECParameters" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::ECParameters ExportExplicitParameters(bool includePrivateParameters);" />
-      <MemberSignature Language="F#" Value="override this.ExportExplicitParameters : bool -&gt; System.Security.Cryptography.ECParameters" Usage="eCDiffieHellmanCng.ExportExplicitParameters includePrivateParameters" />
+      <MemberSignature Language="F#" Value="abstract member ExportExplicitParameters : bool -&gt; System.Security.Cryptography.ECParameters&#xA;override this.ExportExplicitParameters : bool -&gt; System.Security.Cryptography.ECParameters" Usage="eCDiffieHellmanCng.ExportExplicitParameters includePrivateParameters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -651,7 +605,7 @@
         <ReturnType>System.Security.Cryptography.ECParameters</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="includePrivateParameters" Type="System.Boolean" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="includePrivateParameters" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <param name="includePrivateParameters">
@@ -669,7 +623,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.ExportParameters(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ExportParameters (includePrivateParameters As Boolean) As ECParameters" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::ECParameters ExportParameters(bool includePrivateParameters);" />
-      <MemberSignature Language="F#" Value="override this.ExportParameters : bool -&gt; System.Security.Cryptography.ECParameters" Usage="eCDiffieHellmanCng.ExportParameters includePrivateParameters" />
+      <MemberSignature Language="F#" Value="abstract member ExportParameters : bool -&gt; System.Security.Cryptography.ECParameters&#xA;override this.ExportParameters : bool -&gt; System.Security.Cryptography.ECParameters" Usage="eCDiffieHellmanCng.ExportParameters includePrivateParameters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -684,7 +638,7 @@
         <ReturnType>System.Security.Cryptography.ECParameters</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="includePrivateParameters" Type="System.Boolean" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="includePrivateParameters" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <param name="includePrivateParameters">
@@ -712,48 +666,12 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="FromXmlString">
-      <MemberSignature Language="C#" Value="public override void FromXmlString (string xmlString);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FromXmlString(string xmlString) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.FromXmlString(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Sub FromXmlString (xmlString As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXmlString(System::String ^ xmlString);" />
-      <MemberSignature Language="F#" Value="override this.FromXmlString : string -&gt; unit" Usage="eCDiffieHellmanCng.FromXmlString xmlString" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="xmlString" Type="System.String" Index="0" FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      </Parameters>
-      <Docs>
-        <param name="xmlString">The XML-based key information to be deserialized.</param>
-        <summary>This method is not implemented.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To deserialize an XML key, use the <xref:System.Security.Cryptography.ECDiffieHellmanCng.FromXmlString%28System.String%2CSystem.Security.Cryptography.ECKeyXmlFormat%29> overload instead.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotImplementedException">This method was not overridden for this instance.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="FromXmlString">
       <MemberSignature Language="C#" Value="public void FromXmlString (string xml, System.Security.Cryptography.ECKeyXmlFormat format);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FromXmlString(string xml, valuetype System.Security.Cryptography.ECKeyXmlFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.FromXmlString(System.String,System.Security.Cryptography.ECKeyXmlFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FromXmlString (xml As String, format As ECKeyXmlFormat)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FromXmlString(System::String ^ xml, System::Security::Cryptography::ECKeyXmlFormat format);" />
-      <MemberSignature Language="F#" Value="override this.FromXmlString : string * System.Security.Cryptography.ECKeyXmlFormat -&gt; unit" Usage="eCDiffieHellmanCng.FromXmlString (xml, format)" />
+      <MemberSignature Language="F#" Value="member this.FromXmlString : string * System.Security.Cryptography.ECKeyXmlFormat -&gt; unit" Usage="eCDiffieHellmanCng.FromXmlString (xml, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -792,7 +710,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.GenerateKey(System.Security.Cryptography.ECCurve)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GenerateKey (curve As ECCurve)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GenerateKey(System::Security::Cryptography::ECCurve curve);" />
-      <MemberSignature Language="F#" Value="override this.GenerateKey : System.Security.Cryptography.ECCurve -&gt; unit" Usage="eCDiffieHellmanCng.GenerateKey curve" />
+      <MemberSignature Language="F#" Value="abstract member GenerateKey : System.Security.Cryptography.ECCurve -&gt; unit&#xA;override this.GenerateKey : System.Security.Cryptography.ECCurve -&gt; unit" Usage="eCDiffieHellmanCng.GenerateKey curve" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -807,7 +725,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="curve" Type="System.Security.Cryptography.ECCurve" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="curve" Type="System.Security.Cryptography.ECCurve" />
       </Parameters>
       <Docs>
         <param name="curve">The curve used to generate an ephemeral public/private key pair.</param>
@@ -844,11 +762,6 @@
         <AssemblyVersion>4.3.1.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.CngAlgorithm</ReturnType>
       </ReturnValue>
@@ -890,14 +803,6 @@
         <AssemblyVersion>4.3.1.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
@@ -920,7 +825,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.ImportParameters(System.Security.Cryptography.ECParameters)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ImportParameters (parameters As ECParameters)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ImportParameters(System::Security::Cryptography::ECParameters parameters);" />
-      <MemberSignature Language="F#" Value="override this.ImportParameters : System.Security.Cryptography.ECParameters -&gt; unit" Usage="eCDiffieHellmanCng.ImportParameters parameters" />
+      <MemberSignature Language="F#" Value="abstract member ImportParameters : System.Security.Cryptography.ECParameters -&gt; unit&#xA;override this.ImportParameters : System.Security.Cryptography.ECParameters -&gt; unit" Usage="eCDiffieHellmanCng.ImportParameters parameters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -935,7 +840,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameters" Type="System.Security.Cryptography.ECParameters" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="parameters" Type="System.Security.Cryptography.ECParameters" />
       </Parameters>
       <Docs>
         <param name="parameters">The curve's parameters to import.</param>
@@ -1001,11 +906,6 @@
         <AssemblyVersion>4.3.1.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction</ReturnType>
       </ReturnValue>
@@ -1066,14 +966,6 @@
         <AssemblyVersion>4.3.1.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
@@ -1088,30 +980,6 @@
   
  ]]></format>
         </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="LegalKeySizes">
-      <MemberSignature Language="C#" Value="public override System.Security.Cryptography.KeySizes[] LegalKeySizes { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.KeySizes[] LegalKeySizes" />
-      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECDiffieHellmanCng.LegalKeySizes" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LegalKeySizes As KeySizes()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ LegalKeySizes { cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.LegalKeySizes : System.Security.Cryptography.KeySizes[]" Usage="System.Security.Cryptography.ECDiffieHellmanCng.LegalKeySizes" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
-        <AssemblyVersion>4.3.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Security.Cryptography.KeySizes[]</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PublicKey">
@@ -1132,11 +1000,6 @@
         <AssemblyVersion>4.3.1.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0">
-          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.ECDiffieHellmanPublicKey</ReturnType>
       </ReturnValue>
@@ -1164,14 +1027,6 @@
         <AssemblyVersion>4.3.1.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
@@ -1206,14 +1061,6 @@
         <AssemblyVersion>4.3.1.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
@@ -1254,14 +1101,6 @@
         <AssemblyVersion>4.3.1.0</AssemblyVersion>
         <AssemblyVersion>4.3.2.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
@@ -1288,50 +1127,12 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="ToXmlString">
-      <MemberSignature Language="C#" Value="public override string ToXmlString (bool includePrivateParameters);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToXmlString(bool includePrivateParameters) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.ToXmlString(System.Boolean)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXmlString (includePrivateParameters As Boolean) As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToXmlString(bool includePrivateParameters);" />
-      <MemberSignature Language="F#" Value="override this.ToXmlString : bool -&gt; string" Usage="eCDiffieHellmanCng.ToXmlString includePrivateParameters" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>3.5.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="includePrivateParameters" Type="System.Boolean" Index="0" FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      </Parameters>
-      <Docs>
-        <param name="includePrivateParameters">
-          <see langword="true" /> to include private parameters; otherwise, <see langword="false" />.</param>
-        <summary>This method is not implemented.</summary>
-        <returns>Not applicable.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To convert the current key to an XML representation, use the <xref:System.Security.Cryptography.ECDiffieHellmanCng.ToXmlString%28System.Security.Cryptography.ECKeyXmlFormat%29> overload instead.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotImplementedException">This method was not overridden for this instance.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="ToXmlString">
       <MemberSignature Language="C#" Value="public string ToXmlString (System.Security.Cryptography.ECKeyXmlFormat format);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToXmlString(valuetype System.Security.Cryptography.ECKeyXmlFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.ToXmlString(System.Security.Cryptography.ECKeyXmlFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToXmlString (format As ECKeyXmlFormat) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToXmlString(System::Security::Cryptography::ECKeyXmlFormat format);" />
-      <MemberSignature Language="F#" Value="override this.ToXmlString : System.Security.Cryptography.ECKeyXmlFormat -&gt; string" Usage="eCDiffieHellmanCng.ToXmlString format" />
+      <MemberSignature Language="F#" Value="member this.ToXmlString : System.Security.Cryptography.ECKeyXmlFormat -&gt; string" Usage="eCDiffieHellmanCng.ToXmlString format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

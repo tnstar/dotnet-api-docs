@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.SynchronizedCollection`1" />
   <TypeSignature Language="VB.NET" Value="Public Class SynchronizedCollection(Of T)&#xA;Implements ICollection(Of T), IEnumerable(Of T), IList, IList(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class SynchronizedCollection : System::Collections::Generic::ICollection&lt;T&gt;, System::Collections::Generic::IEnumerable&lt;T&gt;, System::Collections::Generic::IList&lt;T&gt;, System::Collections::IList" />
-  <TypeSignature Language="F#" Value="type SynchronizedCollection&lt;'T&gt; = class&#xA;    interface IList&lt;'T&gt;&#xA;    interface ICollection&lt;'T&gt;&#xA;    interface seq&lt;'T&gt;&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
+  <TypeSignature Language="F#" Value="type SynchronizedCollection&lt;'T&gt; = class&#xA;    interface IList&lt;'T&gt;&#xA;    interface ICollection&lt;'T&gt;&#xA;    interface seq&lt;'T&gt;&#xA;    interface IEnumerable&#xA;    interface IList&#xA;    interface ICollection" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,11 +43,6 @@
       <InterfaceName>System.Collections.IList</InterfaceName>
     </Interface>
   </Interfaces>
-  <Attributes>
-    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <typeparam name="T">The type of object contained as items in the thread-safe collection.</typeparam>
     <summary>Provides a thread-safe collection that contains objects of a type specified by the generic parameter as elements.</summary>
@@ -191,7 +186,7 @@
         <Parameter Name="syncRoot" Type="System.Object" />
         <Parameter Name="list" Type="T[]">
           <Attributes>
-            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
+            <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -204,35 +199,6 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="syncRoot" /> or <paramref name="list" /> is <see langword="null" />.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SynchronizedCollection (object syncRoot, System.Collections.Generic.List&lt;T&gt; list, bool makeCopy);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object syncRoot, class System.Collections.Generic.List`1&lt;!T&gt; list, bool makeCopy) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.SynchronizedCollection`1.#ctor(System.Object,System.Collections.Generic.List{`0},System.Boolean)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (syncRoot As Object, list As List(Of T), makeCopy As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SynchronizedCollection(System::Object ^ syncRoot, System::Collections::Generic::List&lt;T&gt; ^ list, bool makeCopy);" />
-      <MemberSignature Language="F#" Value="new System.Collections.Generic.SynchronizedCollection&lt;'T&gt; : obj * System.Collections.Generic.List&lt;'T&gt; * bool -&gt; System.Collections.Generic.SynchronizedCollection&lt;'T&gt;" Usage="new System.Collections.Generic.SynchronizedCollection&lt;'T&gt; (syncRoot, list, makeCopy)" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="syncRoot" Type="System.Object" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="list" Type="System.Collections.Generic.List&lt;T&gt;" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="makeCopy" Type="System.Boolean" Index="2" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      </Parameters>
-      <Docs>
-        <param name="syncRoot">To be added.</param>
-        <param name="list">To be added.</param>
-        <param name="makeCopy">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -656,11 +622,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -849,11 +810,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>

@@ -1,6 +1,6 @@
 ﻿<Type Name="MessageVersion" FullName="System.ServiceModel.Channels.MessageVersion">
   <TypeSignature Language="C#" Value="public sealed class MessageVersion" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MessageVersion extends System.Object" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MessageVersion extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.MessageVersion" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MessageVersion" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessageVersion sealed" />
@@ -24,11 +24,6 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
-  <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ServiceModel.Configuration.MessageVersionConverter))</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <summary>Specifies the versions of SOAP and WS-Addressing associated with a message and its exchange.</summary>
     <remarks>
@@ -74,11 +69,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.AddressingVersion</ReturnType>
       </ReturnValue>
@@ -237,11 +227,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.MessageVersion</ReturnType>
       </ReturnValue>
@@ -287,11 +272,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.EnvelopeVersion</ReturnType>
       </ReturnValue>
@@ -423,11 +403,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.MessageVersion</ReturnType>
       </ReturnValue>
@@ -475,11 +450,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.MessageVersion</ReturnType>
       </ReturnValue>
@@ -492,56 +462,6 @@
 ## Examples  
  [!code-csharp[S_UE_MessageVersion#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageversion/cs/program.cs#5)]
  [!code-vb[S_UE_MessageVersion#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_messageversion/vb/module1.vb#5)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Soap11WSAddressing10">
-      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.MessageVersion Soap11WSAddressing10 { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Channels.MessageVersion Soap11WSAddressing10" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageVersion.Soap11WSAddressing10" />
-      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Soap11WSAddressing10 As MessageVersion" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Channels::MessageVersion ^ Soap11WSAddressing10 { System::ServiceModel::Channels::MessageVersion ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.Soap11WSAddressing10 : System.ServiceModel.Channels.MessageVersion" Usage="System.ServiceModel.Channels.MessageVersion.Soap11WSAddressing10" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.ServiceModel.Channels.MessageVersion</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets the message version using WS-Addressing 1.0 and SOAP 1.1.</summary>
-        <value>The <see cref="T:System.ServiceModel.Channels.MessageVersion" /> using the version of WS-Addressing 1.0 and SOAP 1.1.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information and the schemas for WS-Addressing 1.0 and SOAP 1.1, see the following:  
-  
--   [Web Services Addressing 1.0 - Core](https://go.microsoft.com/fwlink/?LinkID=96644)  
-  
--   [WS-Addressing 1.0 schema](https://go.microsoft.com/fwlink/?LinkId=96647)  
-  
--   [SOAP 1.1 schema](https://go.microsoft.com/fwlink/?LinkId=96641)  
-  
-   
-  
-## Examples  
- [!code-csharp[S_UE_MessageVersion#6](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageversion/cs/program.cs#6)]
- [!code-vb[S_UE_MessageVersion#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_messageversion/vb/module1.vb#6)]  
   
  ]]></format>
         </remarks>
@@ -566,11 +486,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.MessageVersion</ReturnType>
       </ReturnValue>
@@ -599,45 +514,6 @@
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="Soap12">
-      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.MessageVersion Soap12 { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Channels.MessageVersion Soap12" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageVersion.Soap12" />
-      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Soap12 As MessageVersion" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Channels::MessageVersion ^ Soap12 { System::ServiceModel::Channels::MessageVersion ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.Soap12 : System.ServiceModel.Channels.MessageVersion" Usage="System.ServiceModel.Channels.MessageVersion.Soap12" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.ServiceModel.Channels.MessageVersion</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets the message version using SOAP 1.2.</summary>
-        <value>The <see cref="T:System.ServiceModel.Channels.MessageVersion" /> using SOAP 1.2 but no version of WS-Addressing.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-csharp[S_UE_MessageVersion#8](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_messageversion/cs/program.cs#8)]
- [!code-vb[S_UE_MessageVersion#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_messageversion/vb/module1.vb#8)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Soap12WSAddressing10">
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.MessageVersion Soap12WSAddressing10 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Channels.MessageVersion Soap12WSAddressing10" />
@@ -661,11 +537,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.MessageVersion</ReturnType>
       </ReturnValue>
@@ -713,11 +584,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.MessageVersion</ReturnType>
       </ReturnValue>

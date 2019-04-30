@@ -100,7 +100,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="value" Type="System.Decimal" />
+        <Parameter Name="value" Type="System.Decimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="value">The <see cref="T:System.Decimal" /> value to be stored as a <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
@@ -139,7 +139,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="dVal" Type="System.Double" />
+        <Parameter Name="dVal" Type="System.Double" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="dVal">A double, representing the value for the new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
@@ -178,7 +178,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="value" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="value">The supplied integer value which will the used as the value of the new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
@@ -217,7 +217,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="value" Type="System.Int64" />
+        <Parameter Name="value" Type="System.Int64" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="value">The supplied long integer value which will the used as the value of the new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
@@ -256,10 +256,10 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="bPrecision" Type="System.Byte" />
-        <Parameter Name="bScale" Type="System.Byte" />
-        <Parameter Name="fPositive" Type="System.Boolean" />
-        <Parameter Name="bits" Type="System.Int32[]" />
+        <Parameter Name="bPrecision" Type="System.Byte" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="bScale" Type="System.Byte" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="fPositive" Type="System.Boolean" Index="2" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="bits" Type="System.Int32[]" Index="3" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="bPrecision">The maximum number of digits that can be used to represent the <see cref="P:System.Data.SqlTypes.SqlDecimal.Value" /> property of the new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
@@ -301,13 +301,13 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="bPrecision" Type="System.Byte" />
-        <Parameter Name="bScale" Type="System.Byte" />
-        <Parameter Name="fPositive" Type="System.Boolean" />
-        <Parameter Name="data1" Type="System.Int32" />
-        <Parameter Name="data2" Type="System.Int32" />
-        <Parameter Name="data3" Type="System.Int32" />
-        <Parameter Name="data4" Type="System.Int32" />
+        <Parameter Name="bPrecision" Type="System.Byte" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="bScale" Type="System.Byte" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="fPositive" Type="System.Boolean" Index="2" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="data1" Type="System.Int32" Index="3" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="data2" Type="System.Int32" Index="4" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="data3" Type="System.Int32" Index="5" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="data4" Type="System.Int32" Index="6" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="bPrecision">The maximum number of digits that can be used to represent the <see cref="P:System.Data.SqlTypes.SqlDecimal.Value" /> property of the new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
@@ -355,7 +355,7 @@
         <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="n" Type="System.Data.SqlTypes.SqlDecimal" />
+        <Parameter Name="n" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="n">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
@@ -398,8 +398,8 @@
         <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
@@ -443,9 +443,9 @@
         <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="n" Type="System.Data.SqlTypes.SqlDecimal" />
-        <Parameter Name="digits" Type="System.Int32" />
-        <Parameter Name="fRound" Type="System.Boolean" />
+        <Parameter Name="n" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="digits" Type="System.Int32" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="fRound" Type="System.Boolean" Index="2" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="n">The <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure to be adjusted.</param>
@@ -529,7 +529,7 @@
         <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="n" Type="System.Data.SqlTypes.SqlDecimal" />
+        <Parameter Name="n" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="n">The <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure for which the ceiling value is to be calculated.</param>
@@ -581,7 +581,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="value" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="value">The <see cref="T:System.Data.SqlTypes.SqlDecimal" /> to be compared.</param>
@@ -649,7 +649,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="value">The <see cref="T:System.Object" /> to be compared.</param>
@@ -714,9 +714,9 @@
         <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="n" Type="System.Data.SqlTypes.SqlDecimal" />
-        <Parameter Name="precision" Type="System.Int32" />
-        <Parameter Name="scale" Type="System.Int32" />
+        <Parameter Name="n" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="precision" Type="System.Int32" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="scale" Type="System.Int32" Index="2" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="n">The <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose value is to be adjusted.</param>
@@ -800,8 +800,8 @@
         <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
@@ -855,7 +855,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="value">The <see cref="T:System.Object" /> to be compared.</param>
@@ -899,8 +899,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
@@ -945,7 +945,7 @@
         <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="n" Type="System.Data.SqlTypes.SqlDecimal" />
+        <Parameter Name="n" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="n">The <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure for which the floor value is to be calculated.</param>
@@ -1026,7 +1026,7 @@
         <ReturnType>System.Xml.XmlQualifiedName</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="schemaSet" Type="System.Xml.Schema.XmlSchemaSet" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="schemaSet" Type="System.Xml.Schema.XmlSchemaSet" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="schemaSet">A <see cref="T:System.Xml.Schema.XmlSchemaSet" />.</param>
@@ -1069,8 +1069,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
@@ -1114,8 +1114,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
@@ -1249,8 +1249,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
@@ -1294,8 +1294,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
@@ -1512,8 +1512,8 @@
         <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
@@ -1557,8 +1557,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
@@ -1647,8 +1647,8 @@
         <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
@@ -1694,8 +1694,8 @@
         <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
@@ -1740,8 +1740,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
@@ -1796,7 +1796,7 @@
         <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">The <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure to be converted.</param>
@@ -1841,7 +1841,7 @@
         <ReturnType>System.Decimal</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">The <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure to be converted.</param>
@@ -1884,7 +1884,7 @@
         <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">The <see cref="T:System.Data.SqlTypes.SqlDouble" /> structure to be converted.</param>
@@ -1929,7 +1929,7 @@
         <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlSingle" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlSingle" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">The <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure to be converted.</param>
@@ -1974,7 +1974,7 @@
         <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">The <see cref="T:System.Data.SqlTypes.SqlString" /> object to be converted.</param>
@@ -2018,7 +2018,7 @@
         <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Double" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="x" Type="System.Double" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">The <see cref="T:System.Double" /> structure to be converted.</param>
@@ -2062,8 +2062,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
@@ -2109,8 +2109,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
@@ -2166,7 +2166,7 @@
         <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlByte" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlByte" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">The <see cref="T:System.Data.SqlTypes.SqlByte" /> structure to be converted.</param>
@@ -2211,7 +2211,7 @@
         <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt16" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt16" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">The <see cref="T:System.Data.SqlTypes.SqlInt16" /> structure to be converted.</param>
@@ -2256,7 +2256,7 @@
         <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt32" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt32" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">The <see cref="T:System.Data.SqlTypes.SqlInt32" /> structure to be converted.</param>
@@ -2301,7 +2301,7 @@
         <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt64" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt64" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">The <see cref="T:System.Data.SqlTypes.SqlInt64" /> structure to be converted.</param>
@@ -2346,7 +2346,7 @@
         <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlMoney" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlMoney" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">The <see cref="T:System.Data.SqlTypes.SqlMoney" /> structure to be converted.</param>
@@ -2391,7 +2391,7 @@
         <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Decimal" />
+        <Parameter Name="x" Type="System.Decimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">The <see cref="T:System.Decimal" /> value to be converted.</param>
@@ -2433,7 +2433,7 @@
         <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Int64" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="x" Type="System.Int64" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">The <see cref="T:System.Int64" /> structure to be converted.</param>
@@ -2478,8 +2478,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
@@ -2525,8 +2525,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
@@ -2572,8 +2572,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
@@ -2619,8 +2619,8 @@
         <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
@@ -2666,8 +2666,8 @@
         <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
@@ -2713,7 +2713,7 @@
         <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">The <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure to be negated.</param>
@@ -2756,7 +2756,7 @@
         <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="s" Type="System.String" />
+        <Parameter Name="s" Type="System.String" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="s">The <see langword="String" /> to be parsed.</param>
@@ -2799,8 +2799,8 @@
         <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="n" Type="System.Data.SqlTypes.SqlDecimal" />
-        <Parameter Name="exp" Type="System.Double" />
+        <Parameter Name="n" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="exp" Type="System.Double" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="n">The <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure to be raised to a power.</param>
@@ -2883,8 +2883,8 @@
         <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="n" Type="System.Data.SqlTypes.SqlDecimal" />
-        <Parameter Name="position" Type="System.Int32" />
+        <Parameter Name="n" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="position" Type="System.Int32" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="n">The <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure to be rounded.</param>
@@ -2967,7 +2967,7 @@
         <ReturnType>System.Data.SqlTypes.SqlInt32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="n" Type="System.Data.SqlTypes.SqlDecimal" />
+        <Parameter Name="n" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="n">The <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose sign is to be evaluated.</param>
@@ -3010,8 +3010,8 @@
         <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDecimal" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
@@ -3094,7 +3094,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="reader" Type="System.Xml.XmlReader" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="reader" Type="System.Xml.XmlReader" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="reader">
@@ -3137,7 +3137,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="writer" Type="System.Xml.XmlWriter" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="writer">
@@ -3621,8 +3621,8 @@
         <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="n" Type="System.Data.SqlTypes.SqlDecimal" />
-        <Parameter Name="position" Type="System.Int32" />
+        <Parameter Name="n" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="position" Type="System.Int32" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="n">The <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure to be truncated.</param>

@@ -18,9 +18,6 @@
     <Attribute>
       <AttributeName>System.CLSCompliant(false)</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="dotnet-uwp-10.0">
-      <AttributeName>System.Security.SecurityCritical</AttributeName>
-    </Attribute>
   </Attributes>
   <Docs>
     <summary>Provides extension methods for converting between tasks and Windows Runtime asynchronous actions and operations.</summary>
@@ -674,7 +671,7 @@ Use this method to get a <xref:System.Threading.Tasks.Task%601> object for a Win
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -714,7 +711,7 @@ Use this method to get a <xref:System.Threading.Tasks.Task%601> object for a Win
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -758,7 +755,7 @@ Use this method to get a <xref:System.Threading.Tasks.Task%601> object for a Win
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -802,7 +799,7 @@ Use this method to get a <xref:System.Threading.Tasks.Task%601> object for a Win
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

@@ -103,7 +103,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="value" Type="System.Boolean" />
+        <Parameter Name="value" Type="System.Boolean" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="value">The value for the new <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure; either <see langword="true" /> or <see langword="false" />.</param>
@@ -142,7 +142,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="value" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="value">The integer whose value is to be used for the new <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
@@ -184,8 +184,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
@@ -292,7 +292,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="value" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="value">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /><see cref="T:System.Data.SqlTypes.SqlBoolean" /> object to compare, or a null reference (<see langword="Nothing" /> in Visual Basic).</param>
@@ -367,7 +367,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="value">An object to compare, or a null reference (<see langword="Nothing" /> in Visual Basic).</param>
@@ -449,7 +449,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="value">The object to be compared.</param>
@@ -493,8 +493,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
@@ -626,7 +626,7 @@
         <ReturnType>System.Xml.XmlQualifiedName</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="schemaSet" Type="System.Xml.Schema.XmlSchemaSet" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="schemaSet" Type="System.Xml.Schema.XmlSchemaSet" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="schemaSet">A <see cref="T:System.Xml.Schema.XmlSchemaSet" />.</param>
@@ -668,8 +668,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
@@ -720,8 +720,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
@@ -924,8 +924,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
@@ -976,8 +976,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
@@ -1029,8 +1029,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
@@ -1168,7 +1168,7 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
@@ -1211,8 +1211,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
@@ -1258,8 +1258,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
@@ -1305,8 +1305,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" />.</param>
@@ -1353,8 +1353,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
@@ -1410,7 +1410,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> to convert.</param>
@@ -1453,7 +1453,7 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlByte" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlByte" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlByte" /> to be converted to a <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
@@ -1498,7 +1498,7 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> to be converted to a <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
@@ -1543,7 +1543,7 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDouble" /> to be converted to a <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
@@ -1588,7 +1588,7 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt16" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt16" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlInt16" /> to be converted to a <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
@@ -1633,7 +1633,7 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt32" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt32" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlInt32" /> to be converted to a <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
@@ -1678,7 +1678,7 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt64" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt64" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlInt64" /> to be converted to a <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
@@ -1723,7 +1723,7 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlMoney" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlMoney" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlMoney" /> to be converted to a <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
@@ -1768,7 +1768,7 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlSingle" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlSingle" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlSingle" /> to be converted to a <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
@@ -1813,7 +1813,7 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlString" /> to be converted to a <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
@@ -1858,7 +1858,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">The <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure to be tested.</param>
@@ -1903,8 +1903,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> object.</param>
@@ -1955,8 +1955,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
@@ -2008,7 +2008,7 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Boolean" />
+        <Parameter Name="x" Type="System.Boolean" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A byte value to be converted to <see cref="T:System.Data.SqlTypes.SqlBoolean" />.</param>
@@ -2051,8 +2051,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" />.</param>
@@ -2098,8 +2098,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
@@ -2150,8 +2150,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
@@ -2203,7 +2203,7 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">The <see cref="T:System.Data.SqlTypes.SqlBoolean" /> on which the NOT operation will be performed.</param>
@@ -2246,7 +2246,7 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
@@ -2291,7 +2291,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">The <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure to be tested.</param>
@@ -2337,8 +2337,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
@@ -2382,7 +2382,7 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="s" Type="System.String" />
+        <Parameter Name="s" Type="System.String" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="s">The <see cref="T:System.String" /> to be converted.</param>
@@ -2464,7 +2464,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="reader" Type="System.Xml.XmlReader" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="reader" Type="System.Xml.XmlReader" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="reader">
@@ -2507,7 +2507,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="writer" Type="System.Xml.XmlWriter" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="writer">
@@ -3046,8 +3046,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlBoolean" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>

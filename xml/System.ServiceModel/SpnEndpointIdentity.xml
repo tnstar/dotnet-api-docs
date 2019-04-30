@@ -64,49 +64,6 @@
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SpnEndpointIdentity (System.IdentityModel.Claims.Claim identity);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Claims.Claim identity) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.SpnEndpointIdentity.#ctor(System.IdentityModel.Claims.Claim)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As Claim)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SpnEndpointIdentity(System::IdentityModel::Claims::Claim ^ identity);" />
-      <MemberSignature Language="F#" Value="new System.ServiceModel.SpnEndpointIdentity : System.IdentityModel.Claims.Claim -&gt; System.ServiceModel.SpnEndpointIdentity" Usage="new System.ServiceModel.SpnEndpointIdentity identity" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Security</AssemblyName>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="identity" Type="System.IdentityModel.Claims.Claim" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      </Parameters>
-      <Docs>
-        <param name="identity">The identity for this service principal name (SPN).</param>
-        <summary>Initializes a new instance of <see cref="T:System.ServiceModel.SpnEndpointIdentity" /> with the specified identity claim.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor sets the <xref:System.ServiceModel.SpnEndpointIdentity.SpnLookupTime%2A> property to 1 minute.  
-  
-   
-  
-## Examples  
- The following code shows how to create identities from a set of claims.  
-  
- [!code-csharp[S_UESpnEndpointIdentity#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_uespnendpointidentity/cs/service.cs#2)]
- [!code-vb[S_UESpnEndpointIdentity#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uespnendpointidentity/vb/service.vb#2)]  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="identity" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">The claim type of <paramref name="identity" /> is not <see cref="P:System.IdentityModel.Claims.ClaimTypes.Spn" />.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SpnEndpointIdentity (string spnName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string spnName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.SpnEndpointIdentity.#ctor(System.String)" />
@@ -178,11 +135,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>

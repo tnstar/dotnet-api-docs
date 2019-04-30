@@ -140,11 +140,11 @@
       </Docs>
     </Member>
     <Member MemberName="DefaultCloseTimeout">
-      <MemberSignature Language="C#" Value="protected internal override TimeSpan DefaultCloseTimeout { get; }" />
+      <MemberSignature Language="C#" Value="protected override TimeSpan DefaultCloseTimeout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan DefaultCloseTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelFactoryBase.DefaultCloseTimeout" />
-      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property DefaultCloseTimeout As TimeSpan" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property TimeSpan DefaultCloseTimeout { TimeSpan get(); };" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultCloseTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property TimeSpan DefaultCloseTimeout { TimeSpan get(); };" />
       <MemberSignature Language="F#" Value="member this.DefaultCloseTimeout : TimeSpan" Usage="System.ServiceModel.Channels.ChannelFactoryBase.DefaultCloseTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -162,11 +162,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
@@ -184,11 +179,11 @@
       </Docs>
     </Member>
     <Member MemberName="DefaultOpenTimeout">
-      <MemberSignature Language="C#" Value="protected internal override TimeSpan DefaultOpenTimeout { get; }" />
+      <MemberSignature Language="C#" Value="protected override TimeSpan DefaultOpenTimeout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan DefaultOpenTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelFactoryBase.DefaultOpenTimeout" />
-      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property DefaultOpenTimeout As TimeSpan" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property TimeSpan DefaultOpenTimeout { TimeSpan get(); };" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultOpenTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property TimeSpan DefaultOpenTimeout { TimeSpan get(); };" />
       <MemberSignature Language="F#" Value="member this.DefaultOpenTimeout : TimeSpan" Usage="System.ServiceModel.Channels.ChannelFactoryBase.DefaultOpenTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -206,11 +201,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
@@ -228,11 +218,11 @@
       </Docs>
     </Member>
     <Member MemberName="DefaultReceiveTimeout">
-      <MemberSignature Language="C#" Value="protected internal override TimeSpan DefaultReceiveTimeout { get; }" />
+      <MemberSignature Language="C#" Value="protected override TimeSpan DefaultReceiveTimeout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan DefaultReceiveTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelFactoryBase.DefaultReceiveTimeout" />
-      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property DefaultReceiveTimeout As TimeSpan" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property TimeSpan DefaultReceiveTimeout { TimeSpan get(); };" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultReceiveTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property TimeSpan DefaultReceiveTimeout { TimeSpan get(); };" />
       <MemberSignature Language="F#" Value="member this.DefaultReceiveTimeout : TimeSpan" Usage="System.ServiceModel.Channels.ChannelFactoryBase.DefaultReceiveTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -250,11 +240,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
@@ -272,11 +257,11 @@
       </Docs>
     </Member>
     <Member MemberName="DefaultSendTimeout">
-      <MemberSignature Language="C#" Value="protected internal override TimeSpan DefaultSendTimeout { get; }" />
+      <MemberSignature Language="C#" Value="protected override TimeSpan DefaultSendTimeout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan DefaultSendTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelFactoryBase.DefaultSendTimeout" />
-      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property DefaultSendTimeout As TimeSpan" />
-      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property TimeSpan DefaultSendTimeout { TimeSpan get(); };" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultSendTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property TimeSpan DefaultSendTimeout { TimeSpan get(); };" />
       <MemberSignature Language="F#" Value="member this.DefaultSendTimeout : TimeSpan" Usage="System.ServiceModel.Channels.ChannelFactoryBase.DefaultSendTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -294,11 +279,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>

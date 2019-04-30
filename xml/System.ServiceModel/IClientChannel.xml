@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.IClientChannel" />
   <TypeSignature Language="VB.NET" Value="Public Interface IClientChannel&#xA;Implements IContextChannel, IDisposable, IExtensibleObject(Of IContextChannel)" />
   <TypeSignature Language="C++ CLI" Value="public interface class IClientChannel : IDisposable, System::ServiceModel::IContextChannel, System::ServiceModel::IExtensibleObject&lt;System::ServiceModel::IContextChannel ^&gt;" />
-  <TypeSignature Language="F#" Value="type IClientChannel = interface&#xA;    interface IContextChannel&#xA;    interface ICommunicationObject&#xA;    interface IDisposable&#xA;    interface IChannel&#xA;    interface IExtensibleObject&lt;IContextChannel&gt;" />
+  <TypeSignature Language="F#" Value="type IClientChannel = interface&#xA;    interface IDisposable&#xA;    interface IChannel&#xA;    interface ICommunicationObject&#xA;    interface IContextChannel&#xA;    interface IExtensibleObject&lt;IContextChannel&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

@@ -194,98 +194,6 @@
         <related type="Article" href="https://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
       </Docs>
     </Member>
-    <Member MemberName="BeginRead">
-      <MemberSignature Language="C#" Value="public override IAsyncResult BeginRead (byte[] buffer, int offset, int count, AsyncCallback callback, object state);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IAsyncResult BeginRead(unsigned int8[] buffer, int32 offset, int32 count, class System.AsyncCallback callback, object state) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlFileStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginRead (buffer As Byte(), offset As Integer, count As Integer, callback As AsyncCallback, state As Object) As IAsyncResult" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override IAsyncResult ^ BeginRead(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, AsyncCallback ^ callback, System::Object ^ state);" />
-      <MemberSignature Language="F#" Value="override this.BeginRead : byte[] * int * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="sqlFileStream.BeginRead (buffer, offset, count, callback, state)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.IAsyncResult</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="buffer" Type="System.Byte[]" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="offset" Type="System.Int32" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="callback" Type="System.AsyncCallback" Index="3" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="state" Type="System.Object" Index="4" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      </Parameters>
-      <Docs>
-        <param name="buffer">The buffer to read the data into.</param>
-        <param name="offset">The byte offset in <paramref name="buffer" /> at which to begin writing data read from the stream.</param>
-        <param name="count">The maximum number of bytes to read.</param>
-        <param name="callback">An optional asynchronous callback, to be called when the read is complete.</param>
-        <param name="state">A user-provided object that distinguishes this particular asynchronous read request from other requests</param>
-        <summary>Begins an asynchronous read operation.</summary>
-        <returns>An <see cref="T:System.IAsyncResult" /> that represents the asynchronous read, which could still be pending.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.Data.SqlTypes.SqlFileStream.CanRead%2A> property to determine whether the current instance supports reading.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">Reading data is not supported on the stream.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
-      </Docs>
-    </Member>
-    <Member MemberName="BeginWrite">
-      <MemberSignature Language="C#" Value="public override IAsyncResult BeginWrite (byte[] buffer, int offset, int count, AsyncCallback callback, object state);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IAsyncResult BeginWrite(unsigned int8[] buffer, int32 offset, int32 count, class System.AsyncCallback callback, object state) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlFileStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginWrite (buffer As Byte(), offset As Integer, count As Integer, callback As AsyncCallback, state As Object) As IAsyncResult" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override IAsyncResult ^ BeginWrite(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, AsyncCallback ^ callback, System::Object ^ state);" />
-      <MemberSignature Language="F#" Value="override this.BeginWrite : byte[] * int * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="sqlFileStream.BeginWrite (buffer, offset, count, callback, state)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.IAsyncResult</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="buffer" Type="System.Byte[]" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="offset" Type="System.Int32" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="count" Type="System.Int32" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="callback" Type="System.AsyncCallback" Index="3" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="state" Type="System.Object" Index="4" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      </Parameters>
-      <Docs>
-        <param name="buffer">The buffer to write data from.</param>
-        <param name="offset">The byte offset in <paramref name="buffer" /> from which to begin writing.</param>
-        <param name="count">The maximum number of bytes to write.</param>
-        <param name="callback">An optional asynchronous callback, to be called when the write is complete.</param>
-        <param name="state">A user-provided object that distinguishes this particular asynchronous write request from other requests.</param>
-        <summary>Begins an asynchronous write operation.</summary>
-        <returns>An <see cref="T:System.IAsyncResult" /> that represents the asynchronous write, which could still be pending.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.Data.SqlTypes.SqlFileStream.CanWrite%2A> property to determine whether the current instance supports writing.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">Writing data is not supported on the stream.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
-      </Docs>
-    </Member>
     <Member MemberName="CanRead">
       <MemberSignature Language="C#" Value="public override bool CanRead { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanRead" />
@@ -342,37 +250,6 @@
         <related type="Article" href="https://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
       </Docs>
     </Member>
-    <Member MemberName="CanTimeout">
-      <MemberSignature Language="C#" Value="public override bool CanTimeout { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool CanTimeout" />
-      <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlFileStream.CanTimeout" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanTimeout As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanTimeout { bool get(); };" />
-      <MemberSignature Language="F#" Value="member this.CanTimeout : bool" Usage="System.Data.SqlTypes.SqlFileStream.CanTimeout" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets a value indicating whether the current stream can time out.</summary>
-        <value>
-          <see langword="true" /> if the current stream can time out; otherwise, <see langword="false" />.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="CanWrite">
       <MemberSignature Language="C#" Value="public override bool CanWrite { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanWrite" />
@@ -399,120 +276,6 @@
           <see langword="true" /> if the current stream supports writing; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
-      </Docs>
-    </Member>
-    <Member MemberName="Dispose">
-      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlFileStream.Dispose(System.Boolean)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
-      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="sqlFileStream.Dispose disposing" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="disposing" Type="System.Boolean" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      </Parameters>
-      <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="EndRead">
-      <MemberSignature Language="C#" Value="public override int EndRead (IAsyncResult asyncResult);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 EndRead(class System.IAsyncResult asyncResult) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlFileStream.EndRead(System.IAsyncResult)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function EndRead (asyncResult As IAsyncResult) As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int EndRead(IAsyncResult ^ asyncResult);" />
-      <MemberSignature Language="F#" Value="override this.EndRead : IAsyncResult -&gt; int" Usage="sqlFileStream.EndRead asyncResult" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="asyncResult" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      </Parameters>
-      <Docs>
-        <param name="asyncResult">The reference to the pending asynchronous request to finish.</param>
-        <summary>Waits for the pending asynchronous read to complete.</summary>
-        <returns>The number of bytes read from the stream, between zero (0) and the number of bytes you requested. Streams return zero (0) only at the end of the stream, otherwise, they should block until at least one byte is available.</returns>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">The <see cref="T:System.IAsyncResult" /> object did not come from the corresponding <see langword="BeginRead" /> method.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
-      </Docs>
-    </Member>
-    <Member MemberName="EndWrite">
-      <MemberSignature Language="C#" Value="public override void EndWrite (IAsyncResult asyncResult);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EndWrite(class System.IAsyncResult asyncResult) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlFileStream.EndWrite(System.IAsyncResult)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Sub EndWrite (asyncResult As IAsyncResult)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EndWrite(IAsyncResult ^ asyncResult);" />
-      <MemberSignature Language="F#" Value="override this.EndWrite : IAsyncResult -&gt; unit" Usage="sqlFileStream.EndWrite asyncResult" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="asyncResult" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      </Parameters>
-      <Docs>
-        <param name="asyncResult">A reference to the outstanding asynchronous I/O request.</param>
-        <summary>Ends an asynchronous write operation.</summary>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">The <see cref="T:System.IAsyncResult" /> object did not come from the corresponding <see langword="BeginWrite" /> method.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
-      </Docs>
-    </Member>
-    <Member MemberName="Finalize">
-      <MemberSignature Language="C#" Value="~SqlFileStream ();" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlFileStream.Finalize" />
-      <MemberSignature Language="VB.NET" Value="Finalize ()" />
-      <MemberSignature Language="C++ CLI" Value="!SqlFileStream ()" />
-      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="sqlFileStream.Finalize " />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>Ensures that resources are freed and other cleanup operations are performed when the garbage collector reclaims the <see cref="T:System.Data.SqlTypes.SqlFileStream" />.</summary>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Flush">
@@ -625,7 +388,7 @@
     </Member>
     <Member MemberName="Read">
       <MemberSignature Language="C#" Value="public override int Read (byte[] buffer, int offset, int count);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 Read([out] unsigned int8[] buffer, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 Read(unsigned int8[] buffer, int32 offset, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlFileStream.Read(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Read (buffer As Byte(), offset As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Read(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count);" />
@@ -663,72 +426,6 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The object does not support reading of data.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
-      </Docs>
-    </Member>
-    <Member MemberName="ReadByte">
-      <MemberSignature Language="C#" Value="public override int ReadByte ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 ReadByte() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlFileStream.ReadByte" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadByte () As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int ReadByte();" />
-      <MemberSignature Language="F#" Value="override this.ReadByte : unit -&gt; int" Usage="sqlFileStream.ReadByte " />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>Reads a byte from the stream and advances the position within the stream by one byte, or returns -1 if at the end of the stream.</summary>
-        <returns>The unsigned byte cast to an <see cref="T:System.Int32" />, or -1 if at the end of the stream.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.Data.SqlTypes.SqlFileStream.CanRead%2A> property to determine whether the current instance supports reading.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The object does not support reading of data.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
-      </Docs>
-    </Member>
-    <Member MemberName="ReadTimeout">
-      <MemberSignature Language="C#" Value="public override int ReadTimeout { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance int32 ReadTimeout" />
-      <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlFileStream.ReadTimeout" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Property ReadTimeout As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ReadTimeout { int get(); void set(int value); };" />
-      <MemberSignature Language="F#" Value="member this.ReadTimeout : int with get, set" Usage="System.Data.SqlTypes.SqlFileStream.ReadTimeout" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets or sets a value, in milliseconds, that determines how long the stream will attempt to read before timing out.</summary>
-        <value>A value, in milliseconds, that determines how long the stream will attempt to read before timing out.</value>
-        <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
       </Docs>
     </Member>
@@ -869,74 +566,6 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The object does not support writing of data.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
-      </Docs>
-    </Member>
-    <Member MemberName="WriteByte">
-      <MemberSignature Language="C#" Value="public override void WriteByte (byte value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteByte(unsigned int8 value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlFileStream.WriteByte(System.Byte)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteByte (value As Byte)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteByte(System::Byte value);" />
-      <MemberSignature Language="F#" Value="override this.WriteByte : byte -&gt; unit" Usage="sqlFileStream.WriteByte value" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Byte" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      </Parameters>
-      <Docs>
-        <param name="value">The byte to write to the stream.</param>
-        <summary>Writes a byte to the current position in the stream and advances the position within the stream by one byte.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.Data.SqlTypes.SqlFileStream.CanWrite%2A> property to determine whether the current instance supports writing.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.NotSupportedException">The object does not support writing of data.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
-      </Docs>
-    </Member>
-    <Member MemberName="WriteTimeout">
-      <MemberSignature Language="C#" Value="public override int WriteTimeout { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance int32 WriteTimeout" />
-      <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlFileStream.WriteTimeout" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Property WriteTimeout As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int WriteTimeout { int get(); void set(int value); };" />
-      <MemberSignature Language="F#" Value="member this.WriteTimeout : int with get, set" Usage="System.Data.SqlTypes.SqlFileStream.WriteTimeout" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets or sets a value, in milliseconds, that determines how long the stream will attempt to write before timing out.</summary>
-        <value>A value, in milliseconds, that determines how long the stream will attempt to write before timing out.</value>
-        <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/bd8b845c-0f09-4295-b466-97ef106eefa8">FILESTREAM Data in SQL Server 2008 (ADO.NET)</related>
       </Docs>
     </Member>

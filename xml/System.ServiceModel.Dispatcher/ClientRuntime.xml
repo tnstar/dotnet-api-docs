@@ -87,62 +87,6 @@
     </remarks>
   </Docs>
   <Members>
-    <Member MemberName="CallbackClientType">
-      <MemberSignature Language="C#" Value="public Type CallbackClientType { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Type CallbackClientType" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientRuntime.CallbackClientType" />
-      <MemberSignature Language="VB.NET" Value="Public Property CallbackClientType As Type" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ CallbackClientType { Type ^ get(); void set(Type ^ value); };" />
-      <MemberSignature Language="F#" Value="member this.CallbackClientType : Type with get, set" Usage="System.ServiceModel.Dispatcher.ClientRuntime.CallbackClientType" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Type</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets or sets the type of the callback contract associated with a duplex client.</summary>
-        <value>A <see cref="T:System.Type" /> object that represents the callback contract associated with a duplex client.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="CallbackDispatchRuntime">
-      <MemberSignature Language="C#" Value="public System.ServiceModel.Dispatcher.DispatchRuntime CallbackDispatchRuntime { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Dispatcher.DispatchRuntime CallbackDispatchRuntime" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientRuntime.CallbackDispatchRuntime" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CallbackDispatchRuntime As DispatchRuntime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Dispatcher::DispatchRuntime ^ CallbackDispatchRuntime { System::ServiceModel::Dispatcher::DispatchRuntime ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.CallbackDispatchRuntime : System.ServiceModel.Dispatcher.DispatchRuntime" Usage="System.ServiceModel.Dispatcher.ClientRuntime.CallbackDispatchRuntime" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.ServiceModel.Dispatcher.DispatchRuntime</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets the dispatch run-time that dispatches service-initiated operations.</summary>
-        <value>A <see cref="T:System.ServiceModel.Dispatcher.DispatchRuntime" /> object. If the contract is a duplex contract, the dispatch behavior contains service-initiated operations; otherwise the dispatch behavior contains no operations.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="ChannelInitializers">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.SynchronizedCollection&lt;System.ServiceModel.Dispatcher.IChannelInitializer&gt; ChannelInitializers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.SynchronizedCollection`1&lt;class System.ServiceModel.Dispatcher.IChannelInitializer&gt; ChannelInitializers" />
@@ -163,11 +107,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.SynchronizedCollection&lt;System.ServiceModel.Dispatcher.IChannelInitializer&gt;</ReturnType>
       </ReturnValue>
@@ -283,11 +222,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
@@ -320,11 +254,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -357,11 +286,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -391,11 +315,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.SynchronizedCollection&lt;System.ServiceModel.Dispatcher.IInteractiveChannelInitializer&gt;</ReturnType>
       </ReturnValue>
@@ -486,11 +405,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -502,139 +416,6 @@
   
 ## Remarks  
  Use the <xref:System.ServiceModel.Dispatcher.ClientRuntime.MaxFaultSize%2A> property to limit the size of fault messages accepted by the client runtime.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="MessageInspectors">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.SynchronizedCollection&lt;System.ServiceModel.Dispatcher.IClientMessageInspector&gt; MessageInspectors { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.SynchronizedCollection`1&lt;class System.ServiceModel.Dispatcher.IClientMessageInspector&gt; MessageInspectors" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientRuntime.MessageInspectors" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MessageInspectors As SynchronizedCollection(Of IClientMessageInspector)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::SynchronizedCollection&lt;System::ServiceModel::Dispatcher::IClientMessageInspector ^&gt; ^ MessageInspectors { System::Collections::Generic::SynchronizedCollection&lt;System::ServiceModel::Dispatcher::IClientMessageInspector ^&gt; ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.MessageInspectors : System.Collections.Generic.SynchronizedCollection&lt;System.ServiceModel.Dispatcher.IClientMessageInspector&gt;" Usage="System.ServiceModel.Dispatcher.ClientRuntime.MessageInspectors" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Collections.Generic.SynchronizedCollection&lt;System.ServiceModel.Dispatcher.IClientMessageInspector&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets a collection of message inspector implementations for a client.</summary>
-        <value>A collection of <see cref="T:System.ServiceModel.Dispatcher.IClientMessageInspector" /> implementations.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.ServiceModel.Dispatcher.ClientRuntime.MessageInspectors%2A> property to attach custom <xref:System.ServiceModel.Dispatcher.IClientMessageInspector> implementations to inspect or modify all messages that flow through the client.  
-  
-   
-  
-## Examples  
- In the following code example an <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=nameWithType> inserts a <xref:System.ServiceModel.Dispatcher.IClientMessageInspector?displayProperty=nameWithType> into the client runtime by adding it to the <xref:System.ServiceModel.Dispatcher.ClientRuntime.MessageInspectors%2A> property.  
-  
- [!code-csharp[Interceptors#2](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/insertingbehaviors.cs#2)]
- [!code-vb[Interceptors#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/insertingbehaviors.vb#2)]  
-  
- The following code example shows a configuration file that loads the endpoint behavior into the client endpoint.  
-  
- [!code-xml[Interceptors#3](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/client.exe.config#3)]   
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="MessageVersionNoneFaultsEnabled">
-      <MemberSignature Language="C#" Value="public bool MessageVersionNoneFaultsEnabled { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool MessageVersionNoneFaultsEnabled" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientRuntime.MessageVersionNoneFaultsEnabled" />
-      <MemberSignature Language="VB.NET" Value="Public Property MessageVersionNoneFaultsEnabled As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MessageVersionNoneFaultsEnabled { bool get(); void set(bool value); };" />
-      <MemberSignature Language="F#" Value="member this.MessageVersionNoneFaultsEnabled : bool with get, set" Usage="System.ServiceModel.Dispatcher.ClientRuntime.MessageVersionNoneFaultsEnabled" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets or sets a value that indicates whether the MessageVersionNoneFaultsEnabled property is set.</summary>
-        <value>
-          <see langword="true" /> if the MessageVersionNoneFaultsEnabled property is set; otherwise, <see langword="false" />.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Operations">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.SynchronizedKeyedCollection&lt;string,System.ServiceModel.Dispatcher.ClientOperation&gt; Operations { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.SynchronizedKeyedCollection`2&lt;string, class System.ServiceModel.Dispatcher.ClientOperation&gt; Operations" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientRuntime.Operations" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Operations As SynchronizedKeyedCollection(Of String, ClientOperation)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::SynchronizedKeyedCollection&lt;System::String ^, System::ServiceModel::Dispatcher::ClientOperation ^&gt; ^ Operations { System::Collections::Generic::SynchronizedKeyedCollection&lt;System::String ^, System::ServiceModel::Dispatcher::ClientOperation ^&gt; ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.Operations : System.Collections.Generic.SynchronizedKeyedCollection&lt;string, System.ServiceModel.Dispatcher.ClientOperation&gt;" Usage="System.ServiceModel.Dispatcher.ClientRuntime.Operations" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Collections.Generic.SynchronizedKeyedCollection&lt;System.String,System.ServiceModel.Dispatcher.ClientOperation&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets a collection of client operations for a client.</summary>
-        <value>A synchronized collection of <see cref="T:System.ServiceModel.Dispatcher.ClientOperation" /> objects.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.ServiceModel.Dispatcher.ClientRuntime.Operations%2A> property to get a collection of all client operations for this client that you can use to attach extension objects that inspect or modify messages and behavior scoped to a particular operation. For details, see <xref:System.ServiceModel.Dispatcher.ClientOperation>.  
-  
-   
-  
-## Examples  
- In the following code example an <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=nameWithType> inserts a <xref:System.ServiceModel.Dispatcher.IParameterInspector?displayProperty=nameWithType> into the client runtime by adding it to each <xref:System.ServiceModel.Dispatcher.ClientOperation> in the <xref:System.ServiceModel.Dispatcher.ClientRuntime.Operations%2A> property.  
-  
- [!code-csharp[Interceptors#2](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/insertingbehaviors.cs#2)]
- [!code-vb[Interceptors#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/insertingbehaviors.vb#2)]  
   
  ]]></format>
         </remarks>
@@ -663,11 +444,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Dispatcher.IClientOperationSelector</ReturnType>
       </ReturnValue>
@@ -707,11 +483,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Dispatcher.ClientOperation</ReturnType>
       </ReturnValue>
@@ -719,40 +490,6 @@
         <summary>Gets the client operation for methods that do not have a corresponding <see cref="T:System.ServiceModel.Dispatcher.ClientOperation" /> in the <see cref="P:System.ServiceModel.Dispatcher.ClientRuntime.Operations" /> collection.</summary>
         <value>A <see cref="T:System.ServiceModel.Dispatcher.ClientOperation" /> that represents the method to which the current message contents are routed when the operation selector cannot find an operation that matches the message.</value>
         <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValidateMustUnderstand">
-      <MemberSignature Language="C#" Value="public bool ValidateMustUnderstand { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool ValidateMustUnderstand" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientRuntime.ValidateMustUnderstand" />
-      <MemberSignature Language="VB.NET" Value="Public Property ValidateMustUnderstand As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ValidateMustUnderstand { bool get(); void set(bool value); };" />
-      <MemberSignature Language="F#" Value="member this.ValidateMustUnderstand : bool with get, set" Usage="System.ServiceModel.Dispatcher.ClientRuntime.ValidateMustUnderstand" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets or sets a value that specifies whether the system or the application enforces SOAP <see langword="MustUnderstand" /> header processing.</summary>
-        <value>
-          <see langword="true" /> if the system is to perform SOAP header <see langword="MustUnderstand" /> processing; otherwise <see langword="false" />, which indicates that the application performs this processing. The default value is <see langword="true" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.ServiceModel.Dispatcher.ClientRuntime.ValidateMustUnderstand%2A> property to turn off the enforced validation of arriving message headers. In normal execution, message headers are compared against the <xref:System.ServiceModel.Channels.MessageHeaders.UnderstoodHeaders%2A> property to confirm that arriving headers are explicitly handled by the service. Set this to `false` to disable this checking. When set to `false`, the application must check for headers marked with MustUnderstand="true" and return a fault if one or more of them were not understood. This is useful when the application is supposed to accept any returned SOAP messages (for example, when using typed or untyped messages) and perform custom header processing.  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Via">
@@ -778,11 +515,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>

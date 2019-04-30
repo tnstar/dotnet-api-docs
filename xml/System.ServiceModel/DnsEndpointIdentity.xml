@@ -46,40 +46,6 @@
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DnsEndpointIdentity (System.IdentityModel.Claims.Claim identity);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Claims.Claim identity) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DnsEndpointIdentity.#ctor(System.IdentityModel.Claims.Claim)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As Claim)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; DnsEndpointIdentity(System::IdentityModel::Claims::Claim ^ identity);" />
-      <MemberSignature Language="F#" Value="new System.ServiceModel.DnsEndpointIdentity : System.IdentityModel.Claims.Claim -&gt; System.ServiceModel.DnsEndpointIdentity" Usage="new System.ServiceModel.DnsEndpointIdentity identity" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Security</AssemblyName>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="identity" Type="System.IdentityModel.Claims.Claim" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      </Parameters>
-      <Docs>
-        <param name="identity">The <see cref="T:System.IdentityModel.Claims.Claim" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DnsEndpointIdentity" /> class from a claim.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `identity` is used to create an endpoint identity by the <xref:System.ServiceModel.EndpointIdentity.Initialize%2A> method.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="identity" /> is <see langword="null" />.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DnsEndpointIdentity (string dnsName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string dnsName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DnsEndpointIdentity.#ctor(System.String)" />

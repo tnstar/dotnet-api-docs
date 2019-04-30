@@ -59,31 +59,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="BinaryEncoderTransferModeHeader">
-      <MemberSignature Language="C#" Value="public const string BinaryEncoderTransferModeHeader = null;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal string BinaryEncoderTransferModeHeader = null" />
-      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.WebSocketTransportSettings.BinaryEncoderTransferModeHeader" />
-      <MemberSignature Language="VB.NET" Value="Public Const BinaryEncoderTransferModeHeader As String  = null" />
-      <MemberSignature Language="C++ CLI" Value="public: System::String ^ BinaryEncoderTransferModeHeader = nullptr;" />
-      <MemberSignature Language="F#" Value="val mutable BinaryEncoderTransferModeHeader : string" Usage="System.ServiceModel.Channels.WebSocketTransportSettings.BinaryEncoderTransferModeHeader" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Http</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <MemberValue>null</MemberValue>
-      <Docs>
-        <summary>Specifies the header for the binary encoder transfer mode.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="BinaryMessageReceivedAction">
       <MemberSignature Language="C#" Value="public const string BinaryMessageReceivedAction;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string BinaryMessageReceivedAction" />
@@ -111,61 +86,6 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies the action when web socket binary message is received.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ConnectionOpenedAction">
-      <MemberSignature Language="C#" Value="public const string ConnectionOpenedAction = null;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal string ConnectionOpenedAction = null" />
-      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.WebSocketTransportSettings.ConnectionOpenedAction" />
-      <MemberSignature Language="VB.NET" Value="Public Const ConnectionOpenedAction As String  = null" />
-      <MemberSignature Language="C++ CLI" Value="public: System::String ^ ConnectionOpenedAction = nullptr;" />
-      <MemberSignature Language="F#" Value="val mutable ConnectionOpenedAction : string" Usage="System.ServiceModel.Channels.WebSocketTransportSettings.ConnectionOpenedAction" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Http</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <MemberValue>null</MemberValue>
-      <Docs>
-        <summary>Specifies the action when web socket connection is opened.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="CreateNotificationOnConnection">
-      <MemberSignature Language="C#" Value="public bool CreateNotificationOnConnection { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool CreateNotificationOnConnection" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.WebSocketTransportSettings.CreateNotificationOnConnection" />
-      <MemberSignature Language="VB.NET" Value="Public Property CreateNotificationOnConnection As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CreateNotificationOnConnection { bool get(); void set(bool value); };" />
-      <MemberSignature Language="F#" Value="member this.CreateNotificationOnConnection : bool with get, set" Usage="System.ServiceModel.Channels.WebSocketTransportSettings.CreateNotificationOnConnection" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Http</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets or sets the create notification during connection.</summary>
-        <value>The create notification during connection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -240,7 +160,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="obj" Type="System.Object" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
         <param name="obj">The object to compare with the current object.</param>
@@ -353,111 +273,6 @@
       <Docs>
         <summary>Gets or sets the value of the keep alive interval of the connection.</summary>
         <value>The value of the keep alive interval of the connection.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="MaxPendingConnections">
-      <MemberSignature Language="C#" Value="public int MaxPendingConnections { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxPendingConnections" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.WebSocketTransportSettings.MaxPendingConnections" />
-      <MemberSignature Language="VB.NET" Value="Public Property MaxPendingConnections As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxPendingConnections { int get(); void set(int value); };" />
-      <MemberSignature Language="F#" Value="member this.MaxPendingConnections : int with get, set" Usage="System.ServiceModel.Channels.WebSocketTransportSettings.MaxPendingConnections" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Http</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets or sets the maximum number of allowed pending connections.</summary>
-        <value>The maximum number of allowed pending connections.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ReceiveBufferSize">
-      <MemberSignature Language="C#" Value="public int ReceiveBufferSize { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance int32 ReceiveBufferSize" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.WebSocketTransportSettings.ReceiveBufferSize" />
-      <MemberSignature Language="VB.NET" Value="Public Property ReceiveBufferSize As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ReceiveBufferSize { int get(); void set(int value); };" />
-      <MemberSignature Language="F#" Value="member this.ReceiveBufferSize : int with get, set" Usage="System.ServiceModel.Channels.WebSocketTransportSettings.ReceiveBufferSize" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Http</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SendBufferSize">
-      <MemberSignature Language="C#" Value="public int SendBufferSize { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance int32 SendBufferSize" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.WebSocketTransportSettings.SendBufferSize" />
-      <MemberSignature Language="VB.NET" Value="Public Property SendBufferSize As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SendBufferSize { int get(); void set(int value); };" />
-      <MemberSignature Language="F#" Value="member this.SendBufferSize : int with get, set" Usage="System.ServiceModel.Channels.WebSocketTransportSettings.SendBufferSize" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Http</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SoapContentTypeHeader">
-      <MemberSignature Language="C#" Value="public const string SoapContentTypeHeader = null;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal string SoapContentTypeHeader = null" />
-      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.WebSocketTransportSettings.SoapContentTypeHeader" />
-      <MemberSignature Language="VB.NET" Value="Public Const SoapContentTypeHeader As String  = null" />
-      <MemberSignature Language="C++ CLI" Value="public: System::String ^ SoapContentTypeHeader = nullptr;" />
-      <MemberSignature Language="F#" Value="val mutable SoapContentTypeHeader : string" Usage="System.ServiceModel.Channels.WebSocketTransportSettings.SoapContentTypeHeader" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Http</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <MemberValue>null</MemberValue>
-      <Docs>
-        <summary>Specifies the soap content type header.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

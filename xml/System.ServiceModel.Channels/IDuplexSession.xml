@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.IDuplexSession" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDuplexSession&#xA;Implements IInputSession, IOutputSession" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDuplexSession : System::ServiceModel::Channels::IInputSession, System::ServiceModel::Channels::IOutputSession" />
-  <TypeSignature Language="F#" Value="type IDuplexSession = interface&#xA;    interface IInputSession&#xA;    interface IOutputSession&#xA;    interface ISession" />
+  <TypeSignature Language="F#" Value="type IDuplexSession = interface&#xA;    interface IInputSession&#xA;    interface ISession&#xA;    interface IOutputSession" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

@@ -14,11 +14,6 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
-  <Attributes>
-    <Attribute FrameworkAlternate="dotnet-uwp-10.0">
-      <AttributeName>System.Security.SecurityCritical</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <summary>Contains extension methods for the <see cref="T:Windows.Storage.IStorageFile" /> and <see cref="T:Windows.Storage.IStorageFolder" /> interfaces in the Windows Runtime when developing Windows Store apps.</summary>
     <remarks>
@@ -65,7 +60,7 @@ The next example shows the XAML code that is associated with the previous exampl
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="dotnet-plat-ext-3.0">
+        <Attribute>
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -73,9 +68,9 @@ The next example shows the XAML code that is associated with the previous exampl
         <ReturnType>Microsoft.Win32.SafeHandles.SafeFileHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="rootDirectory" Type="Windows.Storage.IStorageFolder" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" RefType="this" />
-        <Parameter Name="relativePath" Type="System.String" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
-        <Parameter Name="mode" Type="System.IO.FileMode" Index="2" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="rootDirectory" Type="Windows.Storage.IStorageFolder" RefType="this" />
+        <Parameter Name="relativePath" Type="System.String" />
+        <Parameter Name="mode" Type="System.IO.FileMode" />
       </Parameters>
       <Docs>
         <param name="rootDirectory">To be added.</param>
@@ -98,7 +93,7 @@ The next example shows the XAML code that is associated with the previous exampl
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="dotnet-plat-ext-3.0">
+        <Attribute>
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -106,10 +101,10 @@ The next example shows the XAML code that is associated with the previous exampl
         <ReturnType>Microsoft.Win32.SafeHandles.SafeFileHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="windowsRuntimeFile" Type="Windows.Storage.IStorageFile" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" RefType="this" />
-        <Parameter Name="access" Type="System.IO.FileAccess" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
-        <Parameter Name="share" Type="System.IO.FileShare" Index="2" FrameworkAlternate="dotnet-plat-ext-3.0" />
-        <Parameter Name="options" Type="System.IO.FileOptions" Index="3" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="windowsRuntimeFile" Type="Windows.Storage.IStorageFile" RefType="this" />
+        <Parameter Name="access" Type="System.IO.FileAccess" />
+        <Parameter Name="share" Type="System.IO.FileShare" />
+        <Parameter Name="options" Type="System.IO.FileOptions" />
       </Parameters>
       <Docs>
         <param name="windowsRuntimeFile">To be added.</param>
@@ -133,7 +128,7 @@ The next example shows the XAML code that is associated with the previous exampl
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="dotnet-plat-ext-3.0">
+        <Attribute>
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -141,12 +136,12 @@ The next example shows the XAML code that is associated with the previous exampl
         <ReturnType>Microsoft.Win32.SafeHandles.SafeFileHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="rootDirectory" Type="Windows.Storage.IStorageFolder" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" RefType="this" />
-        <Parameter Name="relativePath" Type="System.String" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
-        <Parameter Name="mode" Type="System.IO.FileMode" Index="2" FrameworkAlternate="dotnet-plat-ext-3.0" />
-        <Parameter Name="access" Type="System.IO.FileAccess" Index="3" FrameworkAlternate="dotnet-plat-ext-3.0" />
-        <Parameter Name="share" Type="System.IO.FileShare" Index="4" FrameworkAlternate="dotnet-plat-ext-3.0" />
-        <Parameter Name="options" Type="System.IO.FileOptions" Index="5" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="rootDirectory" Type="Windows.Storage.IStorageFolder" RefType="this" />
+        <Parameter Name="relativePath" Type="System.String" />
+        <Parameter Name="mode" Type="System.IO.FileMode" />
+        <Parameter Name="access" Type="System.IO.FileAccess" />
+        <Parameter Name="share" Type="System.IO.FileShare" />
+        <Parameter Name="options" Type="System.IO.FileOptions" />
       </Parameters>
       <Docs>
         <param name="rootDirectory">To be added.</param>

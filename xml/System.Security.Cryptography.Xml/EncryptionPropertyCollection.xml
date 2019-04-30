@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.EncryptionPropertyCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EncryptionPropertyCollection&#xA;Implements IList" />
   <TypeSignature Language="C++ CLI" Value="public ref class EncryptionPropertyCollection sealed : System::Collections::IList" />
-  <TypeSignature Language="F#" Value="type EncryptionPropertyCollection = class&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
+  <TypeSignature Language="F#" Value="type EncryptionPropertyCollection = class&#xA;    interface ICollection&#xA;    interface IEnumerable&#xA;    interface IList" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>

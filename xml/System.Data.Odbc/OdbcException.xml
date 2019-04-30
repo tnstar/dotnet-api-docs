@@ -1,6 +1,6 @@
 ﻿<Type Name="OdbcException" FullName="System.Data.Odbc.OdbcException">
   <TypeSignature Language="C#" Value="public sealed class OdbcException : System.Data.Common.DbException" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit OdbcException extends System.Data.Common.DbException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OdbcException extends System.Data.Common.DbException" />
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OdbcException&#xA;Inherits DbException" />
   <TypeSignature Language="C++ CLI" Value="public ref class OdbcException sealed : System::Data::Common::DbException" />
@@ -21,14 +21,6 @@
     <BaseTypeName FrameworkAlternate="netframework-1.1">System.SystemException</BaseTypeName>
   </Base>
   <Interfaces />
-  <Attributes>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0">
-      <AttributeName>System.Serializable</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0">
-      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089")</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <summary>The exception that is generated when a warning or error is returned by an ODBC data source. This class cannot be inherited.</summary>
     <remarks>
@@ -105,7 +97,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (si As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ si, System::Runtime::Serialization::StreamingContext context);" />
-      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="odbcException.GetObjectData (si, context)" />
+      <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="odbcException.GetObjectData (si, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -138,30 +130,6 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="si" /> parameter is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="Message">
-      <MemberSignature Language="C#" Value="public override string Message { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string Message" />
-      <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcException.Message" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Message { System::String ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.Data.Odbc.OdbcException.Message" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Odbc</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets a message that describes the current exception.</summary>
-        <value>The message that describes the current exception.</value>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Source">

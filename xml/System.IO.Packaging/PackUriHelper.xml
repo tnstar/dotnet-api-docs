@@ -1,6 +1,6 @@
 ﻿<Type Name="PackUriHelper" FullName="System.IO.Packaging.PackUriHelper">
   <TypeSignature Language="C#" Value="public static class PackUriHelper" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed PackUriHelper extends System.Object" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit PackUriHelper extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.PackUriHelper" />
   <TypeSignature Language="VB.NET" Value="Public Class PackUriHelper" />
   <TypeSignature Language="C++ CLI" Value="public ref class PackUriHelper abstract sealed" />
@@ -41,13 +41,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="firstPackUri" Type="System.Uri" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="secondPackUri" Type="System.Uri" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="firstPackUri" Type="System.Uri" />
+        <Parameter Name="secondPackUri" Type="System.Uri" />
       </Parameters>
       <Docs>
         <param name="firstPackUri">The first pack URI.</param>
@@ -201,17 +202,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="packageUri" Type="System.Uri" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="packageUri" Type="System.Uri" />
       </Parameters>
       <Docs>
         <param name="packageUri">The URI of the referenced <see cref="T:System.IO.Packaging.Package" />.</param>
@@ -267,18 +264,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="packageUri" Type="System.Uri" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="partUri" Type="System.Uri" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="packageUri" Type="System.Uri" />
+        <Parameter Name="partUri" Type="System.Uri" />
       </Parameters>
       <Docs>
         <param name="packageUri">The [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the <see cref="T:System.IO.Packaging.Package" />.</param>
@@ -345,14 +338,15 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="packageUri" Type="System.Uri" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="partUri" Type="System.Uri" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="fragment" Type="System.String" Index="2" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="packageUri" Type="System.Uri" />
+        <Parameter Name="partUri" Type="System.Uri" />
+        <Parameter Name="fragment" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="packageUri">The [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the <see cref="T:System.IO.Packaging.Package" />.</param>
@@ -475,8 +469,10 @@
         <altmember cref="M:System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)" />
         <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=160055">Writing a Package Sample</related>
         <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
-        <exception cref="T:System.ArgumentNullException"><paramref name="partUri" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException"><paramref name="partUri" /> is not an absolute <see cref="T:System.Uri" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="partUri" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="partUri" /> is not an absolute <see cref="T:System.Uri" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetNormalizedPartUri">
@@ -525,7 +521,8 @@
         <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)" />
         <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPackageUri(System.Uri)" />
         <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
-        <exception cref="T:System.ArgumentException"><paramref name="partUri" /> does not have a valid <see cref="T:System.Uri" /> syntax.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="partUri" /> does not have a valid <see cref="T:System.Uri" /> syntax.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetPackageUri">
@@ -543,12 +540,13 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="packUri" Type="System.Uri" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="packUri" Type="System.Uri" />
       </Parameters>
       <Docs>
         <param name="packUri">The pack URI from which to return the URI of the <see cref="T:System.IO.Packaging.Package" />.</param>
@@ -573,58 +571,10 @@
         <altmember cref="Overload:System.IO.Packaging.PackUriHelper.Create" />
         <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)" />
         <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
-        <exception cref="T:System.ArgumentNullException"><paramref name="packUri" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException"><paramref name="packUri" /> is not an absolute <see cref="T:System.Uri" />.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="GetPartUri">
-      <MemberSignature Language="C#" Value="public static Uri GetPartUri (Uri packUri);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Uri GetPartUri(class System.Uri packUri) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPartUri (packUri As Uri) As Uri" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Uri ^ GetPartUri(Uri ^ packUri);" />
-      <MemberSignature Language="F#" Value="static member GetPartUri : Uri -&gt; Uri" Usage="System.IO.Packaging.PackUriHelper.GetPartUri packUri" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.IO.Packaging</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Uri</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="packUri" Type="System.Uri" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      </Parameters>
-      <Docs>
-        <param name="packUri">The pack URI from which to return the <see cref="T:System.IO.Packaging.PackagePart" /> URI.</param>
-        <summary>Returns the URI of a <see cref="T:System.IO.Packaging.PackagePart" /> within a specified pack URI.</summary>
-        <returns>The URI of the <see cref="T:System.IO.Packaging.PackagePart" /> in the given <paramref name="packUri" />, or <see langword="null" /> if <paramref name="packUri" /> points to a package instead of a <see cref="T:System.IO.Packaging.PackagePart" />.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The returned <xref:System.IO.Packaging.PackagePart> URI is relative to the package root and is an absolute path that always starts with "/" and conforms to the syntax defined in the [Open Packaging Conventions Specification](https://go.microsoft.com/fwlink/?LinkID=71255).  
-  
- The following table illustrates sample cases for <xref:System.IO.Packaging.PackUriHelper.GetPartUri%2A>.  
-  
-|`packUri`|Returned Part URI|  
-|---------------|-----------------------|  
-|pack://http:,,www.proseware.com,mypackage.xyz/a/mydoc.xaml|/a/mydoc.xaml|  
-|pack://http:,,www.proseware.com,packages.aspx%3fmypackage/a/bar.xaml|/a/bar.xaml|  
-|pack://http:,,www.proseware.com,mypackage.pkg|null|  
-|pack://ftp:,,ftp.proseware.com,packages,mypackage1.abc/a/picture.jpg|/a/picture.jpg|  
-|pack://file:,,,d:,packages,mypackage2.pkg/a/bar.xaml|/a/bar.xaml|  
-  
- ]]></format>
-        </remarks>
-        <altmember cref="M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)" />
-        <altmember cref="M:System.IO.Packaging.PackUriHelper.GetNormalizedPartUri(System.Uri)" />
-        <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPackageUri(System.Uri)" />
-        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="packUri" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="packUri" /> is not an absolute <see cref="T:System.Uri" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetRelationshipPartUri">

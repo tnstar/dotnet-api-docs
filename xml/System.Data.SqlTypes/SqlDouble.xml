@@ -84,7 +84,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="value" Type="System.Double" />
+        <Parameter Name="value" Type="System.Double" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="value">A double whose value will be used for the new <see cref="T:System.Data.SqlTypes.SqlDouble" />.</param>
@@ -126,8 +126,8 @@
         <ReturnType>System.Data.SqlTypes.SqlDouble</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDouble" /> structure.</param>
@@ -180,7 +180,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Data.SqlTypes.SqlDouble" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="value" Type="System.Data.SqlTypes.SqlDouble" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="value">The <see cref="T:System.Data.SqlTypes.SqlDouble" /> to be compared.</param>
@@ -248,7 +248,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="value">The <see cref="T:System.Object" /> to compare.</param>
@@ -313,8 +313,8 @@
         <ReturnType>System.Data.SqlTypes.SqlDouble</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDouble" /> structure.</param>
@@ -370,7 +370,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="value">The object to be compared.</param>
@@ -414,8 +414,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDouble" /> structure.</param>
@@ -498,7 +498,7 @@
         <ReturnType>System.Xml.XmlQualifiedName</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="schemaSet" Type="System.Xml.Schema.XmlSchemaSet" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="schemaSet" Type="System.Xml.Schema.XmlSchemaSet" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="schemaSet">An <see cref="T:System.Xml.Schema.XmlSchemaSet" />.</param>
@@ -541,8 +541,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDouble" /> structure.</param>
@@ -586,8 +586,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDouble" /> structure.</param>
@@ -681,8 +681,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDouble" /> structure.</param>
@@ -726,8 +726,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDouble" /> structure.</param>
@@ -861,8 +861,8 @@
         <ReturnType>System.Data.SqlTypes.SqlDouble</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDouble" /> structure.</param>
@@ -908,8 +908,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDouble" /> structure.</param>
@@ -998,8 +998,8 @@
         <ReturnType>System.Data.SqlTypes.SqlDouble</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDouble" /> structure.</param>
@@ -1045,8 +1045,8 @@
         <ReturnType>System.Data.SqlTypes.SqlDouble</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDouble" /> structure.</param>
@@ -1092,8 +1092,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDouble" /> structure.</param>
@@ -1150,7 +1150,7 @@
         <ReturnType>System.Data.SqlTypes.SqlDouble</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">The <see cref="T:System.Data.SqlTypes.SqlBoolean" /> to be converted.</param>
@@ -1195,7 +1195,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDouble" /> structure.</param>
@@ -1238,7 +1238,7 @@
         <ReturnType>System.Data.SqlTypes.SqlDouble</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlString" /> object.</param>
@@ -1283,8 +1283,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDouble" /> structure.</param>
@@ -1330,8 +1330,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDouble" /> structure.</param>
@@ -1387,7 +1387,7 @@
         <ReturnType>System.Data.SqlTypes.SqlDouble</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlByte" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlByte" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDouble" /> structure.</param>
@@ -1432,7 +1432,7 @@
         <ReturnType>System.Data.SqlTypes.SqlDouble</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure.</param>
@@ -1477,7 +1477,7 @@
         <ReturnType>System.Data.SqlTypes.SqlDouble</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt16" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt16" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlInt16" /> structure.</param>
@@ -1522,7 +1522,7 @@
         <ReturnType>System.Data.SqlTypes.SqlDouble</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt32" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt32" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlInt32" /> structure.</param>
@@ -1567,7 +1567,7 @@
         <ReturnType>System.Data.SqlTypes.SqlDouble</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt64" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt64" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlInt64" /> structure.</param>
@@ -1612,7 +1612,7 @@
         <ReturnType>System.Data.SqlTypes.SqlDouble</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlMoney" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlMoney" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlMoney" /> structure.</param>
@@ -1657,7 +1657,7 @@
         <ReturnType>System.Data.SqlTypes.SqlDouble</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlSingle" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlSingle" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure.</param>
@@ -1702,7 +1702,7 @@
         <ReturnType>System.Data.SqlTypes.SqlDouble</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Double" />
+        <Parameter Name="x" Type="System.Double" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">The double value to convert.</param>
@@ -1745,8 +1745,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDouble" /> structure.</param>
@@ -1792,8 +1792,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDouble" /> structure.</param>
@@ -1839,8 +1839,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDouble" /> structure.</param>
@@ -1886,8 +1886,8 @@
         <ReturnType>System.Data.SqlTypes.SqlDouble</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDouble" /> structure.</param>
@@ -1932,8 +1932,8 @@
         <ReturnType>System.Data.SqlTypes.SqlDouble</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDouble" /> structure.</param>
@@ -1979,7 +1979,7 @@
         <ReturnType>System.Data.SqlTypes.SqlDouble</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDouble" /> structure.</param>
@@ -2022,7 +2022,7 @@
         <ReturnType>System.Data.SqlTypes.SqlDouble</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="s" Type="System.String" />
+        <Parameter Name="s" Type="System.String" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="s">The <see langword="String" /> to be parsed.</param>
@@ -2065,8 +2065,8 @@
         <ReturnType>System.Data.SqlTypes.SqlDouble</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDouble" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDouble" /> structure.</param>
@@ -2149,7 +2149,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="reader" Type="System.Xml.XmlReader" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="reader" Type="System.Xml.XmlReader" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="reader">A <see cref="T:System.Xml.XmlReader" />.</param>
@@ -2190,7 +2190,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="writer" Type="System.Xml.XmlWriter" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="writer">A <see cref="T:System.Xml.XmlWriter" />.</param>

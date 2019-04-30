@@ -1,10 +1,10 @@
 ﻿<Type Name="HttpTransportBindingElement" FullName="System.ServiceModel.Channels.HttpTransportBindingElement">
-  <TypeSignature Language="C#" Value="public class HttpTransportBindingElement : System.ServiceModel.Channels.TransportBindingElement, System.ServiceModel.Description.IPolicyExportExtension, System.ServiceModel.Description.IWsdlExportExtension" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HttpTransportBindingElement extends System.ServiceModel.Channels.TransportBindingElement implements class System.ServiceModel.Description.IPolicyExportExtension, class System.ServiceModel.Description.IWsdlExportExtension" />
+  <TypeSignature Language="C#" Value="public class HttpTransportBindingElement : System.ServiceModel.Channels.TransportBindingElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HttpTransportBindingElement extends System.ServiceModel.Channels.TransportBindingElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.HttpTransportBindingElement" />
-  <TypeSignature Language="VB.NET" Value="Public Class HttpTransportBindingElement&#xA;Inherits TransportBindingElement&#xA;Implements IPolicyExportExtension, IWsdlExportExtension" />
-  <TypeSignature Language="C++ CLI" Value="public ref class HttpTransportBindingElement : System::ServiceModel::Channels::TransportBindingElement, System::ServiceModel::Description::IPolicyExportExtension, System::ServiceModel::Description::IWsdlExportExtension" />
-  <TypeSignature Language="F#" Value="type HttpTransportBindingElement = class&#xA;    inherit TransportBindingElement&#xA;    interface IPolicyExportExtension&#xA;    interface IWsdlExportExtension" />
+  <TypeSignature Language="VB.NET" Value="Public Class HttpTransportBindingElement&#xA;Inherits TransportBindingElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpTransportBindingElement : System::ServiceModel::Channels::TransportBindingElement" />
+  <TypeSignature Language="F#" Value="type HttpTransportBindingElement = class&#xA;    inherit TransportBindingElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -23,14 +23,7 @@
   <Base>
     <BaseTypeName>System.ServiceModel.Channels.TransportBindingElement</BaseTypeName>
   </Base>
-  <Interfaces>
-    <Interface>
-      <InterfaceName>System.ServiceModel.Description.IPolicyExportExtension</InterfaceName>
-    </Interface>
-    <Interface>
-      <InterfaceName>System.ServiceModel.Description.IWsdlExportExtension</InterfaceName>
-    </Interface>
-  </Interfaces>
+  <Interfaces></Interfaces>
   <Docs>
     <summary>Represents the binding element used to specify an HTTP transport for transmitting messages.</summary>
     <remarks>
@@ -194,12 +187,6 @@ public class MyBindingElement : HttpTransportBindingElement
         <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-uwp-10.0;dotnet-plat-ext-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -254,12 +241,6 @@ httpBindingElement.AllowCookies = true;
       <Attributes>
         <Attribute FrameworkAlternate="netcore-2.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0">
           <AttributeName>System.ComponentModel.DefaultValue</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;xamarinandroid-7.1;xamarinios-10.8;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0;dotnet-uwp-10.0">
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -359,55 +340,6 @@ int odd=calc.Add(5,4);
         <exception cref="T:System.ArgumentException">An invalid argument was passed.</exception>
       </Docs>
     </Member>
-    <Member MemberName="BuildChannelListener&lt;TChannel&gt;">
-      <MemberSignature Language="C#" Value="public override System.ServiceModel.Channels.IChannelListener&lt;TChannel&gt; BuildChannelListener&lt;TChannel&gt; (System.ServiceModel.Channels.BindingContext context) where TChannel : class, System.ServiceModel.Channels.IChannel;" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Channels.IChannelListener`1&lt;!!TChannel&gt; BuildChannelListener&lt;class (class System.ServiceModel.Channels.IChannel) TChannel&gt;(class System.ServiceModel.Channels.BindingContext context) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpTransportBindingElement.BuildChannelListener``1(System.ServiceModel.Channels.BindingContext)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildChannelListener(Of TChannel As {Class, IChannel}) (context As BindingContext) As IChannelListener(Of TChannel)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel override System::ServiceModel::Channels::IChannelListener&lt;TChannel&gt; ^ BuildChannelListener(System::ServiceModel::Channels::BindingContext ^ context);" />
-      <MemberSignature Language="F#" Value="override this.BuildChannelListener : System.ServiceModel.Channels.BindingContext -&gt; System.ServiceModel.Channels.IChannelListener&lt;'Channel (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)&gt; (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)" Usage="httpTransportBindingElement.BuildChannelListener context" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Http</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.ServiceModel.Channels.IChannelListener&lt;TChannel&gt;</ReturnType>
-      </ReturnValue>
-      <TypeParameters>
-        <TypeParameter Name="TChannel">
-          <Constraints>
-            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
-            <InterfaceName>System.ServiceModel.Channels.IChannel</InterfaceName>
-          </Constraints>
-        </TypeParameter>
-      </TypeParameters>
-      <Parameters>
-        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      </Parameters>
-      <Docs>
-        <typeparam name="TChannel">The type of channel factory.</typeparam>
-        <param name="context">
-          <see cref="T:System.ServiceModel.Channels.BindingContext" /> members that describe bindings, behaviors, contracts and other information required to create the channel factory.</param>
-        <summary>Creates a channel listener of the specified type.</summary>
-        <returns>A channel listener of the specified type.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method can be used to get a channel listener for receiving messages based on the configuration of the transport binding element.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="context" /> cannot be <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">An invalid argument was passed.</exception>
-      </Docs>
-    </Member>
     <Member MemberName="BypassProxyOnLocal">
       <MemberSignature Language="C#" Value="public bool BypassProxyOnLocal { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool BypassProxyOnLocal" />
@@ -431,12 +363,6 @@ int odd=calc.Add(5,4);
       <Attributes>
         <Attribute FrameworkAlternate="netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -511,47 +437,6 @@ httpBinding.BypassProxyOnLocal = true;
           <paramref name="context" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <Member MemberName="CanBuildChannelListener&lt;TChannel&gt;">
-      <MemberSignature Language="C#" Value="public override bool CanBuildChannelListener&lt;TChannel&gt; (System.ServiceModel.Channels.BindingContext context) where TChannel : class, System.ServiceModel.Channels.IChannel;" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanBuildChannelListener&lt;class (class System.ServiceModel.Channels.IChannel) TChannel&gt;(class System.ServiceModel.Channels.BindingContext context) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpTransportBindingElement.CanBuildChannelListener``1(System.ServiceModel.Channels.BindingContext)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function CanBuildChannelListener(Of TChannel As {Class, IChannel}) (context As BindingContext) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel override bool CanBuildChannelListener(System::ServiceModel::Channels::BindingContext ^ context);" />
-      <MemberSignature Language="F#" Value="override this.CanBuildChannelListener : System.ServiceModel.Channels.BindingContext -&gt; bool (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)" Usage="httpTransportBindingElement.CanBuildChannelListener context" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Http</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <TypeParameters>
-        <TypeParameter Name="TChannel">
-          <Constraints>
-            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
-            <InterfaceName>System.ServiceModel.Channels.IChannel</InterfaceName>
-          </Constraints>
-        </TypeParameter>
-      </TypeParameters>
-      <Parameters>
-        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      </Parameters>
-      <Docs>
-        <typeparam name="TChannel">The type of channel to check.</typeparam>
-        <param name="context">The <see cref="T:System.ServiceModel.Channels.BindingContext" /> for the channel.</param>
-        <summary>Determines whether a channel listener of the specified type can be built.</summary>
-        <returns>
-          <see langword="true" /> if a channel listener can be built; otherwise <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="context" /> is <see langword="null" />.</exception>
-      </Docs>
-    </Member>
     <Member MemberName="Clone">
       <MemberSignature Language="C#" Value="public override System.ServiceModel.Channels.BindingElement Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Channels.BindingElement Clone() cil managed" />
@@ -594,77 +479,6 @@ HttpBindingElement bindingElement = elementToClone.Clone();
   
  ]]></format>
         </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="DecompressionEnabled">
-      <MemberSignature Language="C#" Value="public bool DecompressionEnabled { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool DecompressionEnabled" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpTransportBindingElement.DecompressionEnabled" />
-      <MemberSignature Language="VB.NET" Value="Public Property DecompressionEnabled As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DecompressionEnabled { bool get(); void set(bool value); };" />
-      <MemberSignature Language="F#" Value="member this.DecompressionEnabled : bool with get, set" Usage="System.ServiceModel.Channels.HttpTransportBindingElement.DecompressionEnabled" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Http</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
-          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets or sets whether the process for returning compressed message data to its original size and format is enabled.</summary>
-        <value>
-          <see langword="true" /> if decompression is enabled; otherwise, <see langword="false" />.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ExtendedProtectionPolicy">
-      <MemberSignature Language="C#" Value="public System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy ExtendedProtectionPolicy { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy ExtendedProtectionPolicy" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpTransportBindingElement.ExtendedProtectionPolicy" />
-      <MemberSignature Language="VB.NET" Value="Public Property ExtendedProtectionPolicy As ExtendedProtectionPolicy" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy ^ ExtendedProtectionPolicy { System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy ^ get(); void set(System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy ^ value); };" />
-      <MemberSignature Language="F#" Value="member this.ExtendedProtectionPolicy : System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy with get, set" Usage="System.ServiceModel.Channels.HttpTransportBindingElement.ExtendedProtectionPolicy" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Http</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets or sets the value of the extended security policy used by the server to validate incoming client connections.</summary>
-        <value>The value of the extended security policy used by the server to validate incoming client connections.</value>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetProperty&lt;T&gt;">
@@ -711,41 +525,6 @@ HttpBindingElement bindingElement = elementToClone.Clone();
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="HostNameComparisonMode">
-      <MemberSignature Language="C#" Value="public System.ServiceModel.HostNameComparisonMode HostNameComparisonMode { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.HostNameComparisonMode HostNameComparisonMode" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpTransportBindingElement.HostNameComparisonMode" />
-      <MemberSignature Language="VB.NET" Value="Public Property HostNameComparisonMode As HostNameComparisonMode" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::HostNameComparisonMode HostNameComparisonMode { System::ServiceModel::HostNameComparisonMode get(); void set(System::ServiceModel::HostNameComparisonMode value); };" />
-      <MemberSignature Language="F#" Value="member this.HostNameComparisonMode : System.ServiceModel.HostNameComparisonMode with get, set" Usage="System.ServiceModel.Channels.HttpTransportBindingElement.HostNameComparisonMode" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Http</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.ServiceModel.HostNameComparisonMode</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets or sets a value that indicates whether the hostname is used to reach the service when matching on the URI.</summary>
-        <value>The <see cref="P:System.ServiceModel.Configuration.WSDualHttpBindingElement.HostNameComparisonMode" /> enumeration value that indicates whether the hostname is included when routing incoming requests to an endpoint URI. The default value is <see cref="F:System.ServiceModel.HostNameComparisonMode.StrongWildcard" />, which ignores the hostname in the match.</value>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The value set is not defined.</exception>
-      </Docs>
-    </Member>
     <Member MemberName="KeepAliveEnabled">
       <MemberSignature Language="C#" Value="public bool KeepAliveEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool KeepAliveEnabled" />
@@ -768,12 +547,6 @@ HttpBindingElement bindingElement = elementToClone.Clone();
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;dotnet-plat-ext-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -798,36 +571,6 @@ HttpBindingElement bindingElement = elementToClone.Clone();
   
  ]]></format>
         </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="LegacyExtendedProtectionPolicy">
-      <MemberSignature Language="C#" Value="public object LegacyExtendedProtectionPolicy { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance object LegacyExtendedProtectionPolicy" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpTransportBindingElement.LegacyExtendedProtectionPolicy" />
-      <MemberSignature Language="VB.NET" Value="Public Property LegacyExtendedProtectionPolicy As Object" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ LegacyExtendedProtectionPolicy { System::Object ^ get(); void set(System::Object ^ value); };" />
-      <MemberSignature Language="F#" Value="member this.LegacyExtendedProtectionPolicy : obj with get, set" Usage="System.ServiceModel.Channels.HttpTransportBindingElement.LegacyExtendedProtectionPolicy" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Http</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
-          <AttributeName>System.Obsolete("Use ExtendedProtectionPolicy")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Object</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxBufferSize">
@@ -886,66 +629,6 @@ httpBinding.MaxBufferSize = 16384;
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="MaxPendingAccepts">
-      <MemberSignature Language="C#" Value="public int MaxPendingAccepts { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxPendingAccepts" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpTransportBindingElement.MaxPendingAccepts" />
-      <MemberSignature Language="VB.NET" Value="Public Property MaxPendingAccepts As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxPendingAccepts { int get(); void set(int value); };" />
-      <MemberSignature Language="F#" Value="member this.MaxPendingAccepts : int with get, set" Usage="System.ServiceModel.Channels.HttpTransportBindingElement.MaxPendingAccepts" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Http</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets or sets the maximum number of connections the service can accept simultaneously.</summary>
-        <value>The maximum number of connections the service can accept simultaneously.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default value of <xref:System.ServiceModel.Channels.HttpTransportBindingElement.MaxPendingAccepts%2A> is 0, which means WCF will configure the value for you. You can increase the number for better scalability. In the self-hosted case, this property controls the maximum number of simultaneous BeginGetContext calls WCF will invoke. Each time BeginGetContext is called some memory is pinned within the managed heap for buffering. If too many buffers are pinned, excessive heap fragmentation may result. This property is ignored in the web-hosted case.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="MessageHandlerFactory">
-      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.HttpMessageHandlerFactory MessageHandlerFactory { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.HttpMessageHandlerFactory MessageHandlerFactory" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpTransportBindingElement.MessageHandlerFactory" />
-      <MemberSignature Language="VB.NET" Value="Public Property MessageHandlerFactory As HttpMessageHandlerFactory" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::HttpMessageHandlerFactory ^ MessageHandlerFactory { System::ServiceModel::Channels::HttpMessageHandlerFactory ^ get(); void set(System::ServiceModel::Channels::HttpMessageHandlerFactory ^ value); };" />
-      <MemberSignature Language="F#" Value="member this.MessageHandlerFactory : System.ServiceModel.Channels.HttpMessageHandlerFactory with get, set" Usage="System.ServiceModel.Channels.HttpTransportBindingElement.MessageHandlerFactory" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Http</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.ServiceModel.Channels.HttpMessageHandlerFactory</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets or sets the Http transport message handler factory.</summary>
-        <value>The Http transport message handler factory.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="ProxyAddress">
       <MemberSignature Language="C#" Value="public Uri ProxyAddress { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ProxyAddress" />
@@ -972,15 +655,6 @@ httpBinding.MaxBufferSize = 16384;
         </Attribute>
         <Attribute FrameworkAlternate="netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.UriTypeConverter))</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1028,12 +702,6 @@ httpBinding.ProxyAddress = new Uri(http://proxyserver);
         <Attribute FrameworkAlternate="netcore-2.0;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0">
           <AttributeName>System.ComponentModel.DefaultValue</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.AuthenticationSchemes</ReturnType>
@@ -1055,76 +723,6 @@ httpBinding.ProxyAuthenticationScheme = AuthenticationSchemes.Digest;
   
  ]]></format>
         </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Realm">
-      <MemberSignature Language="C#" Value="public string Realm { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string Realm" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpTransportBindingElement.Realm" />
-      <MemberSignature Language="VB.NET" Value="Public Property Realm As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Realm { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="F#" Value="member this.Realm : string with get, set" Usage="System.ServiceModel.Channels.HttpTransportBindingElement.Realm" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Http</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets or sets the authentication realm.</summary>
-        <value>The authentication realm. The default value is "".</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Servers use realms to partition protected resources; each partition can have its own authentication scheme or authorization database. Realms are used only for basic and digest authentication. After a client successfully authenticates, the authentication is valid for all resources in a given realm. For a detailed description of realms, see [RFC 2617](https://go.microsoft.com/fwlink/?LinkID=95943).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="RequestInitializationTimeout">
-      <MemberSignature Language="C#" Value="public TimeSpan RequestInitializationTimeout { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan RequestInitializationTimeout" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpTransportBindingElement.RequestInitializationTimeout" />
-      <MemberSignature Language="VB.NET" Value="Public Property RequestInitializationTimeout As TimeSpan" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan RequestInitializationTimeout { TimeSpan get(); void set(TimeSpan value); };" />
-      <MemberSignature Language="F#" Value="member this.RequestInitializationTimeout : TimeSpan with get, set" Usage="System.ServiceModel.Channels.HttpTransportBindingElement.RequestInitializationTimeout" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Http</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.TimeSpan), "00:00:00")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.TimeSpan</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets or sets the requested initialization time out.</summary>
-        <value>The requested initialization time out.</value>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Scheme">
@@ -1178,209 +776,6 @@ Console.WriteLine("The scheme of the binding is {0}.",httpBinding.Scheme);
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="ShouldSerializeExtendedProtectionPolicy">
-      <MemberSignature Language="C#" Value="public bool ShouldSerializeExtendedProtectionPolicy ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeExtendedProtectionPolicy() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpTransportBindingElement.ShouldSerializeExtendedProtectionPolicy" />
-      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeExtendedProtectionPolicy () As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeExtendedProtectionPolicy();" />
-      <MemberSignature Language="F#" Value="member this.ShouldSerializeExtendedProtectionPolicy : unit -&gt; bool" Usage="httpTransportBindingElement.ShouldSerializeExtendedProtectionPolicy " />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Http</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>Returns a valueindicating that it is not possible to XAML serialize the extended protection policy.</summary>
-        <returns>
-          <see langword="false" />
-        </returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ShouldSerializeMessageHandlerFactory">
-      <MemberSignature Language="C#" Value="public bool ShouldSerializeMessageHandlerFactory ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeMessageHandlerFactory() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpTransportBindingElement.ShouldSerializeMessageHandlerFactory" />
-      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeMessageHandlerFactory () As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeMessageHandlerFactory();" />
-      <MemberSignature Language="F#" Value="member this.ShouldSerializeMessageHandlerFactory : unit -&gt; bool" Usage="httpTransportBindingElement.ShouldSerializeMessageHandlerFactory " />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Http</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>Determines whether the message handler factory should be serialized.</summary>
-        <returns>
-          <see langword="true" /> if the message handler factory should be serialized; otherwise, <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ShouldSerializeWebSocketSettings">
-      <MemberSignature Language="C#" Value="public bool ShouldSerializeWebSocketSettings ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeWebSocketSettings() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpTransportBindingElement.ShouldSerializeWebSocketSettings" />
-      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeWebSocketSettings () As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeWebSocketSettings();" />
-      <MemberSignature Language="F#" Value="member this.ShouldSerializeWebSocketSettings : unit -&gt; bool" Usage="httpTransportBindingElement.ShouldSerializeWebSocketSettings " />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Http</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>Determines whether the web socket settings should be serialized.</summary>
-        <returns>
-          <see langword="true" /> if the web socket settings should be serialized; otherwise, <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="System.ServiceModel.Description.IPolicyExportExtension.ExportPolicy">
-      <MemberSignature Language="C#" Value="void IPolicyExportExtension.ExportPolicy (System.ServiceModel.Description.MetadataExporter exporter, System.ServiceModel.Description.PolicyConversionContext context);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IPolicyExportExtension.ExportPolicy(class System.ServiceModel.Description.MetadataExporter exporter, class System.ServiceModel.Description.PolicyConversionContext context) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpTransportBindingElement.System#ServiceModel#Description#IPolicyExportExtension#ExportPolicy(System.ServiceModel.Description.MetadataExporter,System.ServiceModel.Description.PolicyConversionContext)" />
-      <MemberSignature Language="VB.NET" Value="Sub ExportPolicy (exporter As MetadataExporter, context As PolicyConversionContext) Implements IPolicyExportExtension.ExportPolicy" />
-      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IPolicyExportExtension.ExportPolicy(System::ServiceModel::Description::MetadataExporter ^ exporter, System::ServiceModel::Description::PolicyConversionContext ^ context) = System::ServiceModel::Description::IPolicyExportExtension::ExportPolicy;" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ServiceModel.Description.IPolicyExportExtension.ExportPolicy(System.ServiceModel.Description.MetadataExporter,System.ServiceModel.Description.PolicyConversionContext)</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Http</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="exporter" Type="System.ServiceModel.Description.MetadataExporter" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="context" Type="System.ServiceModel.Description.PolicyConversionContext" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      </Parameters>
-      <Docs>
-        <param name="exporter">The <see cref="T:System.ServiceModel.Description.MetadataExporter" /> that you can use to modify the exporting process.</param>
-        <param name="context">The <see cref="T:System.ServiceModel.Description.PolicyConversionContext" /> that you can use to insert your custom policy assertion.</param>
-        <summary>Exports a custom policy assertion about bindings.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method writes binding-related statements into the WSDL information exposed by a particular contract and is used by Windows Communication Foundation (WCF) to communicate to clients the existence of this custom binding element in the binding stack.  
-  
- This method takes two parameters: the <xref:System.ServiceModel.Description.MetadataExporter> and <xref:System.ServiceModel.Description.PolicyConversionContext> objects. Use the <xref:System.ServiceModel.Description.PolicyConversionContext.GetBindingAssertions%2A>, <xref:System.ServiceModel.Description.PolicyConversionContext.GetMessageBindingAssertions%2A>, and <xref:System.ServiceModel.Description.PolicyConversionContext.GetOperationBindingAssertions%2A> methods to obtain collections of policy assertions that have already been exported at various scopes. Then use this method to add your own policy assertions to the appropriate collection.  
-  
- The <xref:System.ServiceModel.Description.PolicyConversionContext.Contract%2A> property exposes the <xref:System.ServiceModel.Description.ContractDescription> for the endpoint that is being exported. This allows this method to correctly scope their exported policy assertions. For example, security attributes in code may add behaviors to the <xref:System.ServiceModel.Description.ContractDescription> that indicate where security policy assertions should be added.  
-  
- Once custom policy assertions have been attached to the WSDL information, clients can detect and import the custom binding assertions by implementing an <xref:System.ServiceModel.Description.IPolicyImportExtension> interface.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="System.ServiceModel.Description.IWsdlExportExtension.ExportContract">
-      <MemberSignature Language="C#" Value="void IWsdlExportExtension.ExportContract (System.ServiceModel.Description.WsdlExporter exporter, System.ServiceModel.Description.WsdlContractConversionContext context);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IWsdlExportExtension.ExportContract(class System.ServiceModel.Description.WsdlExporter exporter, class System.ServiceModel.Description.WsdlContractConversionContext context) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpTransportBindingElement.System#ServiceModel#Description#IWsdlExportExtension#ExportContract(System.ServiceModel.Description.WsdlExporter,System.ServiceModel.Description.WsdlContractConversionContext)" />
-      <MemberSignature Language="VB.NET" Value="Sub ExportContract (exporter As WsdlExporter, context As WsdlContractConversionContext) Implements IWsdlExportExtension.ExportContract" />
-      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IWsdlExportExtension.ExportContract(System::ServiceModel::Description::WsdlExporter ^ exporter, System::ServiceModel::Description::WsdlContractConversionContext ^ context) = System::ServiceModel::Description::IWsdlExportExtension::ExportContract;" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ServiceModel.Description.IWsdlExportExtension.ExportContract(System.ServiceModel.Description.WsdlExporter,System.ServiceModel.Description.WsdlContractConversionContext)</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Http</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="exporter" Type="System.ServiceModel.Description.WsdlExporter" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="context" Type="System.ServiceModel.Description.WsdlContractConversionContext" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      </Parameters>
-      <Docs>
-        <param name="exporter">The <see cref="T:System.ServiceModel.Description.WsdlExporter" /> that exports the contract information.</param>
-        <param name="context">A context that provides mappings from exported WSDL elements to the contract description.</param>
-        <summary>Writes custom Web Services Description Language (WSDL) elements into the generated WSDL for a contract.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="System.ServiceModel.Description.IWsdlExportExtension.ExportEndpoint">
-      <MemberSignature Language="C#" Value="void IWsdlExportExtension.ExportEndpoint (System.ServiceModel.Description.WsdlExporter exporter, System.ServiceModel.Description.WsdlEndpointConversionContext endpointContext);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IWsdlExportExtension.ExportEndpoint(class System.ServiceModel.Description.WsdlExporter exporter, class System.ServiceModel.Description.WsdlEndpointConversionContext endpointContext) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpTransportBindingElement.System#ServiceModel#Description#IWsdlExportExtension#ExportEndpoint(System.ServiceModel.Description.WsdlExporter,System.ServiceModel.Description.WsdlEndpointConversionContext)" />
-      <MemberSignature Language="VB.NET" Value="Sub ExportEndpoint (exporter As WsdlExporter, endpointContext As WsdlEndpointConversionContext) Implements IWsdlExportExtension.ExportEndpoint" />
-      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IWsdlExportExtension.ExportEndpoint(System::ServiceModel::Description::WsdlExporter ^ exporter, System::ServiceModel::Description::WsdlEndpointConversionContext ^ endpointContext) = System::ServiceModel::Description::IWsdlExportExtension::ExportEndpoint;" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ServiceModel.Description.IWsdlExportExtension.ExportEndpoint(System.ServiceModel.Description.WsdlExporter,System.ServiceModel.Description.WsdlEndpointConversionContext)</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Http</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="exporter" Type="System.ServiceModel.Description.WsdlExporter" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="endpointContext" Type="System.ServiceModel.Description.WsdlEndpointConversionContext" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      </Parameters>
-      <Docs>
-        <param name="exporter">The <see cref="T:System.ServiceModel.Description.WsdlExporter" /> that exports the contract information.</param>
-        <param name="endpointContext">An endpoint context that provides mappings from exported WSDL elements to the endpoint description.</param>
-        <summary>Writes custom Web Services Description Language (WSDL) elements into the generated WSDL for an endpoint.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="TransferMode">
       <MemberSignature Language="C#" Value="public System.ServiceModel.TransferMode TransferMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.TransferMode TransferMode" />
@@ -1408,9 +803,6 @@ Console.WriteLine("The scheme of the binding is {0}.",httpBinding.Scheme);
         <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-uwp-10.0;dotnet-plat-ext-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.TransferMode</ReturnType>
@@ -1436,96 +828,6 @@ Console.WriteLine("The scheme of the binding is {0}.",httpBinding.Scheme);
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="UnsafeConnectionNtlmAuthentication">
-      <MemberSignature Language="C#" Value="public bool UnsafeConnectionNtlmAuthentication { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool UnsafeConnectionNtlmAuthentication" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpTransportBindingElement.UnsafeConnectionNtlmAuthentication" />
-      <MemberSignature Language="VB.NET" Value="Public Property UnsafeConnectionNtlmAuthentication As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UnsafeConnectionNtlmAuthentication { bool get(); void set(bool value); };" />
-      <MemberSignature Language="F#" Value="member this.UnsafeConnectionNtlmAuthentication : bool with get, set" Usage="System.ServiceModel.Channels.HttpTransportBindingElement.UnsafeConnectionNtlmAuthentication" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Http</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets or sets a value that indicates whether Unsafe Connection Sharing is enabled on the server. If enabled, NTLM authentication is performed once on each TCP connection.</summary>
-        <value>
-          <see langword="true" /> if Unsafe Connection Sharing is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When this property is set to `true` and the first request over a particular connection is authenticated using NTLM, subsequent requests over the same connection are processed using the authentication information in <xref:System.Security.Principal.IIdentity> of the initial request.  
-  
- This property has no effect when NTLM is not the authentication protocol.  
-  
-> [!NOTE]
->  While setting this property to `true` increases performance because additional NTLM authentication challenges are not sent, there is a security risk in not requiring all requests to provide authentication information. You must determine whether the increase in performance is worth this risk.  
-  
- For more information, see <xref:System.Net.HttpListener.UnsafeConnectionNtlmAuthentication%2A>.  
-  
-   
-  
-## Examples  
- The following example sets the property to enable Unsafe Connection Sharing.  
-  
-```csharp  
-HttpTransportBindingElement httpBinding = new HttpTransportBindingElement();  
-httpBinding.AuthenticationScheme = AuthenticationSchemes.Ntlm;  
-httpBinding.UnsafeConnectionNtlmAuthentication = true;  
-```  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="UpdateAuthenticationSchemes">
-      <MemberSignature Language="C#" Value="protected void UpdateAuthenticationSchemes (System.ServiceModel.Channels.BindingContext context);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void UpdateAuthenticationSchemes(class System.ServiceModel.Channels.BindingContext context) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpTransportBindingElement.UpdateAuthenticationSchemes(System.ServiceModel.Channels.BindingContext)" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub UpdateAuthenticationSchemes (context As BindingContext)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void UpdateAuthenticationSchemes(System::ServiceModel::Channels::BindingContext ^ context);" />
-      <MemberSignature Language="F#" Value="member this.UpdateAuthenticationSchemes : System.ServiceModel.Channels.BindingContext -&gt; unit" Usage="httpTransportBindingElement.UpdateAuthenticationSchemes context" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Http</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="context" Type="System.ServiceModel.Channels.BindingContext" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      </Parameters>
-      <Docs>
-        <param name="context">The binding context.</param>
-        <summary>Updates the transport authentication schemes that contains the binding context.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="UseDefaultWebProxy">
       <MemberSignature Language="C#" Value="public bool UseDefaultWebProxy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseDefaultWebProxy" />
@@ -1549,12 +851,6 @@ httpBinding.UnsafeConnectionNtlmAuthentication = true;
       <Attributes>
         <Attribute FrameworkAlternate="netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

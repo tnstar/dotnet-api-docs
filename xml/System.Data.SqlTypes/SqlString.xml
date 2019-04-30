@@ -114,7 +114,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="data" Type="System.String" />
+        <Parameter Name="data" Type="System.String" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="data">The string to store.</param>
@@ -153,8 +153,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="data" Type="System.String" />
-        <Parameter Name="lcid" Type="System.Int32" />
+        <Parameter Name="data" Type="System.String" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="lcid" Type="System.Int32" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="data">The string to store.</param>
@@ -194,9 +194,9 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="lcid" Type="System.Int32" />
-        <Parameter Name="compareOptions" Type="System.Data.SqlTypes.SqlCompareOptions" />
-        <Parameter Name="data" Type="System.Byte[]" />
+        <Parameter Name="lcid" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="compareOptions" Type="System.Data.SqlTypes.SqlCompareOptions" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="data" Type="System.Byte[]" Index="2" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="lcid">Specifies the geographical locale and language for the new <see cref="T:System.Data.SqlTypes.SqlString" /> structure.</param>
@@ -237,9 +237,9 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="data" Type="System.String" />
-        <Parameter Name="lcid" Type="System.Int32" />
-        <Parameter Name="compareOptions" Type="System.Data.SqlTypes.SqlCompareOptions" />
+        <Parameter Name="data" Type="System.String" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="lcid" Type="System.Int32" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="compareOptions" Type="System.Data.SqlTypes.SqlCompareOptions" Index="2" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="data">The string to store.</param>
@@ -280,10 +280,10 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="lcid" Type="System.Int32" />
-        <Parameter Name="compareOptions" Type="System.Data.SqlTypes.SqlCompareOptions" />
-        <Parameter Name="data" Type="System.Byte[]" />
-        <Parameter Name="fUnicode" Type="System.Boolean" />
+        <Parameter Name="lcid" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="compareOptions" Type="System.Data.SqlTypes.SqlCompareOptions" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="data" Type="System.Byte[]" Index="2" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="fUnicode" Type="System.Boolean" Index="3" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="lcid">Specifies the geographical locale and language for the new <see cref="T:System.Data.SqlTypes.SqlString" /> structure.</param>
@@ -326,11 +326,11 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="lcid" Type="System.Int32" />
-        <Parameter Name="compareOptions" Type="System.Data.SqlTypes.SqlCompareOptions" />
-        <Parameter Name="data" Type="System.Byte[]" />
-        <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="lcid" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="compareOptions" Type="System.Data.SqlTypes.SqlCompareOptions" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="data" Type="System.Byte[]" Index="2" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="index" Type="System.Int32" Index="3" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="count" Type="System.Int32" Index="4" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="lcid">Specifies the geographical locale and language for the new <see cref="T:System.Data.SqlTypes.SqlString" /> structure.</param>
@@ -373,12 +373,12 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="lcid" Type="System.Int32" />
-        <Parameter Name="compareOptions" Type="System.Data.SqlTypes.SqlCompareOptions" />
-        <Parameter Name="data" Type="System.Byte[]" />
-        <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="count" Type="System.Int32" />
-        <Parameter Name="fUnicode" Type="System.Boolean" />
+        <Parameter Name="lcid" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="compareOptions" Type="System.Data.SqlTypes.SqlCompareOptions" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="data" Type="System.Byte[]" Index="2" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="index" Type="System.Int32" Index="3" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="count" Type="System.Int32" Index="4" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="fUnicode" Type="System.Boolean" Index="5" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="lcid">Specifies the geographical locale and language for the new <see cref="T:System.Data.SqlTypes.SqlString" /> structure.</param>
@@ -425,8 +425,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlString" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlString" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlString" />.</param>
@@ -637,7 +637,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Globalization.CompareOptions</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="compareOptions" Type="System.Data.SqlTypes.SqlCompareOptions" />
+        <Parameter Name="compareOptions" Type="System.Data.SqlTypes.SqlCompareOptions" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="compareOptions">A <see cref="T:System.Data.SqlTypes.SqlCompareOptions" /> value that describes the comparison options for this <see cref="T:System.Data.SqlTypes.SqlString" /> structure.</param>
@@ -689,7 +689,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Data.SqlTypes.SqlString" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="value" Type="System.Data.SqlTypes.SqlString" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="value">The <see cref="T:System.Data.SqlTypes.SqlString" /> to be compared.</param>
@@ -757,7 +757,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="value">The <see cref="T:System.Object" /> to be compared.</param>
@@ -822,8 +822,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlString" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlString" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlString" />.</param>
@@ -916,7 +916,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="value">The object to be compared.</param>
@@ -960,8 +960,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlString" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlString" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlString" />.</param>
@@ -1124,7 +1124,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Xml.XmlQualifiedName</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="schemaSet" Type="System.Xml.Schema.XmlSchemaSet" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="schemaSet" Type="System.Xml.Schema.XmlSchemaSet" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="schemaSet">A <see cref="T:System.Xml.Schema.XmlSchemaSet" />.</param>
@@ -1166,8 +1166,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlString" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlString" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlString" />.</param>
@@ -1211,8 +1211,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlString" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlString" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlString" />.</param>
@@ -1532,8 +1532,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlString" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlString" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlString" />.</param>
@@ -1577,8 +1577,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlString" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlString" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlString" />.</param>
@@ -1622,8 +1622,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlString" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlString" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlString" />.</param>
@@ -1712,8 +1712,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlString" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlString" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlString" />.</param>
@@ -1759,8 +1759,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlString" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlString" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlString" />.</param>
@@ -1816,7 +1816,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlBoolean" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">The <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure to be converted.</param>
@@ -1861,7 +1861,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlByte" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlByte" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">The <see cref="T:System.Data.SqlTypes.SqlByte" /> structure to be converted.</param>
@@ -1906,7 +1906,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">The <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure to be converted.</param>
@@ -1951,7 +1951,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDecimal" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">The <see langword="SqlDecimal" /> structure to be converted.</param>
@@ -1996,7 +1996,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDouble" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">The <see cref="T:System.Data.SqlTypes.SqlDouble" /> structure to be converted.</param>
@@ -2041,7 +2041,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlGuid" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlGuid" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">The <see cref="T:System.Data.SqlTypes.SqlGuid" /> structure to be converted.</param>
@@ -2086,7 +2086,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt16" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt16" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">The <see cref="T:System.Data.SqlTypes.SqlInt16" /> structure to be converted.</param>
@@ -2131,7 +2131,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt32" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt32" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">The SqlInt32 structure to be converted.</param>
@@ -2176,7 +2176,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt64" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlInt64" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">The <see cref="T:System.Data.SqlTypes.SqlInt64" /> structure to be converted.</param>
@@ -2221,7 +2221,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlMoney" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlMoney" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">The <see cref="T:System.Data.SqlTypes.SqlMoney" /> structure to be converted.</param>
@@ -2266,7 +2266,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlSingle" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlSingle" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">The <see cref="T:System.Data.SqlTypes.SqlSingle" /> structure to be converted.</param>
@@ -2311,7 +2311,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">The <see cref="T:System.Data.SqlTypes.SqlString" /> to be converted.</param>
@@ -2354,8 +2354,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlString" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlString" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlString" />.</param>
@@ -2401,8 +2401,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlString" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlString" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlString" />.</param>
@@ -2448,7 +2448,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Data.SqlTypes.SqlString</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.String" />
+        <Parameter Name="x" Type="System.String" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">The <see cref="T:System.String" /> to be converted.</param>
@@ -2491,8 +2491,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlString" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlString" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlString" />.</param>
@@ -2538,8 +2538,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlString" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlString" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlString" />.</param>
@@ -2585,8 +2585,8 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlString" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlString" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlString" />.</param>
@@ -2710,7 +2710,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="reader" Type="System.Xml.XmlReader" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="reader" Type="System.Xml.XmlReader" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="reader">
@@ -2753,7 +2753,7 @@ SqlString mySqlString = new SqlString("abc", CultureInfo.CurrentCulture.LCID);
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="writer" Type="System.Xml.XmlWriter" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="writer">

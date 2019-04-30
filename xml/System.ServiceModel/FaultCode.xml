@@ -75,11 +75,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
       </Parameters>
@@ -112,11 +107,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="subCode" Type="System.ServiceModel.FaultCode" />
@@ -151,11 +141,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="ns" Type="System.String" />
@@ -228,70 +213,6 @@
         <summary>Creates a receiver fault code for a message.</summary>
       </Docs>
     </MemberGroup>
-    <Member MemberName="CreateReceiverFaultCode">
-      <MemberSignature Language="C#" Value="public static System.ServiceModel.FaultCode CreateReceiverFaultCode (System.ServiceModel.FaultCode subCode);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.FaultCode CreateReceiverFaultCode(class System.ServiceModel.FaultCode subCode) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultCode.CreateReceiverFaultCode(System.ServiceModel.FaultCode)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateReceiverFaultCode (subCode As FaultCode) As FaultCode" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::FaultCode ^ CreateReceiverFaultCode(System::ServiceModel::FaultCode ^ subCode);" />
-      <MemberSignature Language="F#" Value="static member CreateReceiverFaultCode : System.ServiceModel.FaultCode -&gt; System.ServiceModel.FaultCode" Usage="System.ServiceModel.FaultCode.CreateReceiverFaultCode subCode" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.ServiceModel.FaultCode</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="subCode" Type="System.ServiceModel.FaultCode" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      </Parameters>
-      <Docs>
-        <param name="subCode">A <see cref="T:System.ServiceModel.FaultCode" /> object that represents the fault subcode.</param>
-        <summary>Creates a receiver fault code with the specified subcode.</summary>
-        <returns>A <see cref="T:System.ServiceModel.FaultCode" /> object with the created SOAP fault subcode in the <see cref="P:System.ServiceModel.FaultCode.SubCode" /> property.</returns>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="subCode" /> is <see langword="null" />.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="CreateReceiverFaultCode">
-      <MemberSignature Language="C#" Value="public static System.ServiceModel.FaultCode CreateReceiverFaultCode (string name, string ns);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.FaultCode CreateReceiverFaultCode(string name, string ns) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultCode.CreateReceiverFaultCode(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateReceiverFaultCode (name As String, ns As String) As FaultCode" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::FaultCode ^ CreateReceiverFaultCode(System::String ^ name, System::String ^ ns);" />
-      <MemberSignature Language="F#" Value="static member CreateReceiverFaultCode : string * string -&gt; System.ServiceModel.FaultCode" Usage="System.ServiceModel.FaultCode.CreateReceiverFaultCode (name, ns)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.ServiceModel.FaultCode</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="ns" Type="System.String" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      </Parameters>
-      <Docs>
-        <param name="name">The local name for the fault subcode.</param>
-        <param name="ns">The namespace name for the fault subcode.</param>
-        <summary>Creates a receiver fault code with the specified subcode.</summary>
-        <returns>A <see cref="T:System.ServiceModel.FaultCode" /> instance with the created SOAP fault subcode in the <see cref="P:System.ServiceModel.FaultCode.SubCode" /> property.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <MemberGroup MemberName="CreateSenderFaultCode">
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -338,38 +259,6 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="subCode" /> is <see langword="null" />.</exception>
-      </Docs>
-    </Member>
-    <Member MemberName="CreateSenderFaultCode">
-      <MemberSignature Language="C#" Value="public static System.ServiceModel.FaultCode CreateSenderFaultCode (string name, string ns);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.FaultCode CreateSenderFaultCode(string name, string ns) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultCode.CreateSenderFaultCode(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateSenderFaultCode (name As String, ns As String) As FaultCode" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::FaultCode ^ CreateSenderFaultCode(System::String ^ name, System::String ^ ns);" />
-      <MemberSignature Language="F#" Value="static member CreateSenderFaultCode : string * string -&gt; System.ServiceModel.FaultCode" Usage="System.ServiceModel.FaultCode.CreateSenderFaultCode (name, ns)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.ServiceModel.FaultCode</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="ns" Type="System.String" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      </Parameters>
-      <Docs>
-        <param name="name">The local name for the fault subcode.</param>
-        <param name="ns">The namespace name for the fault subcode.</param>
-        <summary>Creates a sender fault code with the specified subcode.</summary>
-        <returns>A <see cref="T:System.ServiceModel.FaultCode" /> object with the created SOAP fault subcode in <see cref="P:System.ServiceModel.FaultCode.SubCode" />.</returns>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsPredefinedFault">
@@ -494,11 +383,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -531,11 +415,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -568,11 +447,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.FaultCode</ReturnType>
       </ReturnValue>

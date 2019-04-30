@@ -94,7 +94,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="value" Type="System.DateTime" />
+        <Parameter Name="value" Type="System.DateTime" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="value">A <see langword="DateTime" /> structure.</param>
@@ -133,8 +133,8 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="dayTicks" Type="System.Int32" />
-        <Parameter Name="timeTicks" Type="System.Int32" />
+        <Parameter Name="dayTicks" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="timeTicks" Type="System.Int32" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="dayTicks">An integer value that represents the date as ticks.</param>
@@ -174,9 +174,9 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="year" Type="System.Int32" />
-        <Parameter Name="month" Type="System.Int32" />
-        <Parameter Name="day" Type="System.Int32" />
+        <Parameter Name="year" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="month" Type="System.Int32" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="day" Type="System.Int32" Index="2" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="year">An integer representing the year of the of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
@@ -217,12 +217,12 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="year" Type="System.Int32" />
-        <Parameter Name="month" Type="System.Int32" />
-        <Parameter Name="day" Type="System.Int32" />
-        <Parameter Name="hour" Type="System.Int32" />
-        <Parameter Name="minute" Type="System.Int32" />
-        <Parameter Name="second" Type="System.Int32" />
+        <Parameter Name="year" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="month" Type="System.Int32" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="day" Type="System.Int32" Index="2" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="hour" Type="System.Int32" Index="3" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="minute" Type="System.Int32" Index="4" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="second" Type="System.Int32" Index="5" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="year">An integer value representing the year of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
@@ -266,13 +266,13 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="year" Type="System.Int32" />
-        <Parameter Name="month" Type="System.Int32" />
-        <Parameter Name="day" Type="System.Int32" />
-        <Parameter Name="hour" Type="System.Int32" />
-        <Parameter Name="minute" Type="System.Int32" />
-        <Parameter Name="second" Type="System.Int32" />
-        <Parameter Name="millisecond" Type="System.Double" />
+        <Parameter Name="year" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="month" Type="System.Int32" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="day" Type="System.Int32" Index="2" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="hour" Type="System.Int32" Index="3" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="minute" Type="System.Int32" Index="4" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="second" Type="System.Int32" Index="5" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="millisecond" Type="System.Double" Index="6" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="year">An integer value representing the year of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
@@ -317,13 +317,13 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="year" Type="System.Int32" />
-        <Parameter Name="month" Type="System.Int32" />
-        <Parameter Name="day" Type="System.Int32" />
-        <Parameter Name="hour" Type="System.Int32" />
-        <Parameter Name="minute" Type="System.Int32" />
-        <Parameter Name="second" Type="System.Int32" />
-        <Parameter Name="bilisecond" Type="System.Int32" />
+        <Parameter Name="year" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="month" Type="System.Int32" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="day" Type="System.Int32" Index="2" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="hour" Type="System.Int32" Index="3" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="minute" Type="System.Int32" Index="4" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="second" Type="System.Int32" Index="5" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="bilisecond" Type="System.Int32" Index="6" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="year">An integer value representing the year of the new <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
@@ -370,8 +370,8 @@
         <ReturnType>System.Data.SqlTypes.SqlDateTime</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="t" Type="System.TimeSpan" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="t" Type="System.TimeSpan" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> value.</param>
@@ -424,7 +424,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Data.SqlTypes.SqlDateTime" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="value" Type="System.Data.SqlTypes.SqlDateTime" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="value">The <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure to be compared.</param>
@@ -492,7 +492,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="value">The <see cref="T:System.Object" /> to be compared.</param>
@@ -606,7 +606,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="value">The object to be compared.</param>
@@ -650,8 +650,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
@@ -734,7 +734,7 @@
         <ReturnType>System.Xml.XmlQualifiedName</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="schemaSet" Type="System.Xml.Schema.XmlSchemaSet" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="schemaSet" Type="System.Xml.Schema.XmlSchemaSet" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="schemaSet">A <see cref="T:System.Xml.Schema.XmlSchemaSet" />.</param>
@@ -776,8 +776,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
@@ -821,8 +821,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
@@ -916,8 +916,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
@@ -961,8 +961,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
@@ -1096,8 +1096,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
@@ -1186,8 +1186,8 @@
         <ReturnType>System.Data.SqlTypes.SqlDateTime</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" />
-        <Parameter Name="t" Type="System.TimeSpan" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="t" Type="System.TimeSpan" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
@@ -1231,8 +1231,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
@@ -1289,7 +1289,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
@@ -1334,7 +1334,7 @@
         <ReturnType>System.Data.SqlTypes.SqlDateTime</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlString" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlString" />.</param>
@@ -1377,8 +1377,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
@@ -1424,8 +1424,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
@@ -1471,7 +1471,7 @@
         <ReturnType>System.Data.SqlTypes.SqlDateTime</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.DateTime" />
+        <Parameter Name="value" Type="System.DateTime" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="value">A <see langword="DateTime" /> structure.</param>
@@ -1514,8 +1514,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
@@ -1559,8 +1559,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
@@ -1606,8 +1606,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBoolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" />
-        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="y" Type="System.Data.SqlTypes.SqlDateTime" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
@@ -1653,8 +1653,8 @@
         <ReturnType>System.Data.SqlTypes.SqlDateTime</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" />
-        <Parameter Name="t" Type="System.TimeSpan" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="t" Type="System.TimeSpan" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> structure.</param>
@@ -1698,7 +1698,7 @@
         <ReturnType>System.Data.SqlTypes.SqlDateTime</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="s" Type="System.String" />
+        <Parameter Name="s" Type="System.String" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="s">The <see langword="string" /> to be parsed.</param>
@@ -1851,8 +1851,8 @@
         <ReturnType>System.Data.SqlTypes.SqlDateTime</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="t" Type="System.TimeSpan" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="x" Type="System.Data.SqlTypes.SqlDateTime" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="t" Type="System.TimeSpan" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlDateTime" /> value.</param>
@@ -1935,7 +1935,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="reader" Type="System.Xml.XmlReader" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="reader" Type="System.Xml.XmlReader" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="reader">
@@ -1978,7 +1978,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="writer" Type="System.Xml.XmlWriter" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
         <param name="writer">

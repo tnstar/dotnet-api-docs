@@ -338,7 +338,7 @@
       <MemberSignature Language="C#" Value="public event System.Management.EventArrivedEventHandler EventArrived;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Management.EventArrivedEventHandler EventArrived" />
       <MemberSignature Language="DocId" Value="E:System.Management.ManagementEventWatcher.EventArrived" />
-      <MemberSignature Language="VB.NET" Value="Public Event EventArrived As EventArrivedEventHandler " />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event EventArrived As EventArrivedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Management::EventArrivedEventHandler ^ EventArrived;" />
       <MemberSignature Language="F#" Value="member this.EventArrived : System.Management.EventArrivedEventHandler " Usage="member this.EventArrived : System.Management.EventArrivedEventHandler " />
       <MemberType>Event</MemberType>
@@ -379,7 +379,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementEventWatcher.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!ManagementEventWatcher ()" />
-      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="managementEventWatcher.Finalize " />
+      <MemberSignature Language="F#" Value="abstract member Finalize : unit -&gt; unit&#xA;override this.Finalize : unit -&gt; unit" Usage="managementEventWatcher.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -610,7 +610,7 @@
       <MemberSignature Language="C#" Value="public event System.Management.StoppedEventHandler Stopped;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Management.StoppedEventHandler Stopped" />
       <MemberSignature Language="DocId" Value="E:System.Management.ManagementEventWatcher.Stopped" />
-      <MemberSignature Language="VB.NET" Value="Public Event Stopped As StoppedEventHandler " />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Stopped As StoppedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Management::StoppedEventHandler ^ Stopped;" />
       <MemberSignature Language="F#" Value="member this.Stopped : System.Management.StoppedEventHandler " Usage="member this.Stopped : System.Management.StoppedEventHandler " />
       <MemberType>Event</MemberType>

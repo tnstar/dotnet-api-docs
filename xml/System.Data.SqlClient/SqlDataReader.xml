@@ -1,10 +1,10 @@
 ﻿<Type Name="SqlDataReader" FullName="System.Data.SqlClient.SqlDataReader">
-  <TypeSignature Language="C#" Value="public class SqlDataReader : System.Data.Common.DbDataReader, IDisposable" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlDataReader extends System.Data.Common.DbDataReader implements class System.Data.IDataReader, class System.Data.IDataRecord, class System.IDisposable" />
+  <TypeSignature Language="C#" Value="public class SqlDataReader : System.Data.Common.DbDataReader, IDisposable, System.Data.Common.IDbColumnSchemaGenerator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlDataReader extends System.Data.Common.DbDataReader implements class System.Data.Common.IDbColumnSchemaGenerator, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlDataReader" />
-  <TypeSignature Language="VB.NET" Value="Public Class SqlDataReader&#xA;Inherits DbDataReader&#xA;Implements IDisposable" />
-  <TypeSignature Language="C++ CLI" Value="public ref class SqlDataReader : System::Data::Common::DbDataReader, IDisposable" />
-  <TypeSignature Language="F#" Value="type SqlDataReader = class&#xA;    inherit DbDataReader&#xA;    interface IDataReader&#xA;    interface IDisposable&#xA;    interface IDataRecord" />
+  <TypeSignature Language="VB.NET" Value="Public Class SqlDataReader&#xA;Inherits DbDataReader&#xA;Implements IDbColumnSchemaGenerator, IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlDataReader : System::Data::Common::DbDataReader, IDisposable, System::Data::Common::IDbColumnSchemaGenerator" />
+  <TypeSignature Language="F#" Value="type SqlDataReader = class&#xA;    inherit DbDataReader&#xA;    interface IDisposable&#xA;    interface IDbColumnSchemaGenerator" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -30,10 +30,7 @@
   </Base>
   <Interfaces>
     <Interface>
-      <InterfaceName>System.Data.IDataReader</InterfaceName>
-    </Interface>
-    <Interface>
-      <InterfaceName>System.Data.IDataRecord</InterfaceName>
+      <InterfaceName>System.Data.Common.IDbColumnSchemaGenerator</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>System.IDisposable</InterfaceName>
@@ -73,61 +70,6 @@
     <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
-    <Member MemberName="Close">
-      <MemberSignature Language="C#" Value="public override void Close ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Close() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.Close" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
-      <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="sqlDataReader.Close " />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Data.IDataReader.Close</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>Closes the <see cref="T:System.Data.SqlClient.SqlDataReader" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You must explicitly call the <xref:System.Data.SqlClient.SqlDataReader.Close%2A> method when you are through using the <xref:System.Data.SqlClient.SqlDataReader> to use the associated <xref:System.Data.SqlClient.SqlConnection> for any other purpose.  
-  
- The `Close` method fills in the values for output parameters, return values and `RecordsAffected`, increasing the time that it takes to close a `SqlDataReader` that was used to process a large or complex query. When the return values and the number of records affected by a query are not significant, the time that it takes to close the `SqlDataReader` can be reduced by calling the <xref:System.Data.SqlClient.SqlCommand.Cancel%2A> method of the associated <xref:System.Data.SqlClient.SqlCommand> object before calling the `Close` method.  
-  
-> [!CAUTION]
->  Do not call `Close` or `Dispose` on a Connection, a DataReader, or any other managed object in the `Finalize` method of your class. In a finalizer, you should only release unmanaged resources that your class owns directly. If your class does not own any unmanaged resources, do not include a `Finalize` method in your class definition. For more information, see [Garbage Collection](~/docs/standard/garbage-collection/index.md).  
-  
-   
-  
-## Examples  
- The following example creates a <xref:System.Data.SqlClient.SqlConnection>, a `SqlCommand`, and a <xref:System.Data.SqlClient.SqlDataReader>. The example reads through the data, writing it out to the console window. The code then closes the <xref:System.Data.SqlClient.SqlDataReader>. The <xref:System.Data.SqlClient.SqlConnection> is closed automatically at the end of the `using` code block.  
-  
- [!code-csharp[Classic WebData SqlDataReader.Close Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlDataReader.Close Example/CS/source.cs#1)]
- [!code-vb[Classic WebData SqlDataReader.Close Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlDataReader.Close Example/VB/source.vb#1)]  
-  
- ]]></format>
-        </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders</related>
-        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/7e51d44e-7c4e-4040-9332-f0190fe36f07">SQL Server Connection Pooling (ADO.NET)</related>
-        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
-      </Docs>
-    </Member>
     <Member MemberName="Connection">
       <MemberSignature Language="C#" Value="protected System.Data.SqlClient.SqlConnection Connection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.SqlClient.SqlConnection Connection" />
@@ -175,9 +117,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Depth { int get(); };" />
       <MemberSignature Language="F#" Value="member this.Depth : int" Usage="System.Data.SqlClient.SqlDataReader.Depth" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Data.IDataReader.Depth</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -216,33 +155,6 @@
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
-    <Member MemberName="Dispose">
-      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.Dispose(System.Boolean)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
-      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="sqlDataReader.Dispose disposing" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.5.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="disposing" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
-      </Parameters>
-      <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="FieldCount">
       <MemberSignature Language="C#" Value="public override int FieldCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 FieldCount" />
@@ -251,9 +163,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int FieldCount { int get(); };" />
       <MemberSignature Language="F#" Value="member this.FieldCount : int" Usage="System.Data.SqlClient.SqlDataReader.FieldCount" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Data.IDataRecord.FieldCount</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -301,9 +210,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetBoolean(int i);" />
       <MemberSignature Language="F#" Value="override this.GetBoolean : int -&gt; bool" Usage="sqlDataReader.GetBoolean i" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Data.IDataRecord.GetBoolean(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -357,9 +263,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Byte GetByte(int i);" />
       <MemberSignature Language="F#" Value="override this.GetByte : int -&gt; byte" Usage="sqlDataReader.GetByte i" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Data.IDataRecord.GetByte(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -413,9 +316,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override long GetBytes(int i, long dataIndex, cli::array &lt;System::Byte&gt; ^ buffer, int bufferIndex, int length);" />
       <MemberSignature Language="F#" Value="override this.GetBytes : int * int64 * byte[] * int * int -&gt; int64" Usage="sqlDataReader.GetBytes (i, dataIndex, buffer, bufferIndex, length)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Data.IDataRecord.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -478,9 +378,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override char GetChar(int i);" />
       <MemberSignature Language="F#" Value="override this.GetChar : int -&gt; char" Usage="sqlDataReader.GetChar i" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Data.IDataRecord.GetChar(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -500,11 +397,6 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;xamarinandroid-7.1;xamarinios-10.8;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
@@ -535,9 +427,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override long GetChars(int i, long dataIndex, cli::array &lt;char&gt; ^ buffer, int bufferIndex, int length);" />
       <MemberSignature Language="F#" Value="override this.GetChars : int * int64 * char[] * int * int -&gt; int64" Usage="sqlDataReader.GetChars (i, dataIndex, buffer, bufferIndex, length)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Data.IDataRecord.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -625,42 +514,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetData">
-      <MemberSignature Language="C#" Value="public System.Data.IDataReader GetData (int i);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.IDataReader GetData(int32 i) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetData(System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetData (i As Integer) As IDataReader" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::IDataReader ^ GetData(int i);" />
-      <MemberSignature Language="F#" Value="abstract member GetData : int -&gt; System.Data.IDataReader&#xA;override this.GetData : int -&gt; System.Data.IDataReader" Usage="sqlDataReader.GetData i" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Data.IDataRecord.GetData(System.Int32)</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Data.IDataReader</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="i" Type="System.Int32" Index="0" FrameworkAlternate="netframework-1.1" />
-      </Parameters>
-      <Docs>
-        <param name="i">A column ordinal.</param>
-        <summary>Returns an <see cref="T:System.Data.IDataReader" /> for the specified column ordinal.</summary>
-        <returns>The <see cref="T:System.Data.IDataReader" /> instance for the specified column ordinal.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="GetDataTypeName">
       <MemberSignature Language="C#" Value="public override string GetDataTypeName (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetDataTypeName(int32 i) cil managed" />
@@ -669,9 +522,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDataTypeName(int i);" />
       <MemberSignature Language="F#" Value="override this.GetDataTypeName : int -&gt; string" Usage="sqlDataReader.GetDataTypeName i" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Data.IDataRecord.GetDataTypeName(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -722,9 +572,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override DateTime GetDateTime(int i);" />
       <MemberSignature Language="F#" Value="override this.GetDateTime : int -&gt; DateTime" Usage="sqlDataReader.GetDateTime i" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Data.IDataRecord.GetDateTime(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -800,7 +647,7 @@
         <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="i" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="i" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="i">The zero-based column ordinal.</param>
@@ -831,9 +678,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Decimal GetDecimal(int i);" />
       <MemberSignature Language="F#" Value="override this.GetDecimal : int -&gt; decimal" Usage="sqlDataReader.GetDecimal i" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Data.IDataRecord.GetDecimal(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -887,9 +731,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override double GetDouble(int i);" />
       <MemberSignature Language="F#" Value="override this.GetDouble : int -&gt; double" Usage="sqlDataReader.GetDouble i" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Data.IDataRecord.GetDouble(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -989,9 +830,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetFieldType(int i);" />
       <MemberSignature Language="F#" Value="override this.GetFieldType : int -&gt; Type" Usage="sqlDataReader.GetFieldType i" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Data.IDataRecord.GetFieldType(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -1059,7 +897,7 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="i" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="i" Type="System.Int32" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of the value to be returned.</typeparam>
@@ -1132,8 +970,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="i" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="i" Type="System.Int32" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of the value to be returned.</typeparam>
@@ -1186,9 +1024,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override float GetFloat(int i);" />
       <MemberSignature Language="F#" Value="override this.GetFloat : int -&gt; single" Usage="sqlDataReader.GetFloat i" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Data.IDataRecord.GetFloat(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -1242,9 +1077,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Guid GetGuid(int i);" />
       <MemberSignature Language="F#" Value="override this.GetGuid : int -&gt; Guid" Usage="sqlDataReader.GetGuid i" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Data.IDataRecord.GetGuid(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -1298,9 +1130,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override short GetInt16(int i);" />
       <MemberSignature Language="F#" Value="override this.GetInt16 : int -&gt; int16" Usage="sqlDataReader.GetInt16 i" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Data.IDataRecord.GetInt16(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -1354,9 +1183,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetInt32(int i);" />
       <MemberSignature Language="F#" Value="override this.GetInt32 : int -&gt; int" Usage="sqlDataReader.GetInt32 i" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Data.IDataRecord.GetInt32(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -1410,9 +1236,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override long GetInt64(int i);" />
       <MemberSignature Language="F#" Value="override this.GetInt64 : int -&gt; int64" Usage="sqlDataReader.GetInt64 i" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Data.IDataRecord.GetInt64(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -1466,9 +1289,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetName(int i);" />
       <MemberSignature Language="F#" Value="override this.GetName : int -&gt; string" Usage="sqlDataReader.GetName i" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Data.IDataRecord.GetName(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -1512,9 +1332,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetOrdinal(System::String ^ name);" />
       <MemberSignature Language="F#" Value="override this.GetOrdinal : string -&gt; int" Usage="sqlDataReader.GetOrdinal name" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Data.IDataRecord.GetOrdinal(System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -1600,7 +1417,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="i" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="i" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="i">An <see cref="T:System.Int32" /> representing the column ordinal.</param>
@@ -1642,7 +1459,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="i" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="i" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="i">An <see cref="T:System.Int32" /> representing the column ordinal.</param>
@@ -1685,7 +1502,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="values" Type="System.Object[]" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="values" Type="System.Object[]" />
       </Parameters>
       <Docs>
         <param name="values">An array of <see cref="T:System.Object" /> into which to copy the column values.</param>
@@ -1706,9 +1523,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::DataTable ^ GetSchemaTable();" />
       <MemberSignature Language="F#" Value="override this.GetSchemaTable : unit -&gt; System.Data.DataTable" Usage="sqlDataReader.GetSchemaTable " />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Data.IDataReader.GetSchemaTable</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -1960,7 +1774,7 @@
         <ReturnType>System.Data.SqlTypes.SqlBytes</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="i" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="i" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="i">The zero-based column ordinal.</param>
@@ -2003,7 +1817,7 @@
         <ReturnType>System.Data.SqlTypes.SqlChars</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="i" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="i" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="i">The zero-based column ordinal.</param>
@@ -2660,7 +2474,7 @@
         <ReturnType>System.Data.SqlTypes.SqlXml</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="i" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="i" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="i">The zero-based column ordinal.</param>
@@ -2714,7 +2528,7 @@
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="i" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="i" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="i">The zero-based column ordinal.</param>
@@ -2787,9 +2601,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetString(int i);" />
       <MemberSignature Language="F#" Value="override this.GetString : int -&gt; string" Usage="sqlDataReader.GetString i" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Data.IDataRecord.GetString(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -2865,7 +2676,7 @@
         <ReturnType>System.IO.TextReader</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="i" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="i" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="i">The column to be retrieved.</param>
@@ -2942,7 +2753,7 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="i" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="i" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="i">The zero-based column ordinal.</param>
@@ -2973,9 +2784,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetValue(int i);" />
       <MemberSignature Language="F#" Value="override this.GetValue : int -&gt; obj" Usage="sqlDataReader.GetValue i" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Data.IDataRecord.GetValue(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -3027,9 +2835,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetValues(cli::array &lt;System::Object ^&gt; ^ values);" />
       <MemberSignature Language="F#" Value="override this.GetValues : obj[] -&gt; int" Usage="sqlDataReader.GetValues values" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Data.IDataRecord.GetValues(System.Object[])</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -3114,7 +2919,7 @@
         <ReturnType>System.Xml.XmlReader</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="i" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="i" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="i">The value of the specified column.</param>
@@ -3195,9 +3000,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsClosed { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsClosed : bool" Usage="System.Data.SqlClient.SqlDataReader.IsClosed" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Data.IDataReader.IsClosed</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -3239,11 +3041,11 @@
       </Docs>
     </Member>
     <Member MemberName="IsCommandBehavior">
-      <MemberSignature Language="C#" Value="protected bool IsCommandBehavior (System.Data.CommandBehavior condition);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool IsCommandBehavior(valuetype System.Data.CommandBehavior condition) cil managed" />
+      <MemberSignature Language="C#" Value="protected internal bool IsCommandBehavior (System.Data.CommandBehavior condition);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance bool IsCommandBehavior(valuetype System.Data.CommandBehavior condition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.IsCommandBehavior(System.Data.CommandBehavior)" />
-      <MemberSignature Language="VB.NET" Value="Protected Function IsCommandBehavior (condition As CommandBehavior) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool IsCommandBehavior(System::Data::CommandBehavior condition);" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Function IsCommandBehavior (condition As CommandBehavior) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; bool IsCommandBehavior(System::Data::CommandBehavior condition);" />
       <MemberSignature Language="F#" Value="member this.IsCommandBehavior : System.Data.CommandBehavior -&gt; bool" Usage="sqlDataReader.IsCommandBehavior condition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3262,7 +3064,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="condition" Type="System.Data.CommandBehavior" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="condition" Type="System.Data.CommandBehavior" />
       </Parameters>
       <Docs>
         <param name="condition">A <see cref="T:System.Data.CommandBehavior" /> enumeration.</param>
@@ -3288,9 +3090,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDBNull(int i);" />
       <MemberSignature Language="F#" Value="override this.IsDBNull : int -&gt; bool" Usage="sqlDataReader.IsDBNull i" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Data.IDataRecord.IsDBNull(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -3365,8 +3164,8 @@
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="i" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="i" Type="System.Int32" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="i">The zero-based column to be retrieved.</param>
@@ -3417,9 +3216,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[int] { System::Object ^ get(int i); };" />
       <MemberSignature Language="F#" Value="member this.Item(int) : obj" Usage="System.Data.SqlClient.SqlDataReader.Item" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Data.IDataRecord.Item(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -3464,9 +3260,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ name); };" />
       <MemberSignature Language="F#" Value="member this.Item(string) : obj" Usage="System.Data.SqlClient.SqlDataReader.Item" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Data.IDataRecord.Item(System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -3520,9 +3313,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool NextResult();" />
       <MemberSignature Language="F#" Value="override this.NextResult : unit -&gt; bool" Usage="sqlDataReader.NextResult " />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Data.IDataReader.NextResult</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -3592,7 +3382,7 @@
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="cancellationToken">The cancellation instruction.</param>
@@ -3623,9 +3413,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Read();" />
       <MemberSignature Language="F#" Value="override this.Read : unit -&gt; bool" Usage="sqlDataReader.Read " />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Data.IDataReader.Read</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -3705,7 +3492,7 @@
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
         <param name="cancellationToken">The cancellation instruction.</param>
@@ -3738,9 +3525,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int RecordsAffected { int get(); };" />
       <MemberSignature Language="F#" Value="member this.RecordsAffected : int" Usage="System.Data.SqlClient.SqlDataReader.RecordsAffected" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Data.IDataReader.RecordsAffected</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -3780,103 +3564,6 @@
         <related type="Article" href="https://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
-      </Docs>
-    </Member>
-    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
-      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.System#Collections#IEnumerable#GetEnumerator" />
-      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
-      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Collections.IEnumerator</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>Returns an enumerator that can be used to iterate through the item collection.</summary>
-        <returns>The enumerator that can be used to iterate through the item collection.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="System.Data.IDataRecord.GetData">
-      <MemberSignature Language="C#" Value="System.Data.IDataReader IDataRecord.GetData (int i);" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Data.IDataReader System.Data.IDataRecord.GetData(int32 i) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.System#Data#IDataRecord#GetData(System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Function GetData (i As Integer) As IDataReader Implements IDataRecord.GetData" />
-      <MemberSignature Language="C++ CLI" Value=" virtual System::Data::IDataReader ^ System.Data.IDataRecord.GetData(int i) = System::Data::IDataRecord::GetData;" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Data.IDataRecord.GetData(System.Int32)</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Data.IDataReader</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="i" Type="System.Int32" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      </Parameters>
-      <Docs>
-        <param name="i">A column ordinal.</param>
-        <summary>Returns an <see cref="T:System.Data.IDataReader" /> for the specified column ordinal.</summary>
-        <returns>The <see cref="T:System.Data.IDataReader" /> instance for the specified column ordinal.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.SqlClient.SqlDataReader> instance is cast to an <xref:System.Data.IDataRecord> interface.  
-  
- ]]></format>
-        </remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
-      </Docs>
-    </Member>
-    <Member MemberName="System.IDisposable.Dispose">
-      <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
-      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.System#IDisposable#Dispose" />
-      <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
-      <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>Releases all resources that are used by the data reader.</summary>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="VisibleFieldCount">

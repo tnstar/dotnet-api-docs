@@ -203,11 +203,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.HttpStatusCode</ReturnType>
       </ReturnValue>
@@ -255,14 +250,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -281,128 +268,6 @@
  This shows how to get the description of the status code of the current HTTP response to which this property is attached:  
   
  [!code-csharp[S_UEHttpResponseMessageProperty#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_uehttpresponsemessageproperty/cs/service.cs#4)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SuppressEntityBody">
-      <MemberSignature Language="C#" Value="public bool SuppressEntityBody { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool SuppressEntityBody" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpResponseMessageProperty.SuppressEntityBody" />
-      <MemberSignature Language="VB.NET" Value="Public Property SuppressEntityBody As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SuppressEntityBody { bool get(); void set(bool value); };" />
-      <MemberSignature Language="F#" Value="member this.SuppressEntityBody : bool with get, set" Usage="System.ServiceModel.Channels.HttpResponseMessageProperty.SuppressEntityBody" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Http</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets or sets a value that indicates whether the body of the message is ignored and an empty message is sent.</summary>
-        <value>
-          <see langword="true" /> if the message body is suppressed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This property is used for empty message responses, for example, a service that accepts a POST request and returns a response that contains no message body with StatusCode = 200 and StatusDescription = OK. The <xref:System.ServiceModel.Channels.HttpResponseMessageProperty> associated with this response has this property set to `true`.  
-  
-   
-  
-## Examples  
- This shows how to suppress the message body:  
-  
- [!code-csharp[S_UEHttpResponseMessageProperty#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_uehttpresponsemessageproperty/cs/service.cs#5)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SuppressPreamble">
-      <MemberSignature Language="C#" Value="public bool SuppressPreamble { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool SuppressPreamble" />
-      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpResponseMessageProperty.SuppressPreamble" />
-      <MemberSignature Language="VB.NET" Value="Public Property SuppressPreamble As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SuppressPreamble { bool get(); void set(bool value); };" />
-      <MemberSignature Language="F#" Value="member this.SuppressPreamble : bool with get, set" Usage="System.ServiceModel.Channels.HttpResponseMessageProperty.SuppressPreamble" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Http</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets or sets whether the message preamble is suppressed.</summary>
-        <value>
-          <see langword="true" /> if the message preamble is suppressed; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.ServiceModel.Channels.HttpResponseMessageProperty.SuppressPreamble%2A> property enables users to write content into the <xref:System.Web.HttpResponseBase.OutputStream%2A> from within a WCF operation body. This takes effect only on webhosted scenarios. The <xref:System.ServiceModel.Channels.HttpResponseMessageProperty.SuppressPreamble%2A> property is `false` by default.  
-  
-> [!WARNING]
->  If the <xref:System.ServiceModel.Channels.HttpResponseMessageProperty.SuppressPreamble%2A> property is set to `true`, you must set the headers, content-type, status code on the response because WCF will no longer do it.  
-  
- The following code shows an example of how to do this.  
-  
-```  
-public class Service1 : IService1  
-{  
-   public void GetData()  
-   {  
-      HttpContext hc = HttpContext.Current;  
-      string str = @"<?xml version=""1.0"" encoding=""utf-8"" ?>";  
-      byte[] buffer = new byte[str.Length];  
-      buffer = ASCIIEncoding.UTF8.GetBytes(str);  
-  
-      // enable the property  
-      HttpResponseMessageProperty responseProperty = new HttpResponseMessageProperty();  
-      responseProperty.SuppressPreamble = true;  
-      OperationContext.Current.OutgoingMessageProperties[HttpResponseMessageProperty.Name] = responseProperty;  
-  
-      // set the response   
-      hc.Response.StatusCode = 200;  
-      hc.Response.ContentType = "text/xml; charset=utf-8";  
-      hc.Response.ClearContent();  
-      hc.Response.Flush();  
-  
-      hc.Response.OutputStream.Write(buffer, 0, buffer.Length);  
-     hc.Response.Flush();  
-   }  
-}  
-```  
   
  ]]></format>
         </remarks>

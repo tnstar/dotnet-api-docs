@@ -1,6 +1,6 @@
 ﻿<Type Name="DirectoryServicesCOMException" FullName="System.DirectoryServices.DirectoryServicesCOMException">
   <TypeSignature Language="C#" Value="public class DirectoryServicesCOMException : System.Runtime.InteropServices.COMException" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit DirectoryServicesCOMException extends System.Runtime.InteropServices.COMException implements class System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DirectoryServicesCOMException extends System.Runtime.InteropServices.COMException implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.DirectoryServicesCOMException" />
   <TypeSignature Language="VB.NET" Value="Public Class DirectoryServicesCOMException&#xA;Inherits COMException" />
   <TypeSignature Language="C++ CLI" Value="public ref class DirectoryServicesCOMException : System::Runtime::InteropServices::COMException" />
@@ -19,11 +19,6 @@
       <InterfaceName>System.Runtime.Serialization.ISerializable</InterfaceName>
     </Interface>
   </Interfaces>
-  <Attributes>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.Serializable</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <summary>Contains extended error information about an error that occurred when the <see cref="M:System.DirectoryServices.DirectoryEntry.Invoke(System.String,System.Object[])" /> method is called.</summary>
     <remarks>To be added.</remarks>

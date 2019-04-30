@@ -1,9 +1,9 @@
 ﻿<Type Name="X509ServiceCertificateAuthentication" FullName="System.ServiceModel.Security.X509ServiceCertificateAuthentication">
-  <TypeSignature Language="C#" Value="public class X509ServiceCertificateAuthentication" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit X509ServiceCertificateAuthentication extends System.Object" />
+  <TypeSignature Language="C#" Value="public sealed class X509ServiceCertificateAuthentication" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit X509ServiceCertificateAuthentication extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.X509ServiceCertificateAuthentication" />
-  <TypeSignature Language="VB.NET" Value="Public Class X509ServiceCertificateAuthentication" />
-  <TypeSignature Language="C++ CLI" Value="public ref class X509ServiceCertificateAuthentication" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class X509ServiceCertificateAuthentication" />
+  <TypeSignature Language="C++ CLI" Value="public ref class X509ServiceCertificateAuthentication sealed" />
   <TypeSignature Language="F#" Value="type X509ServiceCertificateAuthentication = class" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
@@ -86,11 +86,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.X509CertificateValidationMode</ReturnType>
       </ReturnValue>
@@ -141,11 +136,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.IdentityModel.Selectors.X509CertificateValidator</ReturnType>
       </ReturnValue>
@@ -197,11 +187,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509RevocationMode</ReturnType>
       </ReturnValue>
@@ -253,11 +238,6 @@
         <AssemblyVersion>4.5.0.1</AssemblyVersion>
         <AssemblyVersion>4.5.0.3</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.StoreLocation</ReturnType>
       </ReturnValue>

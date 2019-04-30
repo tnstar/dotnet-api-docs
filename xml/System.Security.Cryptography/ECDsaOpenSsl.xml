@@ -143,7 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsaOpenSsl.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
-      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="eCDsaOpenSsl.Dispose disposing" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="eCDsaOpenSsl.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.OpenSsl</AssemblyName>
@@ -195,7 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsaOpenSsl.ExportExplicitParameters(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ExportExplicitParameters (includePrivateParameters As Boolean) As ECParameters" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::ECParameters ExportExplicitParameters(bool includePrivateParameters);" />
-      <MemberSignature Language="F#" Value="override this.ExportExplicitParameters : bool -&gt; System.Security.Cryptography.ECParameters" Usage="eCDsaOpenSsl.ExportExplicitParameters includePrivateParameters" />
+      <MemberSignature Language="F#" Value="abstract member ExportExplicitParameters : bool -&gt; System.Security.Cryptography.ECParameters&#xA;override this.ExportExplicitParameters : bool -&gt; System.Security.Cryptography.ECParameters" Usage="eCDsaOpenSsl.ExportExplicitParameters includePrivateParameters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.OpenSsl</AssemblyName>
@@ -223,7 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsaOpenSsl.ExportParameters(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ExportParameters (includePrivateParameters As Boolean) As ECParameters" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::ECParameters ExportParameters(bool includePrivateParameters);" />
-      <MemberSignature Language="F#" Value="override this.ExportParameters : bool -&gt; System.Security.Cryptography.ECParameters" Usage="eCDsaOpenSsl.ExportParameters includePrivateParameters" />
+      <MemberSignature Language="F#" Value="abstract member ExportParameters : bool -&gt; System.Security.Cryptography.ECParameters&#xA;override this.ExportParameters : bool -&gt; System.Security.Cryptography.ECParameters" Usage="eCDsaOpenSsl.ExportParameters includePrivateParameters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.OpenSsl</AssemblyName>
@@ -251,7 +251,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsaOpenSsl.GenerateKey(System.Security.Cryptography.ECCurve)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GenerateKey (curve As ECCurve)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GenerateKey(System::Security::Cryptography::ECCurve curve);" />
-      <MemberSignature Language="F#" Value="override this.GenerateKey : System.Security.Cryptography.ECCurve -&gt; unit" Usage="eCDsaOpenSsl.GenerateKey curve" />
+      <MemberSignature Language="F#" Value="abstract member GenerateKey : System.Security.Cryptography.ECCurve -&gt; unit&#xA;override this.GenerateKey : System.Security.Cryptography.ECCurve -&gt; unit" Usage="eCDsaOpenSsl.GenerateKey curve" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.OpenSsl</AssemblyName>
@@ -278,7 +278,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsaOpenSsl.HashData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function HashData (data As Stream, hashAlgorithm As HashAlgorithmName) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::Byte&gt; ^ HashData(System::IO::Stream ^ data, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
-      <MemberSignature Language="F#" Value="override this.HashData : System.IO.Stream * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]" Usage="eCDsaOpenSsl.HashData (data, hashAlgorithm)" />
+      <MemberSignature Language="F#" Value="abstract member HashData : System.IO.Stream * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]&#xA;override this.HashData : System.IO.Stream * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]" Usage="eCDsaOpenSsl.HashData (data, hashAlgorithm)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.OpenSsl</AssemblyName>
@@ -308,7 +308,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsaOpenSsl.HashData(System.Byte[],System.Int32,System.Int32,System.Security.Cryptography.HashAlgorithmName)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function HashData (data As Byte(), offset As Integer, count As Integer, hashAlgorithm As HashAlgorithmName) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::Byte&gt; ^ HashData(cli::array &lt;System::Byte&gt; ^ data, int offset, int count, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
-      <MemberSignature Language="F#" Value="override this.HashData : byte[] * int * int * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]" Usage="eCDsaOpenSsl.HashData (data, offset, count, hashAlgorithm)" />
+      <MemberSignature Language="F#" Value="abstract member HashData : byte[] * int * int * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]&#xA;override this.HashData : byte[] * int * int * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]" Usage="eCDsaOpenSsl.HashData (data, offset, count, hashAlgorithm)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.OpenSsl</AssemblyName>
@@ -342,7 +342,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsaOpenSsl.ImportParameters(System.Security.Cryptography.ECParameters)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ImportParameters (parameters As ECParameters)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ImportParameters(System::Security::Cryptography::ECParameters parameters);" />
-      <MemberSignature Language="F#" Value="override this.ImportParameters : System.Security.Cryptography.ECParameters -&gt; unit" Usage="eCDsaOpenSsl.ImportParameters parameters" />
+      <MemberSignature Language="F#" Value="abstract member ImportParameters : System.Security.Cryptography.ECParameters -&gt; unit&#xA;override this.ImportParameters : System.Security.Cryptography.ECParameters -&gt; unit" Usage="eCDsaOpenSsl.ImportParameters parameters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.OpenSsl</AssemblyName>
@@ -417,7 +417,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsaOpenSsl.SignHash(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function SignHash (hash As Byte()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ SignHash(cli::array &lt;System::Byte&gt; ^ hash);" />
-      <MemberSignature Language="F#" Value="override this.SignHash : byte[] -&gt; byte[]" Usage="eCDsaOpenSsl.SignHash hash" />
+      <MemberSignature Language="F#" Value="abstract member SignHash : byte[] -&gt; byte[]&#xA;override this.SignHash : byte[] -&gt; byte[]" Usage="eCDsaOpenSsl.SignHash hash" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.OpenSsl</AssemblyName>
@@ -445,7 +445,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsaOpenSsl.VerifyHash(System.Byte[],System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function VerifyHash (hash As Byte(), signature As Byte()) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool VerifyHash(cli::array &lt;System::Byte&gt; ^ hash, cli::array &lt;System::Byte&gt; ^ signature);" />
-      <MemberSignature Language="F#" Value="override this.VerifyHash : byte[] * byte[] -&gt; bool" Usage="eCDsaOpenSsl.VerifyHash (hash, signature)" />
+      <MemberSignature Language="F#" Value="abstract member VerifyHash : byte[] * byte[] -&gt; bool&#xA;override this.VerifyHash : byte[] * byte[] -&gt; bool" Usage="eCDsaOpenSsl.VerifyHash (hash, signature)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.OpenSsl</AssemblyName>
