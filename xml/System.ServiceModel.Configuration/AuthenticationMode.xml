@@ -15,6 +15,7 @@
   </Base>
   <Docs>
     <summary>Specifies the authentication setting used for message exchange.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AnonymousForCertificate">

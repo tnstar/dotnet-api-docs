@@ -565,7 +565,7 @@
     </MemberGroup>
     <Member MemberName="op_Addition">
       <MemberSignature Language="C#" Value="public void operator + (ref Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt; , int _Right);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.void op_Addition(class Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1&lt;!TValue&gt;&amp; , int32 _Right) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance void op_Addition(class Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1&lt;!TValue&gt;&amp; , int32 _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1.op_Addition(Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator{`0}@,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Operator + (ByRef  As ReverseRandomAccessIterator(Of TValue), _Right As Integer) As Void" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ operator +(Microsoft::VisualC::StlClr::Generic::ReverseRandomAccessIterator&lt;TValue&gt; ^ % , int _Right);" />
@@ -593,7 +593,7 @@
     </Member>
     <Member MemberName="op_Addition">
       <MemberSignature Language="C#" Value="public static void operator + (ref Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt; , int _Left, Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt; _Right);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.void op_Addition(class Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1&lt;!TValue&gt;&amp; , int32 _Left, class Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1&lt;!TValue&gt; _Right) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname void op_Addition(class Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1&lt;!TValue&gt;&amp; , int32 _Left, class Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1&lt;!TValue&gt; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1.op_Addition(Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator{`0}@,System.Int32,Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator + (ByRef  As ReverseRandomAccessIterator(Of TValue), _Left As Integer, _Right As ReverseRandomAccessIterator(Of TValue)) As Void" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ^ operator +(Microsoft::VisualC::StlClr::Generic::ReverseRandomAccessIterator&lt;TValue&gt; ^ % , int _Left, Microsoft::VisualC::StlClr::Generic::ReverseRandomAccessIterator&lt;TValue&gt; ^ _Right);" />
@@ -663,7 +663,7 @@
     </MemberGroup>
     <Member MemberName="op_Decrement">
       <MemberSignature Language="C#" Value="public void operator -- (ref Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt; );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.void op_Decrement(class Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1&lt;!TValue&gt;&amp; ) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance void op_Decrement(class Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1&lt;!TValue&gt;&amp; ) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1.op_Decrement(Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator{`0}@)" />
       <MemberSignature Language="VB.NET" Value="Public op_Decrement (ByRef  As ReverseRandomAccessIterator(Of TValue)) As Void" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ operator --(Microsoft::VisualC::StlClr::Generic::ReverseRandomAccessIterator&lt;TValue&gt; ^ % );" />
@@ -688,12 +688,17 @@
       </Docs>
     </Member>
     <Member MemberName="op_Decrement">
-      <MemberSignature Language="C#" Value="public void operator -- (ref Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt; , int );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.void op_Decrement(class Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1&lt;!TValue&gt;&amp; , int32 ) cil managed" />
+      <MemberSignature Language="C#" Value="public void operator -- (ref Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt; , int );" FrameworkAlternate="netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance void op_Decrement(class Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1&lt;!TValue&gt;&amp; , int32 ) cil managed" FrameworkAlternate="netframework-3.5;netframework-4.0" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1.op_Decrement(Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator{`0}@,System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Public op_Decrement (ByRef  As ReverseRandomAccessIterator(Of TValue),  As Integer) As Void" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ operator --(Microsoft::VisualC::StlClr::Generic::ReverseRandomAccessIterator&lt;TValue&gt; ^ % , int );" />
-      <MemberSignature Language="F#" Value="member this.op_Decrement :  * int -&gt; unit" Usage="reverseRandomAccessIterator.op_Decrement (, )" />
+      <MemberSignature Language="VB.NET" Value="Public op_Decrement (ByRef  As ReverseRandomAccessIterator(Of TValue),  As Integer) As Void" FrameworkAlternate="netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ operator --(Microsoft::VisualC::StlClr::Generic::ReverseRandomAccessIterator&lt;TValue&gt; ^ % , int );" FrameworkAlternate="netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="F#" Value="member this.op_Decrement :  * int -&gt; unit" Usage="reverseRandomAccessIterator.op_Decrement (, )" FrameworkAlternate="netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="C#" Value="public void operator -- (ref Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt; , int A_0);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance void op_Decrement(class Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1&lt;!TValue&gt;&amp; , int32 A_0) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="VB.NET" Value="Public op_Decrement (ByRef  As ReverseRandomAccessIterator(Of TValue), A_0 As Integer) As Void" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ operator --(Microsoft::VisualC::StlClr::Generic::ReverseRandomAccessIterator&lt;TValue&gt; ^ % , int A_0);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="member this.op_Decrement :  * int -&gt; unit" Usage="reverseRandomAccessIterator.op_Decrement (, A_0)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -704,14 +709,15 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="System.Int32" RefType="ref" />
-        <Parameter Name="A_0" Type="System.Int32" />
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt;" RefType="ref" Index="0" />
+        <Parameter Name="" Type="System.Int32" Index="1" FrameworkAlternate="netframework-3.5;netframework-4.0" />
+        <Parameter Name="A_0" Type="System.Int32" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="">A reference to the current iterator.</param>
-        <param name="A_0">An unused parameter that indicates this is the postfix version of the operator.</param>
-        <summary>Decrements the reverse iterator by one element. This is the postfix version of the decrement operator.</summary>
-        <returns>An iterator.</returns>
+        <param name="">To be added.</param>
+        <param name="A_0">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -840,7 +846,7 @@
     </MemberGroup>
     <Member MemberName="op_Increment">
       <MemberSignature Language="C#" Value="public void operator ++ (ref Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt; );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.void op_Increment(class Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1&lt;!TValue&gt;&amp; ) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance void op_Increment(class Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1&lt;!TValue&gt;&amp; ) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1.op_Increment(Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator{`0}@)" />
       <MemberSignature Language="VB.NET" Value="Public op_Increment (ByRef  As ReverseRandomAccessIterator(Of TValue)) As Void" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ operator ++(Microsoft::VisualC::StlClr::Generic::ReverseRandomAccessIterator&lt;TValue&gt; ^ % );" />
@@ -865,12 +871,17 @@
       </Docs>
     </Member>
     <Member MemberName="op_Increment">
-      <MemberSignature Language="C#" Value="public void operator ++ (ref Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt; , int );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.void op_Increment(class Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1&lt;!TValue&gt;&amp; , int32 ) cil managed" />
+      <MemberSignature Language="C#" Value="public void operator ++ (ref Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt; , int );" FrameworkAlternate="netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance void op_Increment(class Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1&lt;!TValue&gt;&amp; , int32 ) cil managed" FrameworkAlternate="netframework-3.5;netframework-4.0" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1.op_Increment(Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator{`0}@,System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Public op_Increment (ByRef  As ReverseRandomAccessIterator(Of TValue),  As Integer) As Void" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ operator ++(Microsoft::VisualC::StlClr::Generic::ReverseRandomAccessIterator&lt;TValue&gt; ^ % , int );" />
-      <MemberSignature Language="F#" Value="member this.op_Increment :  * int -&gt; unit" Usage="reverseRandomAccessIterator.op_Increment (, )" />
+      <MemberSignature Language="VB.NET" Value="Public op_Increment (ByRef  As ReverseRandomAccessIterator(Of TValue),  As Integer) As Void" FrameworkAlternate="netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ operator ++(Microsoft::VisualC::StlClr::Generic::ReverseRandomAccessIterator&lt;TValue&gt; ^ % , int );" FrameworkAlternate="netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="F#" Value="member this.op_Increment :  * int -&gt; unit" Usage="reverseRandomAccessIterator.op_Increment (, )" FrameworkAlternate="netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="C#" Value="public void operator ++ (ref Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt; , int A_0);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance void op_Increment(class Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1&lt;!TValue&gt;&amp; , int32 A_0) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="VB.NET" Value="Public op_Increment (ByRef  As ReverseRandomAccessIterator(Of TValue), A_0 As Integer) As Void" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ operator ++(Microsoft::VisualC::StlClr::Generic::ReverseRandomAccessIterator&lt;TValue&gt; ^ % , int A_0);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="member this.op_Increment :  * int -&gt; unit" Usage="reverseRandomAccessIterator.op_Increment (, A_0)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -881,14 +892,15 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="System.Int32" RefType="ref" />
-        <Parameter Name="A_0" Type="System.Int32" />
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt;" RefType="ref" Index="0" />
+        <Parameter Name="" Type="System.Int32" Index="1" FrameworkAlternate="netframework-3.5;netframework-4.0" />
+        <Parameter Name="A_0" Type="System.Int32" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="">A reference to the current iterator.</param>
-        <param name="A_0">An unused parameter that indicates this is the postfix version of the operator.</param>
-        <summary>Increments the reverse iterator by one element. This is the postfix version of the increment operator.</summary>
-        <returns>An iterator.</returns>
+        <param name="">To be added.</param>
+        <param name="A_0">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1088,7 +1100,7 @@
     </Member>
     <Member MemberName="op_Subtraction">
       <MemberSignature Language="C#" Value="public void operator - (ref Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt; , int _Right);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class System.void op_Subtraction(class Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1&lt;!TValue&gt;&amp; , int32 _Right) cil managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance void op_Subtraction(class Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1&lt;!TValue&gt;&amp; , int32 _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1.op_Subtraction(Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator{`0}@,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Operator - (ByRef  As ReverseRandomAccessIterator(Of TValue), _Right As Integer) As Void" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ operator -(Microsoft::VisualC::StlClr::Generic::ReverseRandomAccessIterator&lt;TValue&gt; ^ % , int _Right);" />

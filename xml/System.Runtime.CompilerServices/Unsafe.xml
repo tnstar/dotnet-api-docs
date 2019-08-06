@@ -766,7 +766,8 @@
         <param name="left">The first value to compare.</param>
         <param name="right">The second value to compare.</param>
         <summary>Returns a value that indicates whether a specified reference is greater than another specified reference.</summary>
-        <returns><see langword="true" /> if <paramref name="left" /> is greater than <paramref name="right" />; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="left" /> is greater than <paramref name="right" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -799,7 +800,8 @@
         <param name="left">The first value to compare.</param>
         <param name="right">The second value to compare.</param>
         <summary>Returns a value that indicates whether a specified reference is less than another specified reference.</summary>
-        <returns><see langword="true" /> if <paramref name="left" /> is less than <paramref name="right" />; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="left" /> is less than <paramref name="right" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

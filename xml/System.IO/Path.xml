@@ -649,7 +649,8 @@ The following example displays <xref:System.IO.Path> field values on Windows and
       <Docs>
         <param name="path">The path to analyze.</param>
         <summary>Returns a value that indicates whether the path, specified as a read-only span, ends in a directory separator.</summary>
-        <returns><see langword="true" /> if the path ends in a directory separator; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the path ends in a directory separator; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -680,7 +681,8 @@ The following example displays <xref:System.IO.Path> field values on Windows and
       <Docs>
         <param name="path">The path to analyze.</param>
         <summary>Returns a value that indicates whether the specified path ends in a directory separator.</summary>
-        <returns><see langword="true" /> if the path ends in a directory separator; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the path ends in a directory separator; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

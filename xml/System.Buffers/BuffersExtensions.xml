@@ -36,6 +36,11 @@
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -46,7 +51,7 @@
       <Parameters>
         <Parameter Name="source" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" RefType="this">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-2.1">
               <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
             </Attribute>
           </Attributes>
@@ -73,6 +78,11 @@
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.SequencePosition&gt;</ReturnType>
@@ -87,7 +97,7 @@
       <Parameters>
         <Parameter Name="source" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" RefType="this">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-2.1">
               <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
             </Attribute>
           </Attributes>
@@ -115,6 +125,11 @@
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T[]</ReturnType>
@@ -125,7 +140,7 @@
       <Parameters>
         <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" RefType="this">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netcore-2.1">
               <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
             </Attribute>
           </Attributes>

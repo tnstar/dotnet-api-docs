@@ -1789,16 +1789,17 @@
       </Docs>
     </Member>
     <Member MemberName="ValueRef">
-      <MemberSignature Language="C#" Value="public TValue&amp; ValueRef (TKey key);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance TValue&amp; modreq(System.Runtime.InteropServices.InAttribute) ValueRef(!TKey key) cil managed" />
+      <MemberSignature Language="C#" Value="public ref readonly TValue ValueRef (TKey key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TValue ValueRef(!TKey key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.ValueRef(`0)" />
-      <MemberSignature Language="VB.NET" Value="Public Function ValueRef (key As TKey) As TValue&amp;" />
+      <MemberSignature Language="VB.NET" Value="Public Function ValueRef (key As TKey) As TValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TValue&amp; ^ ValueRef(TKey key);" />
-      <MemberSignature Language="F#" Value="member this.ValueRef : 'Key -&gt; TValue&amp;" Usage="immutableSortedDictionary.ValueRef key" />
+      <MemberSignature Language="F#" Value="member this.ValueRef : 'Key -&gt; " Usage="immutableSortedDictionary.ValueRef key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue RefType="Readonly">
         <ReturnType>TValue</ReturnType>
@@ -1809,14 +1810,13 @@
         </Attributes>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="TKey" />
+        <Parameter Name="key" Type="TKey" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="key">To be added.</param>
-        <summary>Returns a read-only reference to the value associated with the provided <paramref name="key" />.</summary>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Collections.Generic.KeyNotFoundException">The <paramref name="key" /> is not present.</exception>
       </Docs>
     </Member>
     <Member MemberName="Values">

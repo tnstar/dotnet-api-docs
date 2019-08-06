@@ -451,12 +451,16 @@
       </Docs>
     </Member>
     <Member MemberName="DeriveKeyMaterial">
-      <MemberSignature Language="C#" Value="public virtual byte[] DeriveKeyMaterial (System.Security.Cryptography.ECDiffieHellmanPublicKey otherPartyPublicKey);" />
+      <MemberSignature Language="C#" Value="public virtual byte[] DeriveKeyMaterial (System.Security.Cryptography.ECDiffieHellmanPublicKey otherPartyPublicKey);" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.1;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] DeriveKeyMaterial(class System.Security.Cryptography.ECDiffieHellmanPublicKey otherPartyPublicKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellman.DeriveKeyMaterial(System.Security.Cryptography.ECDiffieHellmanPublicKey)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeriveKeyMaterial (otherPartyPublicKey As ECDiffieHellmanPublicKey) As Byte()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ DeriveKeyMaterial(System::Security::Cryptography::ECDiffieHellmanPublicKey ^ otherPartyPublicKey);" />
-      <MemberSignature Language="F#" Value="abstract member DeriveKeyMaterial : System.Security.Cryptography.ECDiffieHellmanPublicKey -&gt; byte[]&#xA;override this.DeriveKeyMaterial : System.Security.Cryptography.ECDiffieHellmanPublicKey -&gt; byte[]" Usage="eCDiffieHellman.DeriveKeyMaterial otherPartyPublicKey" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeriveKeyMaterial (otherPartyPublicKey As ECDiffieHellmanPublicKey) As Byte()" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.1;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ DeriveKeyMaterial(System::Security::Cryptography::ECDiffieHellmanPublicKey ^ otherPartyPublicKey);" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.1;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="abstract member DeriveKeyMaterial : System.Security.Cryptography.ECDiffieHellmanPublicKey -&gt; byte[]&#xA;override this.DeriveKeyMaterial : System.Security.Cryptography.ECDiffieHellmanPublicKey -&gt; byte[]" Usage="eCDiffieHellman.DeriveKeyMaterial otherPartyPublicKey" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.1;xamarinmac-3.0" />
+      <MemberSignature Language="C#" Value="public abstract byte[] DeriveKeyMaterial (System.Security.Cryptography.ECDiffieHellmanPublicKey otherPartyPublicKey);" FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function DeriveKeyMaterial (otherPartyPublicKey As ECDiffieHellmanPublicKey) As Byte()" FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;System::Byte&gt; ^ DeriveKeyMaterial(System::Security::Cryptography::ECDiffieHellmanPublicKey ^ otherPartyPublicKey);" FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1" />
+      <MemberSignature Language="F#" Value="abstract member DeriveKeyMaterial : System.Security.Cryptography.ECDiffieHellmanPublicKey -&gt; byte[]" Usage="eCDiffieHellman.DeriveKeyMaterial otherPartyPublicKey" FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -745,7 +749,7 @@
       </Parameters>
       <Docs>
         <param name="source">The bytes of an ECPrivateKey structure in the ASN.1-BER encoding.</param>
-        <param name="bytesRead">When this method returns, contains a value that indicates the number of bytes read from <paramref name="source"/>. This parameter is treated as uninitialized.</param>
+        <param name="bytesRead">When this method returns, contains a value that indicates the number of bytes read from <paramref name="source" />. This parameter is treated as uninitialized.</param>
         <summary>Imports the public/private keypair from an ECPrivateKey structure, replacing the keys for this object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -755,7 +759,7 @@
  If the value is Base64-encoded or in the PEM text format, the caller must Base64-decode the contents before calling this method.
  ]]></format>
         </remarks>
-        <exception cref="T:System.Security.Cryptography.CryptographicException">The contents of <paramref name="source"/> do not represent an ASN.1-BER-encoded PKCS#8 ECPrivateKey structure.
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The contents of <paramref name="source" /> do not represent an ASN.1-BER-encoded PKCS#8 ECPrivateKey structure.
 
 -or-
 
@@ -792,7 +796,7 @@ The key import failed.
       <Docs>
         <param name="passwordBytes">The bytes to use as a password when decrypting the key material.</param>
         <param name="source">The bytes of a PKCS#8 EncryptedPrivateKeyInfo structure in the ASN.1-BER encoding.</param>
-        <param name="bytesRead">When this method returns, contains a value that indicates the number of bytes read from <paramref name="source"/>. This parameter is treated as uninitialized.</param>
+        <param name="bytesRead">When this method returns, contains a value that indicates the number of bytes read from <paramref name="source" />. This parameter is treated as uninitialized.</param>
         <summary>Imports the public/private keypair from a PKCS#8 EncryptedPrivateKeyInfo structure after decrypting with a byte-based password, replacing the keys for this object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -808,19 +812,19 @@ The key import failed.
 
 -or-
 
-The contents of <paramref name="source"/> indicate the Key Derivation Function (KDF) to apply is the legacy PKCS#12 KDF, which requires <see cref="T:System.Char"/>-based passwords.
+The contents of <paramref name="source" /> indicate the Key Derivation Function (KDF) to apply is the legacy PKCS#12 KDF, which requires <see cref="T:System.Char" />-based passwords.
 
 -or-
 
-The contents of <paramref name="source"/> do not represent an ASN.1-BER-encoded PKCS#8 EncryptedPrivateKeyInfo structure.
+The contents of <paramref name="source" /> do not represent an ASN.1-BER-encoded PKCS#8 EncryptedPrivateKeyInfo structure.
 
 -or-
 
-The contents of <paramref name="source"/> indicate the key is for an algorithm other than the algorithm represented by this instance.
+The contents of <paramref name="source" /> indicate the key is for an algorithm other than the algorithm represented by this instance.
 
 -or-
 
-The contents of <paramref name="source"/> represent the key in a format that is not supported.
+The contents of <paramref name="source" /> represent the key in a format that is not supported.
 
 -or-
 
@@ -857,7 +861,7 @@ The algorithm-specific key import failed.
       <Docs>
         <param name="password">The password to use for decrypting the key material.</param>
         <param name="source">The bytes of a PKCS#8 EncryptedPrivateKeyInfo structure in the ASN.1-BER encoding.</param>
-        <param name="bytesRead">When this method returns, contains a value that indicates the number of bytes read from <paramref name="source"/>. This parameter is treated as uninitialized.</param>
+        <param name="bytesRead">When this method returns, contains a value that indicates the number of bytes read from <paramref name="source" />. This parameter is treated as uninitialized.</param>
         <summary>Imports the public/private keypair from a PKCS#8 EncryptedPrivateKeyInfo structure after decrypting with a char-based password, replacing the keys for this object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -872,15 +876,15 @@ The algorithm-specific key import failed.
 
 -or-
 
-The contents of <paramref name="source"/> do not represent an ASN.1-BER-encoded PKCS#8 EncryptedPrivateKeyInfo structure.
+The contents of <paramref name="source" /> do not represent an ASN.1-BER-encoded PKCS#8 EncryptedPrivateKeyInfo structure.
 
 -or-
 
-The contents of <paramref name="source"/> indicate the key is for an algorithm other than the algorithm represented by this instance.
+The contents of <paramref name="source" /> indicate the key is for an algorithm other than the algorithm represented by this instance.
 
 -or-
 
-The contents of <paramref name="source"/> represent the key in a format that is not supported.
+The contents of <paramref name="source" /> represent the key in a format that is not supported.
 
 -or-
 
@@ -959,7 +963,7 @@ The algorithm-specific key import failed.
       </Parameters>
       <Docs>
         <param name="source">The bytes of a PKCS#8 PrivateKeyInfo structure in the ASN.1-BER encoding.</param>
-        <param name="bytesRead">When this method returns, contains a value that indicates the number of bytes read from <paramref name="source"/>. This parameter is treated as uninitialized.</param>
+        <param name="bytesRead">When this method returns, contains a value that indicates the number of bytes read from <paramref name="source" />. This parameter is treated as uninitialized.</param>
         <summary>Imports the public/private keypair from a PKCS#8 PrivateKeyInfo structure after decryption, replacing the keys for this object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -969,20 +973,20 @@ The algorithm-specific key import failed.
  If the value is Base64-encoded or in the PEM text format, the caller must Base64-decode the contents before calling this method.
  ]]></format>
         </remarks>
-        <exception cref="T:System.Security.Cryptography.CryptographicException">The contents of <paramref name="source"/> do not represent an ASN.1-BER-encoded PKCS#8 PrivateKeyInfo structure.
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The contents of <paramref name="source" /> do not represent an ASN.1-BER-encoded PKCS#8 PrivateKeyInfo structure.
 
 -or-
 
-The contents of <paramref name="source"/> indicate the key is for an algorithm other than the algorithm represented by this instance.
+The contents of <paramref name="source" /> indicate the key is for an algorithm other than the algorithm represented by this instance.
 
 -or-
 
-The contents of <paramref name="source"/> represent the key in a format that is not supported.
+The contents of <paramref name="source" /> represent the key in a format that is not supported.
 
 -or-
 
 The algorithm-specific key import failed.
-</exception>        
+</exception>
       </Docs>
     </Member>
     <Member MemberName="ImportSubjectPublicKeyInfo">
@@ -1012,7 +1016,7 @@ The algorithm-specific key import failed.
       </Parameters>
       <Docs>
         <param name="source">The bytes of an X.509 SubjectPublicKeyInfo structure in the ASN.1-DER encoding.</param>
-        <param name="bytesRead">When this method returns, contains a value that indicates the number of bytes read from <paramref name="source"/>. This parameter is treated as uninitialized.</param>
+        <param name="bytesRead">When this method returns, contains a value that indicates the number of bytes read from <paramref name="source" />. This parameter is treated as uninitialized.</param>
         <summary>Imports the public key from an X.509 SubjectPublicKeyInfo structure after decryption, replacing the keys for this object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1022,15 +1026,15 @@ The algorithm-specific key import failed.
  If the value is Base64-encoded or in the PEM text format, the caller must Base64-decode the contents before calling this method.
  ]]></format>
         </remarks>
-        <exception cref="T:System.Security.Cryptography.CryptographicException">The contents of <paramref name="source"/> do not represent an ASN.1-DER-encoded X.509 SubjectPublicKeyInfo structure.
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The contents of <paramref name="source" /> do not represent an ASN.1-DER-encoded X.509 SubjectPublicKeyInfo structure.
 
 -or-
 
-The contents of <paramref name="source"/> indicate the key is for an algorithm other than the algorithm represented by this instance.
+The contents of <paramref name="source" /> indicate the key is for an algorithm other than the algorithm represented by this instance.
 
 -or-
 
-The contents of <paramref name="source"/> represent the key in a format that is not supported.
+The contents of <paramref name="source" /> represent the key in a format that is not supported.
 
 -or-
 
@@ -1172,7 +1176,8 @@ The algorithm-specific key import failed.
         <Parameter Name="includePrivateParameters" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="includePrivateParameters"><see langword="true" /> to include private parameters; otherwise, <see langword="false" />.</param>
+        <param name="includePrivateParameters">
+          <see langword="true" /> to include private parameters; otherwise, <see langword="false" />.</param>
         <summary>This method throws in all cases.</summary>
         <returns>This method does not return a value.</returns>
         <remarks>To be added.</remarks>
@@ -1206,9 +1211,10 @@ The algorithm-specific key import failed.
       </Parameters>
       <Docs>
         <param name="destination">The byte span to receive the ECPrivateKey data.</param>
-        <param name="bytesWritten">When this method returns, contains a value that indicates the number of bytes written to <paramref name="destination"/>. This parameter is treated as uninitialized.</param>
+        <param name="bytesWritten">When this method returns, contains a value that indicates the number of bytes written to <paramref name="destination" />. This parameter is treated as uninitialized.</param>
         <summary>Attempts to export the current key in the ECPrivateKey format into a provided buffer.</summary>
-        <returns><see langword="true"/> if <paramref name="destination"/> is big enough to receive the output; otherwise, <see langword="false"/>.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="destination" /> is big enough to receive the output; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">The key could not be exported.</exception>
         <altmember cref="M:System.Security.Cryptography.ECDiffieHellman.ExportECPrivateKey()" />
@@ -1244,9 +1250,10 @@ The algorithm-specific key import failed.
         <param name="passwordBytes">The bytes to use as a password when encrypting the key material.</param>
         <param name="pbeParameters">The password-based encryption (PBE) parameters to use when encrypting the key material.</param>
         <param name="destination">The byte span to receive the PKCS#8 EncryptedPrivateKeyInfo data.</param>
-        <param name="bytesWritten">When this method returns, contains a value that indicates the number of bytes written to <paramref name="destination"/>. This parameter is treated as uninitialized.</param>
+        <param name="bytesWritten">When this method returns, contains a value that indicates the number of bytes written to <paramref name="destination" />. This parameter is treated as uninitialized.</param>
         <summary>Attempts to export the current key in the PKCS#8 EncryptedPrivateKeyInfo format into a provided buffer, using a byte-based password.</summary>
-        <returns><see langword="true"/> if <paramref name="destination"/> is big enough to receive the output; otherwise, <see langword="false"/>.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="destination" /> is big enough to receive the output; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1259,9 +1266,9 @@ The algorithm-specific key import failed.
 
 -or-
 
-<paramref name="pbeParameters"/> indicates that <see cref="F:System.Security.Cryptography.PbeEncryptionAlgorithm.TripleDes3KeyPkcs12"/> should be used, which requires <see cref="T:System.Char"/>-based passwords.
+<paramref name="pbeParameters" /> indicates that <see cref="F:System.Security.Cryptography.PbeEncryptionAlgorithm.TripleDes3KeyPkcs12" /> should be used, which requires <see cref="T:System.Char" />-based passwords.
 </exception>
-        <altmember cref="Overload:System.Security.Cryptography.AsymmetricAlgorithm.ExportEncryptedPkcs8PrivateKey" />        
+        <altmember cref="Overload:System.Security.Cryptography.AsymmetricAlgorithm.ExportEncryptedPkcs8PrivateKey" />
       </Docs>
     </Member>
     <Member MemberName="TryExportEncryptedPkcs8PrivateKey">
@@ -1294,9 +1301,10 @@ The algorithm-specific key import failed.
         <param name="password">The password to use when encrypting the key material.</param>
         <param name="pbeParameters">The password-based encryption (PBE) parameters to use when encrypting the key material.</param>
         <param name="destination">The byte span to receive the PKCS#8 EncryptedPrivateKeyInfo data.</param>
-        <param name="bytesWritten">When this method returns, contains a value that indicates the number of bytes written to <paramref name="destination"/>. This parameter is treated as uninitialized.</param>
+        <param name="bytesWritten">When this method returns, contains a value that indicates the number of bytes written to <paramref name="destination" />. This parameter is treated as uninitialized.</param>
         <summary>Attempts to export the current key in the PKCS#8 EncryptedPrivateKeyInfo format into a provided buffer, using a char-based password.</summary>
-        <returns><see langword="true"/> if <paramref name="destination"/> is big enough to receive the output; otherwise, <see langword="false"/>.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="destination" /> is big enough to receive the output; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1335,12 +1343,13 @@ The algorithm-specific key import failed.
       </Parameters>
       <Docs>
         <param name="destination">The byte span to receive the PKCS#8 PrivateKeyInfo data.</param>
-        <param name="bytesWritten">When this method returns, contains a value that indicates the number of bytes written to <paramref name="destination"/>. This parameter is treated as uninitialized.</param>
+        <param name="bytesWritten">When this method returns, contains a value that indicates the number of bytes written to <paramref name="destination" />. This parameter is treated as uninitialized.</param>
         <summary>Attempts to export the current key in the PKCS#8 PrivateKeyInfo format into a provided buffer.</summary>
-        <returns><see langword="true"/> if <paramref name="destination"/> is big enough to receive the output; otherwise, <see langword="false"/>.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="destination" /> is big enough to receive the output; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">The key could not be exported.</exception>
-        <altmember cref="Overload:System.Security.Cryptography.AsymmetricAlgorithm.ExportPkcs8PrivateKey" />        
+        <altmember cref="Overload:System.Security.Cryptography.AsymmetricAlgorithm.ExportPkcs8PrivateKey" />
       </Docs>
     </Member>
     <Member MemberName="TryExportSubjectPublicKeyInfo">
@@ -1370,12 +1379,13 @@ The algorithm-specific key import failed.
       </Parameters>
       <Docs>
         <param name="destination">The byte span to receive the X.509 SubjectPublicKeyInfo data.</param>
-        <param name="bytesWritten">When this method returns, contains a value that indicates the number of bytes written to <paramref name="destination"/>. This parameter is treated as uninitialized.</param>
+        <param name="bytesWritten">When this method returns, contains a value that indicates the number of bytes written to <paramref name="destination" />. This parameter is treated as uninitialized.</param>
         <summary>Attempts to export the current key in the X.509 SubjectPublicKeyInfo format into a provided buffer.</summary>
-        <returns><see langword="true"/> if <paramref name="destination"/> is big enough to receive the output; otherwise, <see langword="false"/>.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="destination" /> is big enough to receive the output; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">The key could not be exported.</exception>
-        <altmember cref="Overload:System.Security.Cryptography.AsymmetricAlgorithm.ExportSubjectPublicKeyInfo" />        
+        <altmember cref="Overload:System.Security.Cryptography.AsymmetricAlgorithm.ExportSubjectPublicKeyInfo" />
       </Docs>
     </Member>
   </Members>

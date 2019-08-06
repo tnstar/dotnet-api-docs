@@ -1763,7 +1763,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a Unicode byte order mark encoded in UTF-32 format, if this object is configured to supply one.</summary>
-        <value>A byte span containing the Unicode byte order mark, if this object is configured to supply one; otherwise, a default span.</value><remarks>
+        <value>A byte span containing the Unicode byte order mark, if this object is configured to supply one; otherwise, a default span.</value>
+        <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
