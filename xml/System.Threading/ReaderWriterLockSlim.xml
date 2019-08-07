@@ -60,7 +60,7 @@
     > [!NOTE]
     >  Blocking new readers when writers are queued is a lock fairness policy that favors writers. The current fairness policy balances fairness to readers and writers, to promote throughput in the most common scenarios. Future versions of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] may introduce new fairness policies.  
   
--   A thread that tries to enter upgradeable mode blocks if there is already a thread in upgradeable mode, if there are threads waiting to enter write mode, or if there is a single thread in write mode.  
+-   A thread that tries to enter upgradeable mode blocks if there is already a thread in upgradeable mode, if here are threads waiting to enter write mode, or if there is a single thread in write mode.  
   
 -   A thread that tries to enter write mode blocks if there is a thread in any of the three modes.  
   
@@ -565,7 +565,7 @@
 ## Examples  
  The following example shows how to use the <xref:System.Threading.ReaderWriterLockSlim.EnterUpgradeableReadLock%2A> method to enter the lock in upgradeable mode. A `finally` block is used to execute the <xref:System.Threading.ReaderWriterLockSlim.ExitUpgradeableReadLock%2A> method, ensuring that the caller exits upgradeable mode.  
   
- The method shown in the example retrieves the value associated with a key and compares it with a new value. If the value is unchanged, the method returns a status indicating no change. It no value is found for the key, the key/value pair is inserted. If the value has changed, it is updated. Upgradeable mode allows the thread to upgrade the read lock as needed, without risk of deadlocks.  
+ The method shown in the example retrieves the value associated with a key and compares it with a new value. If the value is unchanged, the method returns a status indicating no change. If no value is found for the key, the key/value pair is inserted. If the value has changed, it is updated. Upgradeable mode allows the thread to upgrade the read lock as needed, without risk of deadlocks.  
   
  The example uses the parameterless constructor to create the lock, so recursion is not allowed. Programming the <xref:System.Threading.ReaderWriterLockSlim> is simpler and less prone to error when the lock does not allow recursion.  
   
